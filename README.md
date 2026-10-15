@@ -16,10 +16,11 @@ evaluation scripts, and a workflow for reproducing the paper's figures and table
 from saved numerical results. It records 27 selected runs: 26 transport-model
 runs and one heat-equation control.
 
-**Artifact availability:** the dataset DOI is reserved but the record is not yet
-published. Public downloads for checkpoints and saved evaluations have not yet
-been established. Figure/table reproduction requires the datasets and saved
-results described below; a source-only checkout does not contain those inputs.
+**Artifact availability:** a combined Zenodo record for datasets, checkpoints,
+and saved evaluations uses reserved DOI 10.5281/zenodo.23369294. Dataset uploads
+are in the draft; the checkpoint/evaluation additions are prepared locally and
+await upload. The record is not yet published. Figure/table reproduction requires
+the datasets and saved results described below; a source-only checkout does not contain those inputs.
 
 ## Repository contents
 
@@ -104,11 +105,12 @@ python tools/verify_inventory.py
 
 ### Datasets
 
-Dataset record: [10.5281/zenodo.23369294](https://doi.org/10.5281/zenodo.23369294)
+Combined research artifact record: [10.5281/zenodo.23369294](https://doi.org/10.5281/zenodo.23369294)
 (**reserved; not yet published**).
 
-The deposit contains five archives and accompanying descriptions, split IDs,
-license, citation metadata, and SHA-256 checksums:
+The combined deposit includes five dataset archives plus checkpoint and
+evaluation archives, with descriptions, split IDs, license, citation metadata,
+and SHA-256 checksums. The dataset archives are:
 
 - `heat_equation.zip`
 - `linear_advection.zip`
@@ -149,8 +151,10 @@ visualization bank for the quantitative test data.
 
 ### Checkpoints and saved evaluations
 
-Public download locations for these artifacts are not yet available. Their
-required repository-relative destinations are recorded in
+The same Zenodo record will include `checkpoints.zip` and `evaluations.zip`;
+the additional archives are prepared but not yet uploaded or published. Follow
+[ARTIFACTS.md](ARTIFACTS.md) for extraction and integrity checks once available.
+Their required repository-relative destinations are recorded in
 [runs.json](manifests/runs.json), [evaluations.json](manifests/evaluations.json),
 and [generated_evaluations.json](manifests/generated_evaluations.json):
 
@@ -333,13 +337,14 @@ in [CITATION.cff](CITATION.cff) to cite these implementations. The software's
 creator list is distinct from the associated paper's author list.
 
 Please cite the associated paper when using its methods or results, and cite the
-[dataset record](https://doi.org/10.5281/zenodo.23369294) when using the datasets
-(its DOI remains reserved until publication). The dataset creator is Trevor G.
+[research artifact record](https://doi.org/10.5281/zenodo.23369294) when using the
+datasets, trained checkpoints, or numerical evaluation outputs (its DOI remains
+reserved until publication). The artifact creator is Trevor G.
 Reed, [ORCID 0000-0002-4230-6687](https://orcid.org/0000-0002-4230-6687).
 
 The source repository is hosted at
 [tgreed86/gnn-directionality-conservation](https://github.com/tgreed86/gnn-directionality-conservation).
 The software release version/date, software DOI, and the paper's final
-bibliographic details will be added when available. The dataset
-DOI identifies the datasets and should not be used as the identifier for this
-software repository.
+bibliographic details will be added when available. The research artifact
+DOI identifies the datasets, checkpoints, and evaluation outputs and should not
+be used as the identifier for this software repository.

@@ -9,8 +9,8 @@ to check file integrity.
 | Collection | Expected files | Availability | Needed for |
 | --- | ---: | --- | --- |
 | Datasets | 137 original files | [Zenodo DOI 10.5281/zenodo.23369294](https://doi.org/10.5281/zenodo.23369294) reserved; record not yet published | Saved-results reproduction, training, inference |
-| Saved evaluations | 141 files: 107 numerical NPZ archives and 34 JSON records | Public download location not yet assigned | Saved-results reproduction; historical comparisons during Burgers inference |
-| Model checkpoints | 27 PT files | Public download location not yet assigned | Fresh model inference |
+| Saved evaluations | 141 files: 107 numerical NPZ archives and 34 JSON records | Same reserved Zenodo record; additional archive prepared, upload pending | Saved-results reproduction; historical comparisons during Burgers inference |
+| Model checkpoints | 27 PT files | Same reserved Zenodo record; additional archive prepared, upload pending | Fresh model inference |
 
 The repository already includes run configurations, histories, split metadata,
 and summaries under `models/`. Preserve those files when adding checkpoint
@@ -42,7 +42,7 @@ or removing shipped files should update `source_files.json` accordingly.
 
 ## 2. Install the datasets
 
-Once the dataset record is published, download all 11 deposit files to a folder
+Once the combined record is published, download all 14 deposit files to a folder
 outside the repository. The five ZIP names are:
 
 ```text
@@ -77,9 +77,19 @@ for the complete set of figures.
 
 ## 3. Install saved evaluations and checkpoints
 
-These collections are not yet publicly downloadable. Once their archives are
-published, extract their `evaluations/` and `models/` entries at the repository
-root, preserving the exact paths in the artifact manifest. Examples:
+The combined Zenodo package adds `evaluations.zip`, `checkpoints.zip`, and a
+standalone `ARTIFACTS.json` to the same record as the datasets. These additions
+are prepared locally; upload and publication remain pending. Once published,
+extract the archives at the repository root:
+
+```sh
+unzip "/path/to/downloads/evaluations.zip" 'evaluations/*' -d .
+unzip "/path/to/downloads/checkpoints.zip" 'models/*' -d .
+```
+
+The combined standalone README, citation file, and checksums supersede the
+original dataset-only versions. The dataset ZIPs retain their original embedded
+documentation; extract only `datasets/*` as above. Artifact paths include:
 
 ```text
 evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz

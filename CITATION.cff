@@ -1,11 +1,11 @@
-# This citation identifies the software, not the separately archived datasets.
+# This citation identifies the software, not the separately archived research artifacts.
 # Release version/date and software DOI will be added when assigned.
 cff-version: 1.2.0
 message: >-
   Please cite this software when using the implementations. Also cite the
-  associated paper when using its methods or results, and the separate dataset
-  record when using its data. Versioned software archival details will be added
-  when available.
+  associated paper when using its methods or results, and the separate research
+  artifact record when using its datasets, checkpoints, or evaluation outputs.
+  Versioned software archival details will be added when available.
 type: software
 repository-code: "https://github.com/tgreed86/gnn-directionality-conservation"
 title: "Directionality and Conservation in Graph Neural PDE Solvers: Research Software"

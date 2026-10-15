@@ -5,7 +5,7 @@
   "hash_provenance": "Expected hashes copied from the verified complete paper_release snapshot; source filesystem paths are not required by this repository.",
   "groups": {
     "datasets": {
-      "availability": "Dataset DOI 10.5281/zenodo.23369294 is reserved; record not yet published.",
+      "availability": "Combined research artifact DOI 10.5281/zenodo.23369294 is reserved; record not yet published. Dataset files uploaded to the draft.",
       "record_url": "https://doi.org/10.5281/zenodo.23369294",
       "download_url": null,
       "files": [
@@ -697,8 +697,8 @@
       ]
     },
     "checkpoints": {
-      "availability": "Public archive/download location not yet assigned.",
-      "record_url": null,
+      "availability": "Combined research artifact DOI 10.5281/zenodo.23369294 is reserved; record not yet published. Archive prepared locally; upload to the existing draft pending.",
+      "record_url": "https://doi.org/10.5281/zenodo.23369294",
       "download_url": null,
       "files": [
         {
@@ -839,8 +839,8 @@
       ]
     },
     "evaluations": {
-      "availability": "Public archive/download location not yet assigned.",
-      "record_url": null,
+      "availability": "Combined research artifact DOI 10.5281/zenodo.23369294 is reserved; record not yet published. Archive prepared locally; upload to the existing draft pending.",
+      "record_url": "https://doi.org/10.5281/zenodo.23369294",
       "download_url": null,
       "files": [
         {

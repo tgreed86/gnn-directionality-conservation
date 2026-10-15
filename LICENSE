@@ -34,8 +34,9 @@ https://creativecommons.org/licenses/by/4.0/
 Credit these artifacts to Trevor G. Reed. Preserve this notice and the license
 reference when sharing them, and identify any changes as required by CC BY 4.0.
 Dataset-specific descriptions and provenance are provided in inventory/ and
-manifests/. Software citation metadata is provided in CITATION.cff. The dataset
-record has its own DOI and must not be used as the software's identifier.
+manifests/. Software citation metadata is provided in CITATION.cff. The research
+artifact record (datasets, checkpoints, and evaluations) has its own DOI and must
+not be used as the software's identifier.
 
 Other material
 --------------
