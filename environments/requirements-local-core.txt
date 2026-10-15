@@ -1,0 +1,12 @@
+# Core dependencies observed in the author's amr-gnn-pt27 environment.
+# Python 3.11.13, macOS arm64; inspected 2026-10-15.
+# This is a direct-dependency specification, not a complete environment export.
+# Installation into a fresh environment and complete retraining are untested.
+# These pins do not reconstruct the Linux/CUDA container environment.
+torch==2.7.1
+torch-geometric==2.6.1
+numpy==2.3.3
+matplotlib==3.10.6
+scipy==1.16.2
+PyYAML==6.0.2
+tqdm==4.67.1

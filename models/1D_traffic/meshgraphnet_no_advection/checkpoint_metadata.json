@@ -1,0 +1,466 @@
+{
+  "model_class": "MeshGraphNet",
+  "model_kwargs": {
+    "in_channels": 14,
+    "hidden_channels": 128,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "layer_norm": false
+  },
+  "normalization": {
+    "density_mean": 0.2312764110269803,
+    "density_std": 0.23548314949177684,
+    "target_mean": -1.1013828320437629e-05,
+    "target_std": 0.10535730266665164
+  },
+  "feature_names": [
+    "normalized_density",
+    "normalized_pos_x",
+    "normalized_pos_y",
+    "normalized_cell_length",
+    "normalized_road_coordinate",
+    "is_road_start",
+    "is_road_end",
+    "normalized_v_max",
+    "normalized_turning_fraction",
+    "has_turning_fraction",
+    "normalized_merge_priority",
+    "has_merge_priority",
+    "flow_direction",
+    "normalized_dt"
+  ],
+  "dataset_format": "variable_topology_lwr_v1",
+  "target_type": "rate",
+  "learned_target": "rate",
+  "mass_projection": false,
+  "data_path": "data/lwr_structured_directional",
+  "source_config_path": "config_hpc.json",
+  "output_dir": "runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate",
+  "best_epoch": 989,
+  "best_validation_normalized_mse": 0.0005739637586645388,
+  "test_metrics": {
+    "test_in_size": {
+      "normalized_mse": 0.00046522437761991453,
+      "target_rmse": 0.0022724581396448952,
+      "next_state_rmse": 0.00010673199064349933,
+      "mass_mae": 0.00018599646818984183
+    },
+    "test_large": {
+      "normalized_mse": 0.0009807596350737459,
+      "target_rmse": 0.00329948339350571,
+      "next_state_rmse": 0.00014200618979840607,
+      "mass_mae": 0.0004228928492011619
+    },
+    "test_parameter_ood": {
+      "normalized_mse": 0.002877368206608473,
+      "target_rmse": 0.0056514823515513785,
+      "next_state_rmse": 0.0002551267928247834,
+      "mass_mae": 0.0006658923080067325
+    }
+  },
+  "manifest_path": "data/lwr_structured_directional/manifest.json",
+  "manifest_format": "variable_topology_lwr_v1",
+  "feature_normalization": {
+    "position_mean": [
+      1.1934506635395794,
+      1.2839863708163446
+    ],
+    "position_std": [
+      1.042702060781837,
+      0.898187979262673
+    ],
+    "cell_length_mean": 0.12461622247196341,
+    "cell_length_std": 0.0019985385285363378,
+    "v_max_mean": 0.9943016972392797,
+    "v_max_std": 0.10015516898207438,
+    "turning_fraction_mean": 0.0,
+    "turning_fraction_std": 1.0,
+    "merge_priority_mean": 0.0,
+    "merge_priority_std": 1.0,
+    "dt_mean": 0.04438773416353964,
+    "dt_std": 0.0031375270436197764
+  },
+  "conditioning_keys": [
+    "v_max",
+    "turning_fraction",
+    "merge_priority",
+    "flow_direction",
+    "dt"
+  ],
+  "state_dict_inventory": [
+    {
+      "name": "node_encoder.0.weight",
+      "shape": [
+        128,
+        14
+      ],
+      "dtype": "torch.float32",
+      "elements": 1792
+    },
+    {
+      "name": "node_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "node_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "node_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.0.weight",
+      "shape": [
+        128,
+        42
+      ],
+      "dtype": "torch.float32",
+      "elements": 5376
+    },
+    {
+      "name": "edge_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "edge_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.0.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.0.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.1.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.1.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.2.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.2.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.3.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.3.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.3.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.3.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "decoder.0.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "decoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "decoder.3.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "decoder.3.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

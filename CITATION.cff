@@ -1,0 +1,31 @@
+# This citation identifies the software, not the separately archived datasets.
+# Release version/date and software DOI will be added when assigned.
+cff-version: 1.2.0
+message: >-
+  Please cite this software when using the implementations. Also cite the
+  associated paper when using its methods or results, and the separate dataset
+  record when using its data. Versioned software archival details will be added
+  when available.
+type: software
+repository-code: "https://github.com/tgreed86/gnn-directionality-conservation"
+title: "Directionality and Conservation in Graph Neural PDE Solvers: Research Software"
+authors:
+  - family-names: Reed
+    given-names: Trevor G.
+    orcid: "https://orcid.org/0000-0002-4230-6687"
+    affiliation: "School of Data Science, University of Virginia"
+# Software license; documentation and original reference assets are CC BY 4.0.
+# See LICENSE for component scopes. This is not dual licensing of the same files.
+license: MIT
+abstract: >-
+  Research software for comparing directional information and conservation
+  constraints in graph neural PDE solvers. Includes dataset generation,
+  model implementations, training and evaluation scripts, and figure/table
+  reproduction for heat diffusion, linear advection, inviscid Burgers flow,
+  LWR traffic flow, and chemotactic cell migration.
+keywords:
+  - graph neural networks
+  - partial differential equations
+  - conservation laws
+  - scientific machine learning
+  - reproducible research

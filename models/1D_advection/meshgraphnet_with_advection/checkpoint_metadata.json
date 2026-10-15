@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "N": 384,
+    "L": 3.0,
+    "c": 1.0,
+    "CFL": 0.3,
+    "dt": 0.00234375,
+    "dx": 0.0078125,
+    "m_max": 16,
+    "amplitude": 1.0,
+    "spectral_decay": 1.0,
+    "target_type": "next",
+    "seed": 1234,
+    "num_samples": 100,
+    "window": 128,
+    "num_pairs": 12800,
+    "normalize_rms": "nan",
+    "ic_type": "shock",
+    "label_method": "analytic",
+    "shock_fraction": 1.0,
+    "shock_num_jumps_min": 6,
+    "shock_num_jumps_max": 12,
+    "state_representation": "cell_average"
+  },
+  "epoch": 98,
+  "checkpoint_val_loss": 0.00010234980531889914,
+  "best_val_loss": 0.00010234980531889914,
+  "early_stopping_metric": "rollout_state_rel_l2",
+  "best_early_stopping_metric_value": 0.00830972084055553,
+  "val_rollout_state_rel_l2": 0.00830972084055553,
+  "state_dict_inventory": [
+    {
+      "name": "node_encoder.0.weight",
+      "shape": [
+        128,
+        2
+      ],
+      "dtype": "torch.float32",
+      "elements": 256
+    },
+    {
+      "name": "node_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "node_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "node_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.0.weight",
+      "shape": [
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "edge_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.0.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.0.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.1.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.1.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.2.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.2.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "head.0.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "head.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "head.3.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "head.3.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

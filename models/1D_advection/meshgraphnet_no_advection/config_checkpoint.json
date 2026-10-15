@@ -1,0 +1,100 @@
+{
+  "seed": 1234,
+  "device": "cuda",
+  "data": {
+    "dataset_path": "./data/rollout/100_samples/advection_shock_N384_L3_cfl-0p3_cellavg.npz",
+    "target_mode": "delta",
+    "val_fraction": 0.1,
+    "test_fraction": 0.1,
+    "batch_size": 32,
+    "num_workers": 0,
+    "constant_trajectory_tol": 0.0,
+    "ignored_constant_trajectory_ids": []
+  },
+  "model": {
+    "name": "meshgraphnet",
+    "_comment_type": "Options: 'sageconv', 'sage-flux', 'meshgraphnet', 'meshgraphnet-abs', 'fluxgraphnet'",
+    "hidden": 128,
+    "layers": 3,
+    "dropout": 0.0,
+    "activation": "relu",
+    "activation_negative_slope": 0.01,
+    "activation_elu_alpha": 1.0,
+    "use_skip": false,
+    "use_layernorm": false,
+    "layernorm_eps": 1e-06,
+    "use_source": false,
+    "state_residual_mode": "raw",
+    "_comment_state_residual_mode": "Options: 'raw', 'model_input' (or 'legacy')",
+    "predict_type": "delta"
+  },
+  "input_features": {
+    "include_pos": false,
+    "normalize_state_to_minus1_1": true,
+    "normalize_clip": false,
+    "state_min": -2.6732285022735596,
+    "state_max": 2.902402639389038
+  },
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "include_diff": false,
+    "input_form": "delta",
+    "backend": "fv",
+    "_comment_backend": "Options: 'dec' (default, uses DEC operators), 'mls' (uses MLS-based operators)",
+    "advection_scheme": "upwind",
+    "mls_ridge_eps": 1e-12,
+    "nu": 0.0001,
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "normalize_adv_to_minus1_1": true,
+    "adv_min": null,
+    "adv_max": null,
+    "normalize_adv_clip": false,
+    "detach_inputs": true,
+    "c": null,
+    "adv_weight": 1.0,
+    "diff_weight": 1.0
+  },
+  "train": {
+    "epochs": 400,
+    "rollout_steps": 10,
+    "lr": 0.0001,
+    "lr_schedule": {
+      "enabled": true,
+      "entries": [
+        {
+          "epoch": 50,
+          "lr": 1e-05
+        }
+      ]
+    },
+    "tv_loss": {
+      "enabled": true,
+      "lambda_tv": 0.05,
+      "mode": "excess"
+    },
+    "weight_decay": 1e-06,
+    "grad_clip": -1.0,
+    "early_stopping_metric": "rollout_state_rel_l2",
+    "_comment_early_stopping_metric": "Options: 'val_loss' (default) or 'rollout_state_rel_l2'",
+    "early_stopping_patience": 50,
+    "log_every": 10,
+    "save_dir": "./runs/meshgraphnet/no_physics/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts",
+    "rollout_random_length": {
+      "enabled": false,
+      "min_steps": 1,
+      "max_steps": 10
+    },
+    "relative_mse": {
+      "enabled": false,
+      "alpha": 0.5,
+      "eps": 1e-12
+    }
+  },
+  "rollout_eval": {
+    "enabled": true,
+    "horizon": 100,
+    "num_test_samples": 16
+  }
+}

@@ -1,0 +1,3882 @@
+{
+  "datasets": {
+    "Burgers": {
+      "shape": [
+        100,
+        301,
+        256
+      ],
+      "metadata": {
+        "Nx": 256,
+        "n_steps": 300,
+        "n_quad": 8,
+        "domain_length": 1.0,
+        "dx": 0.00390625,
+        "dt": 0.0015,
+        "cfl": 0.2,
+        "cfl_range": null,
+        "time_step_mode": "fixed_cfl_fixed_dt",
+        "dt_min": 0.0015,
+        "dt_max": 0.0015,
+        "dt_mean": 0.0015000000000000011,
+        "cfl_min": 0.2,
+        "cfl_max": 0.2,
+        "cfl_mean": 0.19999999999999962,
+        "max_speed_min": 0.5208333333333334,
+        "max_speed_max": 0.5208333333333334,
+        "max_speed_mean": 0.5208333333333339,
+        "n_samples_requested": 100,
+        "n_samples_stored": 100
+      },
+      "all_states_finite": true,
+      "max_initial_speed_range": [
+        0.5208333134651184,
+        0.5208333134651184
+      ]
+    },
+    "heat_equation": {
+      "metadata": {
+        "spatial_dim": 1,
+        "nx": 64,
+        "ny": 1,
+        "N": 64,
+        "Lx": 1.0,
+        "Ly": 1.0,
+        "nu": 0.01,
+        "CFL": 0.2,
+        "dt": 0.0048828125,
+        "dx": 0.015625,
+        "dy": 0.0,
+        "m_max_x": 8,
+        "m_max_y": 0,
+        "amplitude": 1.0,
+        "spectral_decay": 1.0,
+        "target_type": "rate",
+        "seed": 1234,
+        "num_samples": 100,
+        "window": 130,
+        "num_pairs": 13000,
+        "normalize_rms": "nan"
+      },
+      "shape": [
+        100,
+        131,
+        64,
+        1
+      ],
+      "all_states_finite": true,
+      "max_stored_mass_drift": 2.593151293694973e-08,
+      "generator_replay": {
+        "scope": "all rollout states, using copied numerical generator functions",
+        "exact_match": true,
+        "max_abs_difference": 0.0
+      }
+    },
+    "1D_advection": {
+      "metadata": {
+        "N": 384,
+        "L": 3.0,
+        "c": 1.0,
+        "CFL": 0.3,
+        "dt": 0.00234375,
+        "dx": 0.0078125,
+        "m_max": 16,
+        "amplitude": 1.0,
+        "spectral_decay": 1.0,
+        "target_type": "next",
+        "seed": 1234,
+        "num_samples": 100,
+        "window": 128,
+        "num_pairs": 12800,
+        "normalize_rms": "nan",
+        "ic_type": "shock",
+        "label_method": "analytic",
+        "shock_fraction": 1.0,
+        "shock_num_jumps_min": 6,
+        "shock_num_jumps_max": 12,
+        "state_representation": "cell_average"
+      },
+      "shape": [
+        100,
+        129,
+        384,
+        1
+      ],
+      "all_states_finite": true,
+      "max_stored_mass_drift": 3.041350282728672e-09,
+      "generator_replay": {
+        "scope": "all rollout states, using copied numerical generator functions",
+        "exact_match": true,
+        "max_abs_difference": 0.0
+      }
+    },
+    "1D_traffic": {
+      "topologies_by_split": {
+        "train": [
+          {
+            "id": 0,
+            "cells": 180,
+            "trajectories": 8,
+            "dt": 0.04004901556892257,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.125,
+            "generator_mass_drift": 7.993605777301127e-15,
+            "stored_mass_drift": 1.1661310939103942e-07,
+            "density_min": 0.005388518795371056,
+            "density_max": 0.9476613402366638,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 1,
+            "cells": 126,
+            "trajectories": 8,
+            "dt": 0.048179604589805566,
+            "cell_min": 0.12402618113244006,
+            "cell_max": 0.125,
+            "generator_mass_drift": 7.105427357601002e-15,
+            "stored_mass_drift": 6.42271142936579e-08,
+            "density_min": 0.009898015297949314,
+            "density_max": 0.9599773287773132,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 2,
+            "cells": 191,
+            "trajectories": 8,
+            "dt": 0.04624272796473329,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 7.105427357601002e-15,
+            "stored_mass_drift": 6.495576876375253e-08,
+            "density_min": 0.006740790791809559,
+            "density_max": 0.9786222577095032,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 3,
+            "cells": 167,
+            "trajectories": 8,
+            "dt": 0.05130846736744905,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 7.105427357601002e-15,
+            "stored_mass_drift": 9.739490192117728e-08,
+            "density_min": 0.01532306894659996,
+            "density_max": 0.9572895765304565,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 4,
+            "cells": 178,
+            "trajectories": 8,
+            "dt": 0.04571138546657114,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 1.7763568394002505e-15,
+            "stored_mass_drift": 8.198135148518304e-08,
+            "density_min": 0.0034927870146930218,
+            "density_max": 0.9787368178367615,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 5,
+            "cells": 182,
+            "trajectories": 8,
+            "dt": 0.047128768553583965,
+            "cell_min": 0.125,
+            "cell_max": 0.12995914393844102,
+            "generator_mass_drift": 1.687538997430238e-14,
+            "stored_mass_drift": 1.0869576350103216e-07,
+            "density_min": 0.009936884045600891,
+            "density_max": 0.971404492855072,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 6,
+            "cells": 236,
+            "trajectories": 8,
+            "dt": 0.04061516987654903,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.125,
+            "generator_mass_drift": 2.6645352591003757e-15,
+            "stored_mass_drift": 9.586831506425142e-08,
+            "density_min": 0.0014404829125851393,
+            "density_max": 0.990405261516571,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 7,
+            "cells": 236,
+            "trajectories": 8,
+            "dt": 0.043481355526915365,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.125,
+            "generator_mass_drift": 8.881784197001252e-15,
+            "stored_mass_drift": 1.3298918766224688e-07,
+            "density_min": 0.02896985225379467,
+            "density_max": 0.9479684233665466,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 8,
+            "cells": 164,
+            "trajectories": 8,
+            "dt": 0.04390664076855252,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.125,
+            "generator_mass_drift": 5.329070518200751e-15,
+            "stored_mass_drift": 9.357219532546424e-08,
+            "density_min": 0.012768905609846115,
+            "density_max": 0.9508308172225952,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 9,
+            "cells": 239,
+            "trajectories": 8,
+            "dt": 0.03964859027614428,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 5.329070518200751e-15,
+            "stored_mass_drift": 1.211247155907813e-07,
+            "density_min": 0.024524472653865814,
+            "density_max": 0.9682585000991821,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 10,
+            "cells": 174,
+            "trajectories": 8,
+            "dt": 0.04197953761999375,
+            "cell_min": 0.125,
+            "cell_max": 0.12995914393844102,
+            "generator_mass_drift": 7.105427357601002e-15,
+            "stored_mass_drift": 7.846103944331162e-08,
+            "density_min": 0.012533614411950111,
+            "density_max": 0.9597073793411255,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 11,
+            "cells": 198,
+            "trajectories": 8,
+            "dt": 0.04283961072488484,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12995914393844102,
+            "generator_mass_drift": 4.440892098500626e-15,
+            "stored_mass_drift": 1.0601989952618851e-07,
+            "density_min": 0.010398000478744507,
+            "density_max": 0.951492190361023,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 12,
+            "cells": 175,
+            "trajectories": 8,
+            "dt": 0.042294711208960355,
+            "cell_min": 0.12430983783915288,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 5.329070518200751e-15,
+            "stored_mass_drift": 1.0272250694498553e-07,
+            "density_min": 0.010525818914175034,
+            "density_max": 0.9486695528030396,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 13,
+            "cells": 175,
+            "trajectories": 8,
+            "dt": 0.04572788241700468,
+            "cell_min": 0.12430983783915288,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 1.1546319456101628e-14,
+            "stored_mass_drift": 1.018450364043133e-07,
+            "density_min": 0.013264267705380917,
+            "density_max": 0.9785023927688599,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 14,
+            "cells": 188,
+            "trajectories": 8,
+            "dt": 0.04765498182088848,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.125,
+            "generator_mass_drift": 3.552713678800501e-15,
+            "stored_mass_drift": 5.25084677960308e-08,
+            "density_min": 0.009578529745340347,
+            "density_max": 0.9779008626937866,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 15,
+            "cells": 126,
+            "trajectories": 8,
+            "dt": 0.043435296865675294,
+            "cell_min": 0.12402618113244006,
+            "cell_max": 0.125,
+            "generator_mass_drift": 1.3322676295501878e-14,
+            "stored_mass_drift": 1.351621641276779e-07,
+            "density_min": 0.008731292560696602,
+            "density_max": 0.9583552479743958,
+            "paired_ics_identical": true,
+            "finite": true
+          }
+        ],
+        "validation": [
+          {
+            "id": 16,
+            "cells": 212,
+            "trajectories": 4,
+            "dt": 0.04928938257497153,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.125,
+            "generator_mass_drift": 4.440892098500626e-15,
+            "stored_mass_drift": 7.24227575688019e-08,
+            "density_min": 0.010118616744875908,
+            "density_max": 0.9440348744392395,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 17,
+            "cells": 239,
+            "trajectories": 4,
+            "dt": 0.0423096669438013,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 2.6645352591003757e-15,
+            "stored_mass_drift": 4.6329895475594185e-08,
+            "density_min": 0.002722211414948106,
+            "density_max": 0.9089905023574829,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 18,
+            "cells": 258,
+            "trajectories": 4,
+            "dt": 0.0462222459989293,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 3.552713678800501e-15,
+            "stored_mass_drift": 1.0984319764872907e-07,
+            "density_min": 0.029325131326913834,
+            "density_max": 0.9189435243606567,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 19,
+            "cells": 180,
+            "trajectories": 4,
+            "dt": 0.04048059801530249,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.125,
+            "generator_mass_drift": 1.0658141036401503e-14,
+            "stored_mass_drift": 1.915381471206956e-07,
+            "density_min": 0.031029775738716125,
+            "density_max": 0.933321475982666,
+            "paired_ics_identical": true,
+            "finite": true
+          }
+        ],
+        "test_in_size": [
+          {
+            "id": 20,
+            "cells": 167,
+            "trajectories": 4,
+            "dt": 0.043485751924906946,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 9.769962616701378e-15,
+            "stored_mass_drift": 6.073887526270028e-08,
+            "density_min": 0.03050830028951168,
+            "density_max": 0.9576950669288635,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 21,
+            "cells": 215,
+            "trajectories": 4,
+            "dt": 0.05054562486661241,
+            "cell_min": 0.12297480019640505,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 2.6645352591003757e-15,
+            "stored_mass_drift": 7.936945589648303e-08,
+            "density_min": 0.004327945411205292,
+            "density_max": 0.9377111196517944,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 22,
+            "cells": 118,
+            "trajectories": 4,
+            "dt": 0.04933205741533608,
+            "cell_min": 0.12402618113244006,
+            "cell_max": 0.125,
+            "generator_mass_drift": 1.7763568394002505e-15,
+            "stored_mass_drift": 5.263642233188648e-08,
+            "density_min": 0.006695517338812351,
+            "density_max": 0.9243127703666687,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 23,
+            "cells": 202,
+            "trajectories": 4,
+            "dt": 0.04576246435040834,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 4.440892098500626e-15,
+            "stored_mass_drift": 4.307355361277132e-08,
+            "density_min": 0.009973403997719288,
+            "density_max": 0.9405158758163452,
+            "paired_ics_identical": true,
+            "finite": true
+          }
+        ],
+        "test_large": [
+          {
+            "id": 24,
+            "cells": 481,
+            "trajectories": 4,
+            "dt": 0.04140076996331555,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 5.329070518200751e-15,
+            "stored_mass_drift": 1.3278032717778387e-07,
+            "density_min": 0.0025279317051172256,
+            "density_max": 0.9915415644645691,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 25,
+            "cells": 498,
+            "trajectories": 4,
+            "dt": 0.05251641322901873,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12565523825610145,
+            "generator_mass_drift": 1.4210854715202004e-14,
+            "stored_mass_drift": 2.3357404543844495e-07,
+            "density_min": 0.010626290924847126,
+            "density_max": 0.971404492855072,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 26,
+            "cells": 526,
+            "trajectories": 4,
+            "dt": 0.04120398343815746,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 2.842170943040401e-14,
+            "stored_mass_drift": 2.105277765451774e-07,
+            "density_min": 0.0011569240596145391,
+            "density_max": 0.9920562505722046,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 27,
+            "cells": 456,
+            "trajectories": 4,
+            "dt": 0.0428776561188146,
+            "cell_min": 0.125,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 2.1316282072803006e-14,
+            "stored_mass_drift": 1.0488558643828583e-07,
+            "density_min": 0.0036451611667871475,
+            "density_max": 0.9700267910957336,
+            "paired_ics_identical": true,
+            "finite": true
+          }
+        ],
+        "test_parameter_ood": [
+          {
+            "id": 28,
+            "cells": 153,
+            "trajectories": 4,
+            "dt": 0.034956075298255146,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 1.7763568394002505e-15,
+            "stored_mass_drift": 5.417271253804756e-08,
+            "density_min": 0.008924245834350586,
+            "density_max": 0.9330127239227295,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 29,
+            "cells": 212,
+            "trajectories": 4,
+            "dt": 0.08314931807236481,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12995914393844102,
+            "generator_mass_drift": 1.3322676295501878e-14,
+            "stored_mass_drift": 8.912574944730522e-08,
+            "density_min": 0.0035347547382116318,
+            "density_max": 0.9859126806259155,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 30,
+            "cells": 212,
+            "trajectories": 4,
+            "dt": 0.03427298168669406,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12995914393844102,
+            "generator_mass_drift": 9.769962616701378e-15,
+            "stored_mass_drift": 1.3072246574097335e-07,
+            "density_min": 0.014429355971515179,
+            "density_max": 0.9564354419708252,
+            "paired_ics_identical": true,
+            "finite": true
+          },
+          {
+            "id": 31,
+            "cells": 296,
+            "trajectories": 4,
+            "dt": 0.03308987649078079,
+            "cell_min": 0.11785113019775795,
+            "cell_max": 0.12856486930664504,
+            "generator_mass_drift": 4.440892098500626e-15,
+            "stored_mass_drift": 6.466257218562532e-08,
+            "density_min": 0.030370939522981644,
+            "density_max": 0.9473007917404175,
+            "paired_ics_identical": true,
+            "finite": true
+          }
+        ]
+      },
+      "generation_config": {
+        "CFL": 0.4,
+        "cells_per_unit": 8.0,
+        "center_intersection_fraction_max": 0.15,
+        "diagonal_cell_fraction_max": 0.3,
+        "eval_trajectories_per_topology": 4,
+        "grid_spacing": 1.0,
+        "large_grid_cols_max": 6,
+        "large_grid_cols_min": 5,
+        "large_grid_rows_max": 6,
+        "large_grid_rows_min": 5,
+        "minimum_cells_per_road": 3,
+        "num_blocks_max": 10,
+        "num_blocks_min": 3,
+        "out_dir": "data/lwr_structured_directional",
+        "remove_road_fraction_max": 0.25,
+        "rho_max": 1.0,
+        "road_baseline_jitter": 0.12,
+        "seed": 1234,
+        "subdivide_road_fraction_max": 0.15,
+        "test_in_size_topologies": 4,
+        "test_large_topologies": 4,
+        "test_parameter_ood_topologies": 4,
+        "train_grid_cols_max": 4,
+        "train_grid_cols_min": 3,
+        "train_grid_rows_max": 4,
+        "train_grid_rows_min": 3,
+        "train_topologies": 16,
+        "train_trajectories_per_topology": 8,
+        "validation_topologies": 4,
+        "window": 256
+      }
+    },
+    "chemotactic_cell_migration": {
+      "metadata": {
+        "model": "prescribed_chemoattractant_drift_diffusion",
+        "equation": "n_t + div(chi*n*grad(c) - D*grad(n)) = 0",
+        "boundary": "no_flux",
+        "state_representation": "triangle_cell_average",
+        "chemoattractant_evolution": "prescribed_static_in_time",
+        "chemoattractant_landscape": "unique_per_trajectory",
+        "num_unique_chemoattractant_landscapes": 1,
+        "mesh_geometry": "unique_per_trajectory_static_in_time",
+        "num_unique_meshes": 1,
+        "mesh_mode": "delaunay",
+        "mesh_jitter": 0.3,
+        "nx": 17,
+        "ny": 17,
+        "num_mesh_vertices": 289,
+        "num_cells": 512,
+        "num_undirected_edges": 736,
+        "num_boundary_faces": 64,
+        "lx": 1.0,
+        "ly": 1.0,
+        "domain_area": 1.0,
+        "cell_area_min": 0.0005329119672355927,
+        "cell_area_mean": 0.001953125,
+        "cell_area_max": 0.0038996229007186426,
+        "diffusion": 0.01,
+        "chi_sampling": "fixed",
+        "chi_shared_across_trajectories": true,
+        "num_unique_chi_values": 1,
+        "chi_min": 0.1,
+        "chi_max": 0.1,
+        "chi_sample_min": 0.1,
+        "chi_sample_max": 0.1,
+        "CFL": 0.45,
+        "reference_CFL": 0.8,
+        "coarse_solver_dt_stability_limit": 0.004531302242961875,
+        "reference_solver_dt_stability_limit": 0.0013583927544936934,
+        "solver_dt_stability_limit": 0.0013583927544936934,
+        "nominal_coarse_solver_dt": 0.0025849691084342693,
+        "solver_dt": 0.0007953751102874675,
+        "requested_substeps_per_frame": 4,
+        "substeps_per_frame": 13,
+        "dt": 0.010339876433737077,
+        "reference_refinement_levels": 1,
+        "reference_num_mesh_vertices": 1089,
+        "reference_num_cells": 2048,
+        "reference_spatial_scheme": "barth_jespersen_muscl_face_normal_nonorthogonal_finite_volume",
+        "reference_time_integrator": "SSP_RK2",
+        "reference_projection": "sum_child_mass_divide_parent_area",
+        "interface_flux_reference": "integrated_refined_ssp_rk2_face_flux_aggregated_to_coarse_faces",
+        "interface_flux_orientation": "undirected_edge_index_source_to_target",
+        "interface_flux_transport_units": "mass_per_stored_frame",
+        "interface_flux_rate_units": "mass_per_time",
+        "max_abs_interface_flux_balance_error": 3.594807828147251e-18,
+        "num_samples": 1,
+        "window": 128,
+        "num_pairs": 128,
+        "target_type": "increment",
+        "x_columns": "cell_density,chemoattractant,drift_velocity_x,drift_velocity_y",
+        "edge_attr_columns": "delta_x,delta_y,distance,unit_x,unit_y,shared_face_length,face_normal_x,face_normal_y,center_normal_distance,transmissibility,source_cell_area,target_cell_area,source_is_boundary_cell",
+        "seed": 1234,
+        "chemo_sources_min": 1,
+        "chemo_sources_max": 3,
+        "chemo_amplitude_min": 0.5,
+        "chemo_amplitude_max": 1.5,
+        "chemo_sigma_min": 0.1,
+        "chemo_sigma_max": 0.22,
+        "chemo_baseline": 0.0,
+        "source_margin_fraction": 0.08,
+        "density_blobs_min": 1,
+        "density_blobs_max": 3,
+        "density_amplitude_min": 0.5,
+        "density_amplitude_max": 1.5,
+        "density_sigma_min": 0.06,
+        "density_sigma_max": 0.14,
+        "density_background_min": 0.01,
+        "density_background_max": 0.05,
+        "density_margin_fraction": 0.08,
+        "primary_separation": 0.25,
+        "density_min_observed": 0.007123388651075088,
+        "density_max_observed": 3.786205045299502,
+        "max_abs_mass_error": 2.7755575615628914e-17,
+        "generation_layout": "one_trajectory_per_file",
+        "global_trajectory_id": 0,
+        "collection_num_trajectories": 100,
+        "collection_num_unique_meshes": 100,
+        "collection_num_unique_chemoattractant_landscapes": 100,
+        "collection_coarse_solver_dt_stability_limit": 0.0025849691084342693,
+        "collection_reference_solver_dt_stability_limit": 0.0008175122838573698
+      },
+      "trajectories": [
+        {
+          "id": 0,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.1454733966909103e-09,
+          "finite": true
+        },
+        {
+          "id": 1,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.6814285791765258e-09,
+          "finite": true
+        },
+        {
+          "id": 2,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 3.3009174005282915e-09,
+          "finite": true
+        },
+        {
+          "id": 3,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.7954646103213179e-09,
+          "finite": true
+        },
+        {
+          "id": 4,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 9.200770284545357e-10,
+          "finite": true
+        },
+        {
+          "id": 5,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.1102230246251565e-16,
+          "stored_mass_drift": 2.0648928955591117e-09,
+          "finite": true
+        },
+        {
+          "id": 6,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.1102230246251565e-16,
+          "stored_mass_drift": 1.910410996064371e-09,
+          "finite": true
+        },
+        {
+          "id": 7,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.984350239681021e-09,
+          "finite": true
+        },
+        {
+          "id": 8,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.337805363327732e-10,
+          "finite": true
+        },
+        {
+          "id": 9,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.5953953713676583e-09,
+          "finite": true
+        },
+        {
+          "id": 10,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.444384333832872e-09,
+          "finite": true
+        },
+        {
+          "id": 11,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3381260266509543e-09,
+          "finite": true
+        },
+        {
+          "id": 12,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.1102230246251565e-16,
+          "stored_mass_drift": 2.0719199689267498e-09,
+          "finite": true
+        },
+        {
+          "id": 13,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.2694555684422681e-09,
+          "finite": true
+        },
+        {
+          "id": 14,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.1500199126324162e-09,
+          "finite": true
+        },
+        {
+          "id": 15,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 9.439894144147587e-10,
+          "finite": true
+        },
+        {
+          "id": 16,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.2566986618001152e-09,
+          "finite": true
+        },
+        {
+          "id": 17,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 4.6426004707278423e-10,
+          "finite": true
+        },
+        {
+          "id": 18,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 5.728085714085118e-10,
+          "finite": true
+        },
+        {
+          "id": 19,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 3.4850763386273798e-09,
+          "finite": true
+        },
+        {
+          "id": 20,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 5.932395269470092e-10,
+          "finite": true
+        },
+        {
+          "id": 21,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.373291699419582e-10,
+          "finite": true
+        },
+        {
+          "id": 22,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 8.326672684688674e-17,
+          "stored_mass_drift": 3.1483603224469192e-09,
+          "finite": true
+        },
+        {
+          "id": 23,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 4.258489602615434e-10,
+          "finite": true
+        },
+        {
+          "id": 24,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 6.141240155299599e-10,
+          "finite": true
+        },
+        {
+          "id": 25,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.0243233206086444e-09,
+          "finite": true
+        },
+        {
+          "id": 26,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.1102230246251565e-16,
+          "stored_mass_drift": 2.24567903162054e-09,
+          "finite": true
+        },
+        {
+          "id": 27,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 9.960340607850782e-10,
+          "finite": true
+        },
+        {
+          "id": 28,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.9086561220404974e-09,
+          "finite": true
+        },
+        {
+          "id": 29,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 8.230912063034168e-10,
+          "finite": true
+        },
+        {
+          "id": 30,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.6644603745573647e-09,
+          "finite": true
+        },
+        {
+          "id": 31,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 8.291452802122734e-10,
+          "finite": true
+        },
+        {
+          "id": 32,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 4.163336342344337e-17,
+          "stored_mass_drift": 1.047511105634058e-09,
+          "finite": true
+        },
+        {
+          "id": 33,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 6.649650552414954e-10,
+          "finite": true
+        },
+        {
+          "id": 34,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.239072705550015e-09,
+          "finite": true
+        },
+        {
+          "id": 35,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.6750720810421171e-09,
+          "finite": true
+        },
+        {
+          "id": 36,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 9.808860390592145e-10,
+          "finite": true
+        },
+        {
+          "id": 37,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.249950084720069e-10,
+          "finite": true
+        },
+        {
+          "id": 38,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.269469224185471e-09,
+          "finite": true
+        },
+        {
+          "id": 39,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 3.1979464909515087e-10,
+          "finite": true
+        },
+        {
+          "id": 40,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.7634366744623264e-09,
+          "finite": true
+        },
+        {
+          "id": 41,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.7959231601860637e-09,
+          "finite": true
+        },
+        {
+          "id": 42,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 5.131094021892935e-10,
+          "finite": true
+        },
+        {
+          "id": 43,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3592083569768931e-09,
+          "finite": true
+        },
+        {
+          "id": 44,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 4.215397197970816e-10,
+          "finite": true
+        },
+        {
+          "id": 45,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.5996236557569432e-09,
+          "finite": true
+        },
+        {
+          "id": 46,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 9.454740046432875e-10,
+          "finite": true
+        },
+        {
+          "id": 47,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.209384425937543e-09,
+          "finite": true
+        },
+        {
+          "id": 48,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3659876285654349e-09,
+          "finite": true
+        },
+        {
+          "id": 49,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.8928497930458263e-09,
+          "finite": true
+        },
+        {
+          "id": 50,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.5492007954254206e-09,
+          "finite": true
+        },
+        {
+          "id": 51,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.6097562449690628e-09,
+          "finite": true
+        },
+        {
+          "id": 52,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.2690448964191035e-09,
+          "finite": true
+        },
+        {
+          "id": 53,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.899186860171881e-10,
+          "finite": true
+        },
+        {
+          "id": 54,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3558481559705626e-09,
+          "finite": true
+        },
+        {
+          "id": 55,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.0112426729325108e-09,
+          "finite": true
+        },
+        {
+          "id": 56,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 3.4172418783562364e-09,
+          "finite": true
+        },
+        {
+          "id": 57,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.882187516955014e-09,
+          "finite": true
+        },
+        {
+          "id": 58,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3874600357510758e-09,
+          "finite": true
+        },
+        {
+          "id": 59,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.603210647571629e-09,
+          "finite": true
+        },
+        {
+          "id": 60,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.9169708320720957e-09,
+          "finite": true
+        },
+        {
+          "id": 61,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.9589544431042327e-09,
+          "finite": true
+        },
+        {
+          "id": 62,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 9.143791834809178e-10,
+          "finite": true
+        },
+        {
+          "id": 63,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.60238000646018e-09,
+          "finite": true
+        },
+        {
+          "id": 64,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 3.800756320782028e-09,
+          "finite": true
+        },
+        {
+          "id": 65,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 8.190489952930591e-10,
+          "finite": true
+        },
+        {
+          "id": 66,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-16,
+          "stored_mass_drift": 3.517806101971388e-09,
+          "finite": true
+        },
+        {
+          "id": 67,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 5.358118532194922e-10,
+          "finite": true
+        },
+        {
+          "id": 68,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.6887418680399122e-09,
+          "finite": true
+        },
+        {
+          "id": 69,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3193131032096517e-09,
+          "finite": true
+        },
+        {
+          "id": 70,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.0649885690282588e-09,
+          "finite": true
+        },
+        {
+          "id": 71,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.913759262173187e-09,
+          "finite": true
+        },
+        {
+          "id": 72,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.321640852314232e-09,
+          "finite": true
+        },
+        {
+          "id": 73,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.994440387459889e-10,
+          "finite": true
+        },
+        {
+          "id": 74,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.4734012898642845e-09,
+          "finite": true
+        },
+        {
+          "id": 75,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 6.938893903907228e-18,
+          "stored_mass_drift": 2.251449929269178e-10,
+          "finite": true
+        },
+        {
+          "id": 76,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 1.0305766517948456e-09,
+          "finite": true
+        },
+        {
+          "id": 77,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 8.174397686522283e-10,
+          "finite": true
+        },
+        {
+          "id": 78,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.2115169978343943e-09,
+          "finite": true
+        },
+        {
+          "id": 79,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.0592468430159485e-09,
+          "finite": true
+        },
+        {
+          "id": 80,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.59886337502968e-09,
+          "finite": true
+        },
+        {
+          "id": 81,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.4216772481479012e-09,
+          "finite": true
+        },
+        {
+          "id": 82,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.905323479162618e-10,
+          "finite": true
+        },
+        {
+          "id": 83,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 1.2238775964901194e-09,
+          "finite": true
+        },
+        {
+          "id": 84,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 7.433479110030561e-10,
+          "finite": true
+        },
+        {
+          "id": 85,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.3225948664329366e-09,
+          "finite": true
+        },
+        {
+          "id": 86,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 8.143326846177246e-10,
+          "finite": true
+        },
+        {
+          "id": 87,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 4.854123145103806e-10,
+          "finite": true
+        },
+        {
+          "id": 88,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 6.702012417258985e-10,
+          "finite": true
+        },
+        {
+          "id": 89,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.3400797138629628e-09,
+          "finite": true
+        },
+        {
+          "id": 90,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.1102230246251565e-16,
+          "stored_mass_drift": 2.4345496729694105e-09,
+          "finite": true
+        },
+        {
+          "id": 91,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.2164189927842415e-09,
+          "finite": true
+        },
+        {
+          "id": 92,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 2.33657698744949e-09,
+          "finite": true
+        },
+        {
+          "id": 93,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 7.384721167902342e-10,
+          "finite": true
+        },
+        {
+          "id": 94,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 1.2530941007060648e-09,
+          "finite": true
+        },
+        {
+          "id": 95,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 8.278926710847401e-10,
+          "finite": true
+        },
+        {
+          "id": 96,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 1.3877787807814457e-17,
+          "stored_mass_drift": 3.814133175961132e-10,
+          "finite": true
+        },
+        {
+          "id": 97,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 2.7755575615628914e-17,
+          "stored_mass_drift": 2.0090115682158682e-09,
+          "finite": true
+        },
+        {
+          "id": 98,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.088985789905351e-09,
+          "finite": true
+        },
+        {
+          "id": 99,
+          "shape": [
+            1,
+            129,
+            512,
+            1
+          ],
+          "dt": 0.010339876433737077,
+          "substeps": 13,
+          "solver_dt": 0.0007953751102874675,
+          "diffusion": 0.01,
+          "chi": 0.1,
+          "generator_mass_drift": 5.551115123125783e-17,
+          "stored_mass_drift": 2.1372287828391734e-09,
+          "finite": true
+        }
+      ],
+      "unique_mesh_hashes": 100
+    }
+  },
+  "run_reference_checks": [
+    {
+      "run": "Burgers/fluxgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/fluxgraphnet_w_advection/300_timesteps/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/meshgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/meshgraphnet_w_advection/no-dropout/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/fluxgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/fluxgraphnet/300_timesteps/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/meshgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/vanilla_meshgraphnet/no-dropout/cfl-0p2_dt-1p5e-3/lr-1e-4_200ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/graphsage_with_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/sageconv_w_advection/no-dropout/cfl-0p2_dt-1p5e-3/lr-1e-4_200ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/graphsage_no_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/vanilla_sageconv/no-dropout/cfl-0p2_dt-1p5e-3/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "Burgers/meshgraphnet-abs_no_advection",
+      "checks": [
+        {
+          "artifact": "Burgers/runs/with_shocks/meshgraphnet-abs/300-timesteps_no_dropout/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/gnn_vs_godunov_eval_local_ssim.npz",
+          "trajectories": [
+            1,
+            4,
+            7,
+            14,
+            31,
+            52,
+            58,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/fluxgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/with_physics/fluxgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/meshgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/with_physics/meshgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/fluxgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/no_physics_input/fluxgraphnet/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/meshgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/no_physics_input/meshgraphnet/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/graphsage_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/with_physics/sageconv/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/graphsage_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/no_physics_input/sageconv/200ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_advection/meshgraphnet-abs_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_advection/runs/cell_averaged/no_physics_input/meshgraphnet-abs/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz",
+          "stored_reference_trajectory": 19,
+          "all_prediction_initial_states_match_dataset": true,
+          "evaluation_ids": [
+            19,
+            26,
+            40,
+            56,
+            66,
+            81,
+            84,
+            86,
+            89,
+            99
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true,
+          "limit": "Only representative full truth trajectory saved; all 10 prediction initial states compared."
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/fluxgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/meshgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/fluxgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/meshgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/graphsage_with_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "1D_traffic/graphsage_no_advection",
+      "checks": [
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "topology_id": 20,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "topology_id": 21,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "topology_id": 22,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "topology_id": 23,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "topology_id": 24,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "topology_id": 25,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "topology_id": 26,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "topology_id": 27,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "topology_id": 28,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "topology_id": 29,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "topology_id": 30,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        },
+        {
+          "artifact": "1D_traffic/runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "topology_id": 31,
+          "trajectories": 4,
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/fluxgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/with_advection/unique_meshes_constant-chi_0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/meshgraphnet_with_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/meshgraphnet/with_advection/17x17-unique-meshes_chi-0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/fluxgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/no_physics/17x17-unique-meshes_chi-0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/meshgraphnet_no_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/meshgraphnet/no_physics/17x17-unique-meshes_chi-0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/graphsage_with_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/sageconv/with_advection/17x17-unique-meshes_chi-0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "chemotactic_cell_migration/graphsage_no_advection",
+      "checks": [
+        {
+          "artifact": "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/sageconv/no_physics/17x17-unique-meshes_chi-0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/test_rollout_predictions.npz",
+          "trajectory_ids": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            27,
+            31,
+            48,
+            52,
+            54,
+            58,
+            60,
+            70,
+            82,
+            95
+          ],
+          "max_abs_reference_difference": 0.0,
+          "match": true
+        }
+      ]
+    },
+    {
+      "run": "heat_equation/graphsage_1d",
+      "checks": [
+        {
+          "artifact": "heat_equation/runs/1D/vanilla_SAGEConv/100ep_lr-1e-3/rollout.npz",
+          "pair_id": 2470,
+          "trajectory_id": 19,
+          "time_start": 0,
+          "max_abs_reference_difference": 2.384185791015625e-07,
+          "match": true,
+          "comparison_tolerance": 3e-07,
+          "evaluator_reference_replay_max_abs_difference": 0.0,
+          "explanation": "Evaluation re-evolves the saved initial state with a float32 cast after every FFT step; generation evolves in float64 then stores float32."
+        }
+      ]
+    }
+  ],
+  "split_checks": [
+    {
+      "run": "Burgers/fluxgraphnet_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/meshgraphnet_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/fluxgraphnet_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/meshgraphnet_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/graphsage_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/graphsage_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "Burgers/meshgraphnet-abs_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        24000,
+        3000,
+        3000
+      ],
+      "disjoint": false,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/fluxgraphnet_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/meshgraphnet_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/fluxgraphnet_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/meshgraphnet_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/graphsage_with_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/graphsage_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_advection/meshgraphnet-abs_no_advection",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10240,
+        1280,
+        1280
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/fluxgraphnet_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/meshgraphnet_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/fluxgraphnet_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/meshgraphnet_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/graphsage_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "1D_traffic/graphsage_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test_in_size",
+        "test_large",
+        "test_parameter_ood"
+      ],
+      "sizes": [
+        16,
+        4,
+        4,
+        4,
+        4
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/fluxgraphnet_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/meshgraphnet_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/fluxgraphnet_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/meshgraphnet_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/graphsage_with_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "chemotactic_cell_migration/graphsage_no_advection",
+      "keys": [
+        "train",
+        "validation",
+        "test"
+      ],
+      "sizes": [
+        70,
+        15,
+        15
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    },
+    {
+      "run": "heat_equation/graphsage_1d",
+      "keys": [
+        "train",
+        "val",
+        "test"
+      ],
+      "sizes": [
+        10400,
+        1300,
+        1300
+      ],
+      "disjoint": true,
+      "unit": "flattened pairs for Burgers/heat/advection, trajectories for chemotaxis, topologies for traffic"
+    }
+  ],
+  "inspection_environment": {
+    "python": "3.11",
+    "torch": "2.2.2",
+    "numpy": "2.3.2",
+    "note": "Model execution not tested. Torch/NumPy ABI warning; tensor conversions used list copies. Heat/advection numerical-function replays use NumPy, avoiding that bridge."
+  }
+}

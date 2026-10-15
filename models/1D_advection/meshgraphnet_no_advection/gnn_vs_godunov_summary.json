@@ -1,0 +1,110 @@
+{
+  "checkpoint": "runs/cell_averaged/no_physics_input/meshgraphnet/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/checkpoint_best.pt",
+  "dataset": "data/rollout/100_samples/advection_shock_N384_L3_cfl-0p3_cellavg.npz",
+  "device_requested": "cpu",
+  "device_resolved": "cpu",
+  "eval_mode": "trajectory",
+  "num_samples": 10,
+  "horizon": 100,
+  "c": 1.0,
+  "dt": 0.00234375,
+  "dx": 0.0078125,
+  "cfl_abs": 0.3,
+  "ssim": {
+    "mode": "local-periodic",
+    "data_range": 4.98071563243866,
+    "data_range_source": "evaluation-reference",
+    "window_size": 11,
+    "window_sigma": 1.5,
+    "boundary": "periodic",
+    "covariance": "population",
+    "k1": 0.01,
+    "k2": 0.03
+  },
+  "baseline_schemes": [],
+  "computed_baseline_schemes": [
+    "godunov"
+  ],
+  "baseline_labels": {},
+  "model_in_channels": 1,
+  "state_residual_mode": "raw",
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "include_diff": false,
+    "input_form": "delta",
+    "backend": "fv",
+    "advection_scheme": "upwind",
+    "mls_ridge_eps": 1e-12,
+    "nu": 0.0001,
+    "c_override": null,
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "diff_weight": 1.0,
+    "detach_inputs": true,
+    "normalize_adv_to_minus1_1": true,
+    "adv_min": null,
+    "adv_max": null,
+    "normalize_adv_clip": false
+  },
+  "godunov_correction": {
+    "enabled": false,
+    "advection_scheme": "upwind",
+    "c_override": null
+  },
+  "final_mean_rmse_gnn": 0.06416355052817929,
+  "final_mean_rmse_godunov": 0.20182892575229072,
+  "final_mean_rel_l2_gnn": 0.05575739774986044,
+  "final_mean_rel_l2_godunov": 0.19915848136762007,
+  "final_mean_l1_gnn": 0.03728935274775722,
+  "final_mean_l1_godunov": 0.08235787978029195,
+  "final_mean_ssim_gnn": 0.9812462308388099,
+  "final_mean_ssim_godunov": 0.8705788648911119,
+  "final_mean_rmse_baselines": {
+    "godunov": 0.20182892575229072
+  },
+  "final_mean_rel_l2_baselines": {
+    "godunov": 0.19915848136762007
+  },
+  "final_mean_l1_baselines": {
+    "godunov": 0.08235787978029195
+  },
+  "final_mean_ssim_baselines": {
+    "godunov": 0.8705788648911119
+  },
+  "gnn_beats_godunov_fraction_final_rmse": 1.0,
+  "godunov_beats_gnn_fraction_final_rmse": 0.0,
+  "tie_fraction_final_rmse": 0.0,
+  "gnn_vs_baseline_fraction_final_rmse": {
+    "godunov": {
+      "gnn_better": 1.0,
+      "baseline_better": 0.0,
+      "tie": 0.0
+    }
+  },
+  "plot_all_samples": false,
+  "spacetime_delta_plots": null,
+  "error_curves_log_y": false,
+  "error_curves_mean_only": false,
+  "error_curves_smooth_window": 1,
+  "error_curves_spread": "none",
+  "error_curves_spread_definition": {
+    "std": "mean plus/minus one population standard deviation across test trajectories",
+    "iqr": "25th--75th percentiles across test trajectories"
+  },
+  "error_curve_metrics": [
+    "rmse",
+    "rel_l2",
+    "l1",
+    "ssim"
+  ],
+  "field_totals_include_exact": true,
+  "curve_color_overrides": {},
+  "legend_label_gnn": "MeshGraphNet",
+  "legend_label_godunov": "Godunov",
+  "num_compare_models": 0,
+  "compare_model_labels": [],
+  "compare_eval_npz": [],
+  "out_npz": "runs/cell_averaged/no_physics_input/meshgraphnet/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_eval_local_ssim.npz"
+}

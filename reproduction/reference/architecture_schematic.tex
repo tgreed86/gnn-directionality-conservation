@@ -1,0 +1,171 @@
+% Architecture schematic for the MeshGraphNet / FluxGraphNet comparison.
+% Requires: \usepackage{tikz}, \usetikzlibrary{arrows.meta,calc,positioning},
+% and \usepackage{xcolor} (all are already loaded by this draft's preamble).
+{%
+\definecolor{archNavy}{HTML}{243B53}
+\definecolor{archBlueTint}{HTML}{F1F5F9}
+\definecolor{archLine}{HTML}{CBD5E1}
+\definecolor{archText}{HTML}{334E68}
+\definecolor{archOrange}{HTML}{C65D21}
+\definecolor{archOrangeTint}{HTML}{FFF7ED}
+\definecolor{archTeal}{HTML}{087F73}
+\definecolor{archTealTint}{HTML}{ECFDF5}
+
+\begin{figure}[htbp]
+\centering
+\begingroup
+\linespread{1}\selectfont
+\resizebox{0.78\linewidth}{!}{%
+\begin{tikzpicture}[
+    x=1cm,
+    y=1cm,
+    font=\footnotesize,
+    sharedbox/.style={
+        draw=archNavy,
+        fill=archBlueTint,
+        line width=0.8pt,
+        rounded corners=3pt,
+        align=center,
+        minimum height=0.92cm,
+        inner xsep=8pt,
+        inner ysep=4pt
+    },
+    branchbox/.style={
+        draw=archLine,
+        fill=white,
+        line width=0.65pt,
+        rounded corners=3pt,
+        align=center,
+        minimum height=0.88cm,
+        inner xsep=6pt,
+        inner ysep=4pt
+    },
+    outputbox/.style={
+        line width=0.9pt,
+        rounded corners=3pt,
+        align=center,
+        minimum height=0.92cm,
+        inner xsep=6pt,
+        inner ysep=4pt
+    },
+    sharedarrow/.style={-{Latex[length=2.2mm,width=1.55mm]}, draw=archNavy, line width=1.05pt},
+    mesharrow/.style={-{Latex[length=2.2mm,width=1.55mm]}, draw=archOrange, line width=1.05pt},
+    fluxarrow/.style={-{Latex[length=2.2mm,width=1.55mm]}, draw=archTeal, line width=1.05pt}
+]
+    % Shared encode--process backbone.
+    \node[
+        fill=archNavy,
+        text=white,
+        rounded corners=2pt,
+        font=\scriptsize\bfseries,
+        inner xsep=7pt,
+        inner ysep=3pt
+    ] at (6.45,5.65) {SHARED ENCODE--PROCESS BACKBONE};
+
+    \node[sharedbox, minimum width=3.20cm, text width=2.95cm, inner xsep=0pt]
+        (input) at (2.25,4.60)
+        {\textbf{Graph state}\\[-1pt]\color{archText}\scriptsize $u^n$ and edge geometry};
+    \node[sharedbox, minimum width=3.05cm, text width=2.80cm, inner xsep=0pt]
+        (encoder) at (5.825,4.60)
+        {\textbf{Encoder}\\[-1pt]\color{archText}\scriptsize node + edge latents};
+    \node[sharedbox, minimum width=4.45cm, text width=4.20cm, inner xsep=0pt]
+        (processor) at (10.025,4.60)
+        {\textbf{Message-passing processor}\\[-1pt]\color{archText}\scriptsize learned directional messages};
+
+    \draw[sharedarrow] (input) -- (encoder);
+    \draw[sharedarrow] (encoder) -- (processor);
+
+    % Comparison panels
+    \begin{scope}[yshift=-0.5cm]
+    \path[
+        draw=archOrange,
+        fill=archOrangeTint,
+        line width=0.8pt,
+        rounded corners=5pt
+    ] (0.15,-2.10) rectangle (6.25,3.15);
+    \path[
+        draw=archTeal,
+        fill=archTealTint,
+        line width=0.8pt,
+        rounded corners=5pt
+    ] (6.65,-2.10) rectangle (12.75,3.15);
+
+    \node[
+        fill=archOrange,
+        text=white,
+        rounded corners=2pt,
+        font=\footnotesize\bfseries,
+        minimum height=0.52cm,
+        inner xsep=7pt,
+        inner ysep=0pt
+    ] (meshTitle) at (3.20,2.75) {MeshGraphNet};
+    \node[
+        fill=archTeal,
+        text=white,
+        rounded corners=2pt,
+        font=\footnotesize\bfseries,
+        minimum height=0.52cm,
+        inner xsep=7pt,
+        inner ysep=0pt
+    ] (fluxTitle) at (9.70,2.75) {FluxGraphNet};
+
+    \node[branchbox, minimum width=4.65cm, below=0.91cm of meshTitle]
+        (nodeDecoder)
+        {\textbf{Node decoder}\\[-1pt]\color{archText}\scriptsize decode each node embedding};
+    \node[
+        outputbox,
+        draw=archOrange,
+        fill=white,
+        minimum width=4.65cm,
+        below=0.91cm of nodeDecoder
+    ] (nodeOutput)
+        {\textbf{Direct node update}\\[-1pt]
+         \color{archOrange}$\widehat{u}^{\,n+1}_i$ \quad for each $i\in\mathcal{V}$};
+
+    \node[branchbox, minimum width=4.65cm, below=0.35cm of fluxTitle]
+        (fluxDecoder)
+        {\textbf{Interface-flux decoder}\\[-1pt]
+         \color{archText}\scriptsize one oriented $\widehat{q}^{\,n}_{i+1/2}$ per interface};
+    \node[branchbox, minimum width=4.65cm, minimum height=0.76cm,
+        below=0.35cm of fluxDecoder]
+        (fluxDifference)
+        {\textbf{Conservative flux difference}};
+    \node[
+        outputbox,
+        draw=archTeal,
+        fill=white,
+        minimum width=4.65cm,
+        below=0.35cm of fluxDifference
+    ] (fluxOutput)
+        {\textbf{Conserved state}\\[-1pt]
+         \color{archTeal}$\widehat{u}^{\,n+1}_i
+         =u^n_i+\widehat{q}^{\,n}_{i-1/2}-\widehat{q}^{\,n}_{i+1/2}$};
+
+    \end{scope}
+    % A single shared representation feeds the two alternative decoders.
+    %\coordinate (turn) at (10.025,3.93);
+    %\coordinate (split) at (6.45,3.93);
+    \coordinate (turn) at (10.025,3.60);
+    \coordinate (split) at (6.45,3.60);
+    \draw[sharedarrow, -] (processor.south) -- (turn) -- (split);
+    \fill[archNavy] (split) circle (1.9pt);
+    %\draw[mesharrow] (split) -- ++(-0.28,-0.48) -| (meshTitle.north);
+    %\draw[fluxarrow] (split) -- ++(0.28,-0.48) -| (fluxTitle.north);
+    \draw[mesharrow] (split) -- ++(-0.28,-0.25)
+    -| (meshTitle.north);
+    \draw[fluxarrow] (split) -- ++(0.28,-0.25)
+        -| (fluxTitle.north);
+    \draw[mesharrow] (meshTitle.south) -- (nodeDecoder.north);
+    \draw[fluxarrow] (fluxTitle.south) -- (fluxDecoder.north);
+
+    \draw[mesharrow] (nodeDecoder) -- (nodeOutput);
+    \draw[fluxarrow] (fluxDecoder) -- (fluxDifference);
+    \draw[fluxarrow] (fluxDifference) -- (fluxOutput);
+
+\end{tikzpicture}%
+}
+\endgroup
+\caption{Architectural comparison of MeshGraphNet and FluxGraphNet. Both models share the same encode--process backbone. MeshGraphNet decodes node-wise updates directly, whereas FluxGraphNet decodes one oriented transported amount per interface and applies a conservative flux-difference update, so each interface contribution enters neighboring cells with opposite signs. Detailed equations are given in Appendix \ref{app:model_details}.}
+\label{fig:architecture_schematic}
+\end{figure}
+}%

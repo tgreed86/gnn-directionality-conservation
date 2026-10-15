@@ -1,0 +1,16 @@
+# Reconstructed recipe, not the recovered original YAML.
+# Grid/time settings are saved in the dataset; IC settings below are current
+# generator defaults and agree with the manuscript but are not stored in the archive.
+# The original generation RNG seed/state was not saved.
+training_data:
+  Nx: 256
+  dx: 0.00390625
+  dt: 0.0015
+  initial_conditions:
+    type: top_hat
+    n_hats_min: 2
+    n_hats_max: 6
+    width_min: 0.05
+    width_max: 0.25
+    amplitude_min: -1.5
+    amplitude_max: 1.5

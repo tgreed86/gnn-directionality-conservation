@@ -1,0 +1,42 @@
+{
+  "run_seconds": 1226.8403141498566,
+  "device": "mps",
+  "dataset_path": "data/1D/100_samples_heat_train.npz",
+  "target_mode": "rate",
+  "lr_initial": 0.001,
+  "lr_final": 0.001,
+  "lr_schedule_enabled": false,
+  "lr_schedule": [],
+  "split_unit": "trajectory",
+  "training_mode": "rollout",
+  "rollout_steps": 5,
+  "num_samples": 13000,
+  "num_pairs": 13000,
+  "num_trajectories": 100,
+  "num_nodes": 64,
+  "spatial_dim": 1,
+  "config_spatial_dim": 1,
+  "nx": 64,
+  "ny": 1,
+  "model_in_channels": 1,
+  "train_size": 10400,
+  "val_size": 1300,
+  "test_size": 1300,
+  "train_effective_size": 10080,
+  "val_effective_size": 1260,
+  "test_effective_size": 1260,
+  "input_features": {
+    "include_pos": false,
+    "normalize_state_to_minus1_1": true,
+    "normalize_clip": false,
+    "state_min": -3.851522922515869,
+    "state_max": 4.505324840545654
+  },
+  "best_epoch": 78,
+  "best_val_loss": 0.030754669897613073,
+  "test_metrics": {
+    "loss": 0.02584048169295466,
+    "rmse": 0.1318167064766096,
+    "rel_l2": 0.14856587381783604
+  }
+}

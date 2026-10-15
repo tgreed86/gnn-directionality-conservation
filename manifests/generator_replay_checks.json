@@ -1,0 +1,74 @@
+{
+  "1D_traffic": {
+    "scope": "all 32 topologies regenerated; states, fluxes, positions, connectivity, lengths, directions and speeds compared",
+    "max_abs_difference_by_key": {
+      "trajectory_v_max": 2.220446049250313e-16,
+      "edge_index": 0.0,
+      "rollout_states": 0.0,
+      "trajectory_flow_direction": 0.0,
+      "cell_lengths": 0.0,
+      "rollout_transfer_fluxes": 0.0,
+      "pos": 0.0
+    },
+    "exact_states": true,
+    "note": "Float64 diagnostics may differ at roundoff across numerical-library versions."
+  },
+  "chemotactic_cell_migration": {
+    "scope": "trajectories 0 and 48, mesh/fields/reference evolution; saved common solver_dt and substep count supplied explicitly; cell ordering may differ with SciPy/Qhull/numerical versions, so compare after matching triangles by their vertex IDs; full 100-trajectory replay not performed",
+    "checks": [
+      {
+        "trajectory_id": 0,
+        "mesh_vertices_exact": false,
+        "triangles_exact": true,
+        "chemo_exact": true,
+        "rollout_shape": [
+          1,
+          129,
+          512
+        ],
+        "reference_shape": [
+          1,
+          129,
+          512,
+          1
+        ],
+        "mesh_vertices_max_abs_difference": 1.1102230246251565e-16,
+        "triangles_equal_as_sets": true,
+        "rollout_max_abs_difference_after_cell_reordering": 0.0,
+        "chemo_exact_after_cell_reordering": true,
+        "rollout_max_abs_difference": 0.0,
+        "flux_max_abs_difference": 0.0
+      },
+      {
+        "trajectory_id": 48,
+        "mesh_vertices_exact": false,
+        "triangles_exact": false,
+        "chemo_exact": false,
+        "rollout_shape": [
+          1,
+          129,
+          512
+        ],
+        "reference_shape": [
+          1,
+          129,
+          512,
+          1
+        ],
+        "mesh_vertices_max_abs_difference": 1.1102230246251565e-16,
+        "triangles_equal_as_sets": true,
+        "rollout_max_abs_difference_after_cell_reordering": 0.0,
+        "chemo_exact_after_cell_reordering": true,
+        "rollout_max_abs_difference": 1.677737832069397,
+        "flux_max_abs_difference": 6.77447587804636e-06
+      }
+    ],
+    "comparison_note": "Raw array/flux differences before cell/face reordering are not numerical trajectory errors. Vertex coordinates differ by roundoff; triangle vertex-ID sets agree. The cell-permuted states match exactly. Fluxes for trajectory 48 have not been aligned and compared after oriented face remapping."
+  },
+  "environment": {
+    "python": "3.10.18",
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "scope": "traffic and chemotaxis replay; not original training environment"
+  }
+}

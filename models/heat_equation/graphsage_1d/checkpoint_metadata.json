@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "spatial_dim": 1,
+    "nx": 64,
+    "ny": 1,
+    "N": 64,
+    "Lx": 1.0,
+    "Ly": 1.0,
+    "nu": 0.01,
+    "CFL": 0.2,
+    "dt": 0.0048828125,
+    "dx": 0.015625,
+    "dy": 0.0,
+    "m_max_x": 8,
+    "m_max_y": 0,
+    "amplitude": 1.0,
+    "spectral_decay": 1.0,
+    "target_type": "rate",
+    "seed": 1234,
+    "num_samples": 100,
+    "window": 130,
+    "num_pairs": 13000,
+    "normalize_rms": "nan"
+  },
+  "epoch": 78,
+  "best_val_loss": 0.030754669897613073,
+  "state_dict_inventory": [
+    {
+      "name": "convs.0.lin_l.weight",
+      "shape": [
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convs.0.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convs.0.lin_r.weight",
+      "shape": [
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convs.1.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convs.1.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convs.1.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convs.2.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convs.2.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convs.2.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "head.0.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "head.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "head.3.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "head.3.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

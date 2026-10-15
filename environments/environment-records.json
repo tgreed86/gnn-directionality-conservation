@@ -1,0 +1,70 @@
+{
+  "recorded_on": "2026-10-15",
+  "local": {
+    "environment_name": "amr-gnn-pt27",
+    "python": "3.11.13",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "core_packages": {
+      "torch": "2.7.1",
+      "torch-geometric": "2.6.1",
+      "numpy": "2.3.3",
+      "matplotlib": "3.10.6",
+      "scipy": "1.16.2",
+      "PyYAML": "6.0.2",
+      "tqdm": "4.67.1"
+    },
+    "provenance": "Read from installed distribution metadata; current observation, not per-run historical proof."
+  },
+  "hpc": {
+    "python": "3.12.3",
+    "platform": "Linux-4.18.0-553.124.1.el8_10.x86_64-x86_64-with-glibc2.39",
+    "environment_name": "shock-ramp-hpc-env",
+    "inherits_system_site_packages": true,
+    "torch_cuda_build": "12.9",
+    "core_packages": {
+      "torch": "2.7.0a0+79aa17489c.nv25.4",
+      "torch-geometric": "2.6.1",
+      "numpy": "1.26.4",
+      "matplotlib": "3.10.1",
+      "scipy": "1.15.2",
+      "PyYAML": "6.0.2",
+      "tqdm": "4.67.1"
+    },
+    "optional_packages_reported_not_found": [
+      "torch-scatter",
+      "torch-sparse",
+      "torch-cluster",
+      "pyg-lib"
+    ],
+    "container": {
+      "filename": "pytorch-2.7.0.sif",
+      "original_image_confirmed_by_author": true,
+      "confirmation_date": "2026-10-15",
+      "current_path": null,
+      "image_sha256": null,
+      "note": "Author confirms original image was relocated and used to collect report; binary identity not independently hash-verified."
+    },
+    "runtime_report": "hpc-runtime.txt",
+    "runtime_provenance": "Transcribed from author message; whitespace normalized. GPU model and driver not provided.",
+    "freeze_file": "hpc-freeze.txt",
+    "freeze_sha256": "ff8ee49c3a27ee795cbd50d8fea5329a4397408feb73d60d9e70825365e7f766",
+    "freeze_entries": 333,
+    "freeze_local_file_references": 84,
+    "core_freeze_evidence": {
+      "torch": "torch @ file:///opt/transfer/torch-2.7.0a0%2B79aa17489c.nv25.4-cp312-cp312-linux_x86_64.whl#sha256=939bcb5084db4743a2729da1f8fe1779121cce96f8706bd155669671707ac587",
+      "torch-geometric": "torch-geometric @ file:///rapids/torch_geometric-2.6.1-py3-none-any.whl#sha256=8faeb353f9655f7dbec44c5e0b44c721773bdfb279994da96b9b8b12fd30f427",
+      "numpy": "numpy==1.26.4",
+      "matplotlib": "matplotlib==3.10.1",
+      "scipy": "scipy==1.15.2",
+      "PyYAML": "PyYAML==6.0.2",
+      "tqdm": "tqdm==4.67.1"
+    }
+  },
+  "validation": {
+    "core_hpc_versions_match_freeze": true,
+    "freeze_copy_is_byte_identical": true,
+    "new_installation_tested": false,
+    "hpc_execution_tested_by_assistant": false,
+    "historical_per_run_package_versions_verified": false
+  }
+}

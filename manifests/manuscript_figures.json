@@ -1,0 +1,228 @@
+{
+  "manuscript": "drafts/10-13-26_APLML",
+  "figures": [
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/vanilla_meshgraphnet_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "a161b35dfa10edf2711511003455ead7967d415c558e58e3539607eac3899a3a",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/no_physics_input/meshgraphnet/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/vanilla_meshgraphnet_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/vanilla_meshgraphnet_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "47b815ddbc44e826a72e8683ef29389b276b75502bfee0ff399375ffb869fdb9",
+      "matching_source_files": [],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/meshgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "c183e6af2094a5c1fb139662bb76f2e4ce9e90d56ff87435a2a419d5deb4e651",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/with_physics/meshgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/meshgraphnet-w-adv_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/meshgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "c00eb5d229665bbcc5f047ad1e6c00bce67514b57facb000ca377ae6ac986684",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/meshgraphnet_w_advection/no-dropout/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/paper_plots_orig/paper_spacetime_compare_column_t0_page-002_sample-index-1_sample-id-300.png"
+      ],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/linear_advection_error_curves_compare_all.png",
+      "exists": true,
+      "sha256": "917fdee02c452d4bf088d90fba1f758b370a44461f0933ce1ac9d70ec28e1775",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/with_physics/fluxgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_plots_all_metrics/linear_advection_error_curves_compare_all.png"
+      ]
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/burgers_error_curves_compare_all.png",
+      "exists": true,
+      "sha256": "8f3d6b1e663d29153366658d07a6c8c6a0a94cac3c84a7e6db6f877caf2cff60",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/fluxgraphnet_w_advection/300_timesteps/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/gnn_vs_godunov_plots_all-metrics_all-models/burgers_error_curves_compare_all.png"
+      ]
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/traffic_error_curves_compare_all_metrics.png",
+      "exists": true,
+      "sha256": "2defd00ce85bb948819df8e26ca7404ced4d0db127f28e2fb39094baf9735ad9",
+      "matching_source_files": [
+        "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/paper_model_comparisons/combined_test/traffic_error_curves_compare_all_metrics.png"
+      ]
+    },
+    {
+      "tex_file": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "asset": "figures/cell-migration_error_curves_compare_all_metrics.png",
+      "exists": true,
+      "sha256": "2f161851916ea7690b8dff017cfb58f36244ad6e85448d5cfc17a6458927af6b",
+      "matching_source_files": [
+        "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/with_advection/unique_meshes_constant-chi_0p1_500ep_lr-5e-5_5-ts_abs-pos/cell-migration_error_curves_compare_all_metrics.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/1D_heat_rollout_sample.png",
+      "exists": true,
+      "sha256": "c1b22a220fabbf942797e62d1f4bebe983f235d2f29b9836e756803459b25650",
+      "matching_source_files": [],
+      "previous_sha256": "dddde1799c735916a393f50f563068873f984ad2c100edccd8605f5050c99a1b",
+      "previous_matching_source_files": [
+        "heat_equation/runs/1D/vanilla_sageconv/100ep_lr-1e-3/rollout_plots/1D_heat_rollout_sample.png"
+      ],
+      "current_mapping_evidence": "Current manuscript image checked against release renderer; pixel comparison recorded in reproduction_checks.json."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/vanilla_sageconv_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "d66ba848e53e2b3406897f7125777955b7c58a50bf0a4ef1d6f65095a4cd6f00",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/no_physics_input/sageconv/200ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/vanilla_sageconv_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/vanilla_sageconv_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "3b2fac9c54cf27ae442450170e7ab66aa1824ab4202f387140b0f423d7c87e32",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/vanilla_sageconv/no-dropout/cfl-0p2_dt-1p5e-3/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/paper_plots/paper_spacetime_compare_column_t0_page-002_sample-index-1_sample-id-300.png"
+      ],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/sageconv-w-adv_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "cb69c38ec1c4884fee630a7a487c3139d035193907a89ae5cdd0ffe8108ccedc",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/with_physics/sageconv/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/sageconv-w-adv_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/sageconv-w-adv_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "d8521255d0bc7fea6a84067878a4a84143f8aa00d2e67fd8232b04f5f0e07788",
+      "matching_source_files": [],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/meshgraphnet-abs_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "2872c4016be84ef93d10593659f74edfdaf731c77030cc55babb522ede1e9f59",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/no_physics_input/meshgraphnet-abs/400ep_lr-sched_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/meshgraphnet-abs_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/meshgraphnet-abs_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "45eebb03a495a2c07b5f9dca771ab0637cae2a3b601b94de15a7948563ae36b1",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/meshgraphnet-abs/300-timesteps_no_dropout/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/paper_plots/meshgraphnet-abs_burgers_spacetime_compare_id300.png"
+      ],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "exists": true,
+      "sha256": "ef263ba07299eac3be801435480d877d66c64ce38fec4806123f928f4b865e95",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/with_physics/fluxgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/paper_plots/fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/fluxgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "exists": true,
+      "sha256": "d93a37d0f2e097ebf20735ab0337231c2d8823bba4b16bfdb2b12999342b97bd",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/fluxgraphnet_w_advection/300_timesteps/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/paper_plots/paper_spacetime_compare_column_t0_page-002_sample-index-1_sample-id-300.png"
+      ],
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "dataset_mapping_evidence": "User identified separate visualization bank on 2026-10-13; file metadata confirms length-3 domain. Historical render command not recovered."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/linear_advection_error_curves_compare.png",
+      "exists": true,
+      "sha256": "e3c615564569a3af917c03c5fcfa2ac859296269abae3b689f34cf32e9400a9a",
+      "matching_source_files": [
+        "1D_advection/runs/cell_averaged/with_physics/fluxgraphnet/200ep_lr-sched_adv-norm_rel-l2-early-stop_tv-loss_10ts_seed-1234/gnn_vs_godunov_plots_3-models/linear_advection_error_curves_compare.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/burgers_error_curves_compare.png",
+      "exists": true,
+      "sha256": "895b2eeecbed0c3d2d6ad231050975af15f90e17410aa095c55dfb083e472ebf",
+      "matching_source_files": [
+        "Burgers/runs/with_shocks/fluxgraphnet_w_advection/300_timesteps/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta/gnn_vs_godunov_plots_local_ssim/burgers_error_curves_compare.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/traffic_topology-26_trajectory_0000_network.png",
+      "exists": true,
+      "sha256": "f29b18bdac5a6901e5b3df85fed22b15e34371e65c01f0d486f285d6805cc317",
+      "matching_source_files": [
+        "1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots/test_large/topology_0026/traffic_topology-26_trajectory_0000_network.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/cell-migr_trajectory_048_rollout.png",
+      "exists": true,
+      "sha256": "cba00aa47e7b4c7ad0d3148bbed23bad66d4684a48f0596f4ce86626f9cf1f84",
+      "matching_source_files": [
+        "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/with_advection/unique_meshes_constant-chi_0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots/cell-migr_trajectory_048_rollout.png",
+        "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/with_advection/unique_meshes_constant-chi_0p1_500ep_lr-5e-5_5-ts_abs-pos/rollout_plots_9-17-26/trajectory_048_spatial_rollout.png"
+      ]
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/traffic_error_curves_compare.png",
+      "exists": true,
+      "sha256": "2b9916f0144db8621e86702c6a0ae50816ac9beee9c91401ab3c208cac0895e9",
+      "matching_source_files": [],
+      "previous_sha256": "1c1527de1d746664994a2badf1d3b974036189cfd60e251182890d2542edbf6a",
+      "previous_matching_source_files": [
+        "1D_traffic/output/paper_model_comparisons_with_advection/test_large/traffic_error_curves_compare.png"
+      ],
+      "current_mapping_evidence": "Current manuscript image checked against release renderer; pixel comparison recorded in reproduction_checks.json."
+    },
+    {
+      "tex_file": "sections/03_results.tex",
+      "asset": "figures/cell-migration_error_curves_compare.png",
+      "exists": true,
+      "sha256": "cd116639819266514fb3d5ba7d3907098b840d0d3eff6f2e6f5f2d080cda2690",
+      "matching_source_files": [
+        "chemotactic_cell_migration/runs/17x17-unique-meshes_constant-chi-0p1/fluxgraphnet/with_advection/unique_meshes_constant-chi_0p1_500ep_lr-5e-5_5-ts_abs-pos/cell-migration_error_curves_compare.png"
+      ]
+    }
+  ],
+  "mapping_status": "Exact-byte source-image matches recorded where found. Dataset-to-rollout checks recorded separately in dataset_audit.json."
+}

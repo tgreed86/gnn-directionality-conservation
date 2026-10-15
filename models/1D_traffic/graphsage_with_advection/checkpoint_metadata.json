@@ -1,0 +1,230 @@
+{
+  "model_class": "SAGENet",
+  "model_kwargs": {
+    "in_channels": 15,
+    "hidden_channels": 128,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "layer_norm": false
+  },
+  "normalization": {
+    "density_mean": 0.2312764110269803,
+    "density_std": 0.23548314949177684,
+    "target_mean": -1.1013828320437629e-05,
+    "target_std": 0.10535730266665164
+  },
+  "feature_names": [
+    "normalized_density",
+    "normalized_pos_x",
+    "normalized_pos_y",
+    "normalized_cell_length",
+    "normalized_road_coordinate",
+    "is_road_start",
+    "is_road_end",
+    "normalized_v_max",
+    "normalized_turning_fraction",
+    "has_turning_fraction",
+    "normalized_merge_priority",
+    "has_merge_priority",
+    "flow_direction",
+    "normalized_dt",
+    "lwr_advection_rate"
+  ],
+  "physics_inputs": {
+    "enabled": true,
+    "include_adv": true,
+    "input_form": "rate",
+    "advection_scheme": "godunov",
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "normalize_adv_to_minus1_1": false,
+    "adv_min": null,
+    "adv_max": null,
+    "normalize_adv_clip": false,
+    "detach_inputs": true
+  },
+  "dataset_format": "variable_topology_lwr_v1",
+  "target_type": "rate",
+  "learned_target": "rate",
+  "mass_projection": false,
+  "training_rollout_steps": 1,
+  "node_weight_loss": 1.0,
+  "data_path": "data/lwr_structured_directional",
+  "source_config_path": "config_hpc.json",
+  "output_dir": "runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate",
+  "best_epoch": 454,
+  "best_validation_normalized_mse": 0.0024216082680413105,
+  "test_metrics": {
+    "test_in_size": {
+      "normalized_mse": 0.001890374798635472,
+      "target_rmse": 0.004580771300420027,
+      "next_state_rmse": 0.0002128189468608197,
+      "mass_mae": 0.0002677028187463293
+    },
+    "test_large": {
+      "normalized_mse": 0.0033304183641785813,
+      "target_rmse": 0.006080146488725415,
+      "next_state_rmse": 0.00026267886421521374,
+      "mass_mae": 0.0007505742560169892
+    },
+    "test_parameter_ood": {
+      "normalized_mse": 0.011784000145132735,
+      "target_rmse": 0.011436970849437273,
+      "next_state_rmse": 0.0005935552517026165,
+      "mass_mae": 0.0017463936819694936
+    }
+  },
+  "manifest_path": "data/lwr_structured_directional/manifest.json",
+  "manifest_format": "variable_topology_lwr_v1",
+  "feature_normalization": {
+    "position_mean": [
+      1.1934506635395794,
+      1.2839863708163446
+    ],
+    "position_std": [
+      1.042702060781837,
+      0.898187979262673
+    ],
+    "cell_length_mean": 0.12461622247196341,
+    "cell_length_std": 0.0019985385285363378,
+    "v_max_mean": 0.9943016972392797,
+    "v_max_std": 0.10015516898207438,
+    "turning_fraction_mean": 0.0,
+    "turning_fraction_std": 1.0,
+    "merge_priority_mean": 0.0,
+    "merge_priority_std": 1.0,
+    "dt_mean": 0.04438773416353964,
+    "dt_std": 0.0031375270436197764
+  },
+  "conditioning_keys": [
+    "v_max",
+    "turning_fraction",
+    "merge_priority",
+    "flow_direction",
+    "dt"
+  ],
+  "state_dict_inventory": [
+    {
+      "name": "convolutions.0.lin_l.weight",
+      "shape": [
+        128,
+        15
+      ],
+      "dtype": "torch.float32",
+      "elements": 1920
+    },
+    {
+      "name": "convolutions.0.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.0.lin_r.weight",
+      "shape": [
+        128,
+        15
+      ],
+      "dtype": "torch.float32",
+      "elements": 1920
+    },
+    {
+      "name": "convolutions.1.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.1.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.1.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.2.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.2.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.2.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.3.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.3.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.3.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "output.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "output.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

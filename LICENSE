@@ -1,0 +1,46 @@
+Copyright (c) 2026 Trevor G. Reed
+
+This release contains separately licensed software and research artifacts.
+These licenses apply by component, not as a choice between licenses for the
+same file.
+
+MIT
+---
+Original software under code/ and provenance/, and original scripts and tests
+under generation/, reproduction/, tools/, and tests/, are licensed under the
+MIT License. Software configuration and dependency specification files are
+also covered by MIT. Documentation and reference assets are separately scoped
+below, even when located alongside software.
+See LICENSES/MIT.txt for the complete terms.
+
+CC BY 4.0
+---------
+The following material is licensed under the Creative Commons Attribution 4.0
+International License:
+
+- Dataset files under datasets/, trained checkpoint files under models/, and
+  numerical prediction/evaluation outputs under evaluations/ (distributed
+  separately from the source repository).
+- Original documentation, including READMEs, guides, and inventory descriptions.
+- Original reference figures, tables, and diagrams, including the architecture
+  diagram's LaTeX/TikZ source and assets under reproduction/reference/.
+- Original citation metadata, manifests, and descriptive research metadata.
+
+Historical environment reports and third-party notices are retained as factual
+provenance; this license does not grant rights in third-party software they name.
+See LICENSES/CC-BY-4.0.txt for the complete terms, or:
+https://creativecommons.org/licenses/by/4.0/
+
+Credit these artifacts to Trevor G. Reed. Preserve this notice and the license
+reference when sharing them, and identify any changes as required by CC BY 4.0.
+Dataset-specific descriptions and provenance are provided in inventory/ and
+manifests/. Software citation metadata is provided in CITATION.cff. The dataset
+record has its own DOI and must not be used as the software's identifier.
+
+Other material
+--------------
+Third-party dependencies retain their own licenses. These notices do not
+relicense external dependencies or any third-party material.
+
+The complete license texts in LICENSES/ retain their original terms. Any
+third-party material bearing its own notices remains subject to those notices.

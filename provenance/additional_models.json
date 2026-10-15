@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "id": "heat_equation/graphsage_1d",
+      "dataset": "Heat Equation",
+      "method": "SAGEConv",
+      "original_run_directory": "heat_equation/runs/1D/vanilla_SAGEConv/100ep_lr-1e-3",
+      "checkpoint_filename": "checkpoint_best.pt",
+      "selection_origin": "User supplied the run directory in this chat; saved rollout_eval_summary.json identifies checkpoint_best.pt.",
+      "historical_path_note": "Saved metadata spells vanilla_sageconv in lowercase; the supplied directory spelling vanilla_SAGEConv is preserved in this manifest."
+    }
+  ]
+}

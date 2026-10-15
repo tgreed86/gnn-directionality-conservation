@@ -1,0 +1,112 @@
+{
+  "run_seconds": 1151.6197328567505,
+  "device": "cuda",
+  "config_path": "config_hpc.json",
+  "config_input_path": "runs/sageconv/no_physics/200ep_lr-sched_rel-l2-early-stop_tv-loss_10ts/config_input.json",
+  "config_resolved_path": "runs/sageconv/no_physics/200ep_lr-sched_rel-l2-early-stop_tv-loss_10ts/config_resolved.json",
+  "dataset_path": "data/rollout/100_samples/advection_shock_N384_L3_cfl-0p3_cellavg.npz",
+  "target_mode": "delta",
+  "state_residual_mode": "raw",
+  "lr_initial": 0.0001,
+  "lr_final": 1e-05,
+  "lr_schedule_enabled": true,
+  "lr_schedule": [
+    {
+      "epoch": 50,
+      "lr": 1e-05
+    }
+  ],
+  "split_unit": "trajectory",
+  "training_mode": "rollout",
+  "rollout_steps": 10,
+  "rollout_steps_config": 10,
+  "rollout_steps_train_max": 10,
+  "rollout_steps_val_mode": "fixed",
+  "rollout_random_length": {
+    "enabled": false,
+    "min_steps": 1,
+    "max_steps": 10
+  },
+  "num_samples": 12800,
+  "num_pairs": 12800,
+  "num_trajectories": 100,
+  "num_constant_trajectories_ignored": 0,
+  "ignored_constant_trajectory_ids": [],
+  "constant_trajectory_tol": 0.0,
+  "num_nodes": 384,
+  "model_in_channels": 1,
+  "train_size": 10240,
+  "val_size": 1280,
+  "test_size": 1280,
+  "train_effective_size": 9520,
+  "val_effective_size": 1190,
+  "test_effective_size": 1190,
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "include_diff": false,
+    "input_form": "delta",
+    "backend": "fv",
+    "advection_scheme": "upwind",
+    "mls_ridge_eps": 1e-12,
+    "nu": 0.0001,
+    "c_override": null,
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "diff_weight": 1.0,
+    "detach_inputs": true,
+    "normalize_adv_to_minus1_1": true,
+    "adv_min": null,
+    "adv_max": null,
+    "normalize_adv_clip": false
+  },
+  "godunov_correction": {
+    "enabled": false,
+    "advection_scheme": "upwind",
+    "c_override": null
+  },
+  "gradient_weighted_loss": {
+    "enabled": false,
+    "strength": 1.0,
+    "power": 1.0,
+    "eps": 1e-12,
+    "normalize_mean": true,
+    "clip_max": null,
+    "smooth_radius": 0,
+    "peak_spread_sigma": 0.0,
+    "peak_spread_mode": "gaussian"
+  },
+  "relative_mse": {
+    "enabled": false,
+    "alpha": 0.5,
+    "eps": 1e-12
+  },
+  "mass_conservation_loss": {
+    "enabled": false,
+    "lambda_mass": 0.001
+  },
+  "tv_loss": {
+    "enabled": true,
+    "lambda_tv": 0.05,
+    "mode": "excess"
+  },
+  "input_features": {
+    "include_pos": false,
+    "normalize_state_to_minus1_1": true,
+    "normalize_clip": false,
+    "state_min": -2.6732285022735596,
+    "state_max": 2.902402639389038
+  },
+  "best_epoch": 12,
+  "checkpoint_val_loss": 0.03932113339420126,
+  "best_val_loss": 0.03932113339420126,
+  "early_stopping_metric": "rollout_state_rel_l2",
+  "best_early_stopping_metric_value": 0.1939712998746824,
+  "test_metrics": {
+    "loss": 0.04262579107234458,
+    "rmse": 0.1849568003347849,
+    "rel_l2": 1.0226080841258427,
+    "rollout_state_rel_l2": 0.1787693233118087
+  }
+}

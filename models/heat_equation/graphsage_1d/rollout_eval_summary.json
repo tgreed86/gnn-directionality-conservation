@@ -1,0 +1,38 @@
+{
+  "checkpoint": "runs/1D/vanilla_sageconv/100ep_lr-1e-3/checkpoint_best.pt",
+  "dataset": "data/1D/100_samples_heat_train.npz",
+  "sample_selection_mode": "test_split",
+  "allow_full_dataset_fallback": false,
+  "device_requested": "mps",
+  "device_resolved": "mps",
+  "num_samples": 16,
+  "horizon": 130,
+  "spatial_dim": 1,
+  "nx": 64,
+  "ny": 1,
+  "model_in_channels": 1,
+  "input_features": {
+    "include_pos": false,
+    "normalize_state_to_minus1_1": true,
+    "normalize_clip": false,
+    "state_min": -3.851522922515869,
+    "state_max": 4.505324840545654
+  },
+  "final_mean_rmse": 0.01422051247916678,
+  "final_mean_rel_l2": 0.02799356936613287,
+  "nonfinite_rmse_count": 0,
+  "nonfinite_rel_l2_count": 0,
+  "delta_error_mode": "percent",
+  "delta_percent_eps": 1e-08,
+  "sample_gif_enabled": false,
+  "sample_gif_fps": 8,
+  "sample_gif_out": null,
+  "sample_plot_steps": [
+    1,
+    25,
+    75,
+    130
+  ],
+  "out_npz": "runs/1D/vanilla_sageconv/100ep_lr-1e-3/rollout",
+  "plots_dir": "runs/1D/vanilla_sageconv/100ep_lr-1e-3/rollout_plots"
+}

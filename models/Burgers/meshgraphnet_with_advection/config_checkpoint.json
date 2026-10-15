@@ -1,0 +1,102 @@
+{
+  "seed": 1234,
+  "device": "cuda",
+  "data": {
+    "source_format": "wenoa_pt",
+    "data_dir": "data/100-samples_cfl-0p2_dt-1p5e-3_dataset.pt",
+    "_comment_source_format": "auto: '.pt' path -> wenoa_pt, directory -> npz_bundle. You can also force 'npz_bundle' or 'wenoa_pt'.",
+    "_comment_wenoa_path": "For WENO-A, set data_dir to a .pt file (or provide data.wenoa_pt_path).",
+    "regime_filter": "all",
+    "_comment_regime_filter": "For bundled dataset: 'all' | 'inviscid' | 'viscous'. For WENO-A this applies to synthetic nu (default nu=0 unless data.wenoa_nu is set).",
+    "wenoa_split_fractions": {
+      "train": 0.8,
+      "val": 0.1,
+      "test": 0.1
+    },
+    "wenoa_split_seed": 1234,
+    "_comment_wenoa_nu": "Optional for WENO-A only: set numeric data.wenoa_nu (e.g., 0.0, 0.001) if you need regime_filter behavior.",
+    "target_mode": "delta",
+    "batch_size": 32,
+    "num_workers": 0
+  },
+  "model": {
+    "type": "meshgraphnet",
+    "_comment_type": "Options: 'sageconv', 'meshgraphnet', 'fluxgraphnet'",
+    "hidden": 128,
+    "layers": 3,
+    "dropout": 0.0,
+    "activation": "relu",
+    "activation_negative_slope": 0.01,
+    "activation_elu_alpha": 1.0,
+    "use_skip": false,
+    "use_layernorm": false,
+    "layernorm_eps": 1e-06,
+    "predict_type": "delta",
+    "state_channel": 0
+  },
+  "input_features": {
+    "feature_columns": [
+      "u"
+    ],
+    "use_pos": false,
+    "_comment_use_pos": "For source_format='wenoa_pt': feature_columns are ignored and effective features are ['u'] or ['x','u'] depending on use_pos.",
+    "normalize_u_to_minus1_1": true,
+    "normalize_clip": false,
+    "u_min": -0.5208333134651184,
+    "u_max": 0.5208333134651184
+  },
+  "train": {
+    "epochs": 200,
+    "val_every": 5,
+    "rollout_steps": 10,
+    "gradient_weighted_loss": {
+      "enabled": false,
+      "strength": 0.75,
+      "power": 1.0,
+      "eps": 1e-12,
+      "normalize_mean": true,
+      "clip_max": 4.0,
+      "smooth_radius": 1,
+      "peak_spread_sigma": 1.0,
+      "peak_spread_mode": "gaussian"
+    },
+    "lr": 0.0001,
+    "lr_schedule": {
+      "enabled": false,
+      "entries": [
+        {
+          "epoch": 10,
+          "lr": 1e-05
+        }
+      ]
+    },
+    "weight_decay": 1e-06,
+    "grad_clip": -1.0,
+    "early_stopping_patience": null,
+    "log_every": 10,
+    "save_dir": "runs/meshgraphnet_w_adv/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_200ep_delta"
+  },
+  "physics_inputs": {
+    "enabled": true,
+    "include_adv": true,
+    "input_form": "delta",
+    "advection_scheme": "upwind",
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "_comment_adv_normalization": "If normalize_adv_to_minus1_1 is true and adv_min/adv_max are not provided, train script fits adv_min/adv_max from train-split advection percentiles and stores them in checkpoint config.",
+    "normalize_adv_to_minus1_1": true,
+    "_comment_adv_percentiles": "Percentile bounds used to fit adv_min/adv_max (set to 0 and 100 to recover old pure min/max behavior).",
+    "normalize_adv_percentile_low": 1.0,
+    "normalize_adv_percentile_high": 99.0,
+    "normalize_adv_clip": true,
+    "detach_inputs": true,
+    "adv_min": -0.004959454759955406,
+    "adv_max": 0.005136426072567701
+  },
+  "rollout_eval": {
+    "enabled": false,
+    "horizon": 100,
+    "num_test_samples": 16
+  }
+}

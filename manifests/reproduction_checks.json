@@ -1,0 +1,432 @@
+{
+  "date": "2026-10-13",
+  "evaluation_npz_count": 107,
+  "portable_execution": {
+    "passed": true,
+    "procedure": "Copied release to another location, ran from an unrelated working directory, and blocked opens of the original paper workspace and toy_model tree using an audit hook inherited by child processes.",
+    "ready_figure_assets_rendered": 23,
+    "tables_generated": 3,
+    "python": "3.10.18",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4",
+    "model_inference_performed": false,
+    "unresolved_recipes_skipped": 0
+  },
+  "table_check": {
+    "main_results_rows_matching_manuscript": 26,
+    "main_results_rows_total": 26,
+    "hyperparameter_discrepancies": [
+      {
+        "dataset": "Linear Advection",
+        "model": "SAGEConv (no advection)",
+        "manuscript_epoch_budget": 400,
+        "recorded_config_epoch_budget": 200
+      }
+    ],
+    "hyperparameter_discrepancy_status": "Superseded by author request to report Epochs trained; apply regenerated Table IV to the manuscript.",
+    "historical_hyperparameter_discrepancies_10_12": [
+      {
+        "dataset": "Linear Advection",
+        "model": "MeshGraphNet + advection",
+        "manuscript_epoch_budget": 400,
+        "recorded_config_epoch_budget": 200
+      },
+      {
+        "dataset": "Linear Advection",
+        "model": "SAGEConv + advection",
+        "manuscript_epoch_budget": 400,
+        "recorded_config_epoch_budget": 200
+      },
+      {
+        "dataset": "Linear Advection",
+        "model": "SAGEConv (no advection)",
+        "manuscript_epoch_budget": 400,
+        "recorded_config_epoch_budget": 200
+      }
+    ],
+    "epoch_column": "Epochs trained: final recorded epoch; maximum budgets retained in exports",
+    "completed_epochs_checked": 26,
+    "completed_epochs_in_run_order": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      500,
+      500,
+      174,
+      148,
+      298,
+      346,
+      112,
+      62,
+      76,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      126,
+      177,
+      94,
+      122,
+      136,
+      180
+    ],
+    "workspace_and_release_completed_epochs_agree": true,
+    "best_epochs_unchanged": true
+  },
+  "pending_figure_ids": [],
+  "architecture_standalone_compilation": "success: built-in desktop LaTeX compiler",
+  "advection_baseline_archive_check": {
+    "rmse_gnn_by_sample": 0.0,
+    "rel_l2_gnn_by_sample": 0.0,
+    "l1_gnn_by_sample": 0.0,
+    "ssim_gnn_by_sample": 0.0,
+    "all_gnn_trajs": 0.0
+  },
+  "rendered_figure_checks": [
+    {
+      "asset": "vanilla_meshgraphnet_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1520,
+        1902
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "vanilla_meshgraphnet_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1440,
+        1800
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "meshgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1500,
+        1874
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "meshgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1440,
+        1800
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "linear_advection_error_curves_compare_all.png",
+      "rendered_size": [
+        2654,
+        1430
+      ],
+      "reference_size": [
+        2635,
+        1411
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "burgers_error_curves_compare_all.png",
+      "rendered_size": [
+        2654,
+        1430
+      ],
+      "reference_size": [
+        2635,
+        1411
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "traffic_error_curves_compare_all_metrics.png",
+      "rendered_size": [
+        2635,
+        1411
+      ],
+      "reference_size": [
+        2635,
+        1411
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "cell-migration_error_curves_compare_all_metrics.png",
+      "rendered_size": [
+        2654,
+        1430
+      ],
+      "reference_size": [
+        2654,
+        1430
+      ],
+      "pixels_identical": true
+    },
+    {
+      "asset": "1D_heat_rollout_sample.png",
+      "rendered_size": [
+        1836,
+        1258
+      ],
+      "reference_size": [
+        1836,
+        1258
+      ],
+      "pixels_identical": true
+    },
+    {
+      "asset": "vanilla_sageconv_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1536,
+        1922
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "vanilla_sageconv_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1440,
+        1800
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "sageconv-w-adv_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1492,
+        1864
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "sageconv-w-adv_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1440,
+        1800
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "meshgraphnet-abs_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1450,
+        1812
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "meshgraphnet-abs_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1049,
+        1310
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "rendered_size": [
+        1531,
+        1910
+      ],
+      "reference_size": [
+        1492,
+        1864
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "fluxgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "rendered_size": [
+        1440,
+        1800
+      ],
+      "reference_size": [
+        1440,
+        1800
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "linear_advection_error_curves_compare.png",
+      "rendered_size": [
+        2654,
+        835
+      ],
+      "reference_size": [
+        2635,
+        731
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "burgers_error_curves_compare.png",
+      "rendered_size": [
+        2654,
+        835
+      ],
+      "reference_size": [
+        2635,
+        816
+      ],
+      "pixels_identical": false
+    },
+    {
+      "asset": "traffic_topology-26_trajectory_0000_network.png",
+      "rendered_size": [
+        2611,
+        1640
+      ],
+      "reference_size": [
+        2611,
+        1640
+      ],
+      "pixels_identical": true
+    },
+    {
+      "asset": "cell-migr_trajectory_048_rollout.png",
+      "rendered_size": [
+        2288,
+        1716
+      ],
+      "reference_size": [
+        2288,
+        1716
+      ],
+      "pixels_identical": true
+    },
+    {
+      "asset": "traffic_error_curves_compare.png",
+      "rendered_size": [
+        2635,
+        816
+      ],
+      "reference_size": [
+        2635,
+        816
+      ],
+      "pixels_identical": true
+    },
+    {
+      "asset": "cell-migration_error_curves_compare.png",
+      "rendered_size": [
+        2654,
+        835
+      ],
+      "reference_size": [
+        2654,
+        835
+      ],
+      "pixels_identical": true
+    }
+  ],
+  "unmodified_rendering_helper_symbols_checked": 45,
+  "original_evaluation_npz_count": 101,
+  "new_visualization_npz_count": 6,
+  "author_confirmed_selections": {
+    "date": "2026-10-13",
+    "burgers_length_three_trajectory_index": 1,
+    "traffic_main_test_trajectories": 48
+  },
+  "burgers_visualization_inference": {
+    "models_strictly_loaded": 6,
+    "complete_finite_trajectories": 6,
+    "trajectory_shape": [
+      301,
+      768
+    ],
+    "trajectory_id": 1,
+    "versions": {
+      "python": "3.11.13",
+      "numpy": "1.26.4",
+      "torch": "2.2.2",
+      "torch_geometric": "2.6.1"
+    },
+    "validation_reference": "manifests/generated_evaluations.json",
+    "historical_length_one_reference_states_match_exactly": true,
+    "largest_first_transition_abs_difference": 5.960464477539063e-08,
+    "largest_full_rollout_abs_difference": 0.03268900513648987,
+    "largest_full_rollout_relative_l2_difference": 0.004666185438638022,
+    "historical_inference_environment_recovered": false
+  },
+  "traffic_main_figure_check": {
+    "test_trajectories_per_model": 48,
+    "splits": [
+      "test_in_size",
+      "test_large",
+      "test_parameter_ood"
+    ],
+    "aggregation": "macro",
+    "source_reference_differs_intentionally": false,
+    "current_manuscript_pixels_identical": true
+  },
+  "manuscript": "drafts/10-13-26_APLML",
+  "rendering_helper_modifications": [
+    {
+      "file": "code/paper/plot_helpers/heat.py",
+      "symbol": "_write_rollout_plots",
+      "change": "Snapshot x-axis label Position -> Node Index; otherwise unchanged."
+    }
+  ],
+  "heat_main_figure_check": {
+    "current_manuscript_pixels_identical": true,
+    "x_axis_label": "Node Index"
+  },
+  "latest_manuscript_sync": {
+    "heat_axis_fixed": true,
+    "heat_and_traffic_reference_pixels_match_release_outputs": true,
+    "burgers_appendix_dataset_and_sampling_fixes_present": true,
+    "heat_seed_provenance_fixed": true,
+    "chemotaxis_punctuation_fixed": true,
+    "results_table_unchanged": true,
+    "remaining_text_items": [
+      "Apply Epochs trained values and revised header/note from generated Table IV",
+      "Traffic OOD: free-flow speeds and topology edits, not junction parameters",
+      "Caption: only Burgers uses nine-step smoothing; advection unsmoothed"
+    ]
+  }
+}

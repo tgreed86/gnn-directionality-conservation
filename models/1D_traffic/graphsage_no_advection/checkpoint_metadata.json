@@ -1,0 +1,217 @@
+{
+  "model_class": "SAGENet",
+  "model_kwargs": {
+    "in_channels": 14,
+    "hidden_channels": 128,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "layer_norm": false
+  },
+  "normalization": {
+    "density_mean": 0.2312764110269803,
+    "density_std": 0.23548314949177684,
+    "target_mean": -1.1013828320437629e-05,
+    "target_std": 0.10535730266665164
+  },
+  "feature_names": [
+    "normalized_density",
+    "normalized_pos_x",
+    "normalized_pos_y",
+    "normalized_cell_length",
+    "normalized_road_coordinate",
+    "is_road_start",
+    "is_road_end",
+    "normalized_v_max",
+    "normalized_turning_fraction",
+    "has_turning_fraction",
+    "normalized_merge_priority",
+    "has_merge_priority",
+    "flow_direction",
+    "normalized_dt"
+  ],
+  "dataset_format": "variable_topology_lwr_v1",
+  "target_type": "rate",
+  "learned_target": "rate",
+  "mass_projection": false,
+  "training_rollout_steps": 1,
+  "node_weight_loss": 1.0,
+  "flux_loss_weight": 0.0,
+  "flux_normalization": null,
+  "data_path": "data/lwr_structured_directional",
+  "source_config_path": "config_hpc.json",
+  "output_dir": "runs/structured_directional/sageconv/1000ep_lr-1e-4_pred-rate",
+  "best_epoch": 971,
+  "best_validation_normalized_mse": 0.01270842589060823,
+  "test_metrics": {
+    "test_in_size": {
+      "normalized_mse": 0.017399684783400295,
+      "target_rmse": 0.013897457104147531,
+      "next_state_rmse": 0.0006609451769225622,
+      "mass_mae": 0.002375601136009209
+    },
+    "test_large": {
+      "normalized_mse": 0.019713089759103016,
+      "target_rmse": 0.014792514386049492,
+      "next_state_rmse": 0.00065616239320687,
+      "mass_mae": 0.004823219896934461
+    },
+    "test_parameter_ood": {
+      "normalized_mse": 0.04646431259546356,
+      "target_rmse": 0.022710380442046568,
+      "next_state_rmse": 0.0010194412498754713,
+      "mass_mae": 0.0053579597879434004
+    }
+  },
+  "manifest_path": "data/lwr_structured_directional/manifest.json",
+  "manifest_format": "variable_topology_lwr_v1",
+  "feature_normalization": {
+    "position_mean": [
+      1.1934506635395794,
+      1.2839863708163446
+    ],
+    "position_std": [
+      1.042702060781837,
+      0.898187979262673
+    ],
+    "cell_length_mean": 0.12461622247196341,
+    "cell_length_std": 0.0019985385285363378,
+    "v_max_mean": 0.9943016972392797,
+    "v_max_std": 0.10015516898207438,
+    "turning_fraction_mean": 0.0,
+    "turning_fraction_std": 1.0,
+    "merge_priority_mean": 0.0,
+    "merge_priority_std": 1.0,
+    "dt_mean": 0.04438773416353964,
+    "dt_std": 0.0031375270436197764
+  },
+  "conditioning_keys": [
+    "v_max",
+    "turning_fraction",
+    "merge_priority",
+    "flow_direction",
+    "dt"
+  ],
+  "state_dict_inventory": [
+    {
+      "name": "convolutions.0.lin_l.weight",
+      "shape": [
+        128,
+        14
+      ],
+      "dtype": "torch.float32",
+      "elements": 1792
+    },
+    {
+      "name": "convolutions.0.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.0.lin_r.weight",
+      "shape": [
+        128,
+        14
+      ],
+      "dtype": "torch.float32",
+      "elements": 1792
+    },
+    {
+      "name": "convolutions.1.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.1.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.1.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.2.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.2.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.2.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.3.lin_l.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "convolutions.3.lin_l.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "convolutions.3.lin_r.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "output.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "output.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

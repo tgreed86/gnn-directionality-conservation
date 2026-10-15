@@ -1,0 +1,23 @@
+{
+  "batch_size": 256,
+  "data": "data/lwr_structured_directional",
+  "device": "cuda",
+  "dropout": 0.1,
+  "epochs": 1000,
+  "hidden_channels": 128,
+  "layer_norm": false,
+  "learning_rate": 0.0001,
+  "log_every": 10,
+  "mass_projection": false,
+  "model": "meshgraphnet",
+  "num_layers": 4,
+  "num_workers": 4,
+  "output": "runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate",
+  "patience": 0,
+  "seed": 1234,
+  "target_type": "rate",
+  "test_fraction": 0.15,
+  "train_fraction": null,
+  "validation_fraction": 0.15,
+  "weight_decay": 0
+}

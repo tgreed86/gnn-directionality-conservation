@@ -1,0 +1,116 @@
+{
+  "status": "Static import inventory; original training environment versions not recovered",
+  "projects": {
+    "Burgers": {
+      "local_modules": [
+        "__init__",
+        "burgers",
+        "burgers_data",
+        "compare_gnn_vs_godunov",
+        "generate_data",
+        "gnn_burgers",
+        "input_features",
+        "physics_inputs",
+        "plot_paper_spacetime_compare",
+        "plot_training_history",
+        "riemann",
+        "rollout_gnn_burgers",
+        "sine_wave",
+        "top_hat",
+        "train_gnn_burgers",
+        "weno_a"
+      ],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "torch",
+        "torch_geometric",
+        "tqdm",
+        "yaml"
+      ]
+    },
+    "1D_advection": {
+      "local_modules": [
+        "advection_data",
+        "advection_schemes",
+        "compare_gnn_vs_godunov",
+        "generate_advection_data",
+        "gnn_advection",
+        "input_features",
+        "mls",
+        "physics_inputs",
+        "plot_paper_spacetime_compare",
+        "plot_training_history",
+        "rollout_gnn_advection",
+        "train_gnn_advection"
+      ],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "torch",
+        "torch_geometric"
+      ]
+    },
+    "1D_traffic": {
+      "local_modules": [
+        "generate_network_lwr_traffic_data",
+        "generate_structured_directional_lwr_traffic_data",
+        "physics_inputs",
+        "plot_model_comparisons",
+        "plot_model_comparisons_paper",
+        "plot_network_lwr_traffic_data",
+        "plot_sageconv_rollouts",
+        "plot_training_loss",
+        "plot_variable_sageconv_rollouts",
+        "train"
+      ],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "torch",
+        "torch_geometric"
+      ]
+    },
+    "chemotactic_cell_migration": {
+      "local_modules": [
+        "chemotaxis_archive",
+        "generate_chemotactic_cell_migration_data",
+        "physics_inputs",
+        "plot_gnn_rollouts",
+        "plot_model_comparisons",
+        "plot_model_comparisons_paper",
+        "plot_training_loss",
+        "train"
+      ],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "scipy",
+        "torch",
+        "torch_geometric"
+      ]
+    },
+    "heat_equation": {
+      "local_modules": [
+        "analyze_rollout_diagnostics",
+        "generate_heat_data",
+        "gnn_heat",
+        "heat_data",
+        "input_features",
+        "plot_training_history",
+        "rollout_gnn_heat",
+        "train_gnn_heat"
+      ],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "torch",
+        "torch_geometric"
+      ]
+    }
+  },
+  "deferred_generator_dependent_entry_points": [],
+  "package_name_mapping": {
+    "yaml": "PyYAML"
+  }
+}

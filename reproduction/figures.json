@@ -1,0 +1,620 @@
+{
+  "manuscript": "drafts/10-13-26_APLML",
+  "rendering_policy": "Scientific inputs and author-confirmed selections are explicit. PNG/PDF typography can differ across Matplotlib versions. Original PNGs are preserved for comparison. Figure jobs plot saved arrays; the six length-three Burgers archives were newly regenerated from checkpoints and are identified separately.",
+  "figures": [
+    {
+      "id": "vanilla_meshgraphnet_linear_adv_spacetime_compare_id26",
+      "asset": "vanilla_meshgraphnet_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/vanilla_meshgraphnet_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/meshgraphnet_no_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "vanilla_meshgraphnet_burgers_spacetime_compare_id300",
+      "asset": "vanilla_meshgraphnet_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/vanilla_meshgraphnet_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/meshgraphnet_no_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "meshgraphnet-w-adv_linear_adv_spacetime_compare_id26",
+      "asset": "meshgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/meshgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/meshgraphnet_with_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "meshgraphnet-w-adv_burgers_spacetime_compare_id300",
+      "asset": "meshgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/meshgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/meshgraphnet_with_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "linear_advection_error_curves_compare_all",
+      "asset": "linear_advection_error_curves_compare_all.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/linear_advection_error_curves_compare_all.png",
+      "dpi": 170,
+      "renderer": "curves_1d",
+      "metrics": [
+        "rmse",
+        "rel_l2",
+        "l1",
+        "ssim"
+      ],
+      "curves": [
+        {
+          "label": "FluxGraphNet_w_Adv",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:blue"
+        },
+        {
+          "label": "Godunov",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz",
+          "source": "godunov",
+          "color": "tab:green",
+          "linestyle": "--"
+        },
+        {
+          "label": "WENO-3",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz",
+          "source": "weno3",
+          "color": "tab:red",
+          "linestyle": "--"
+        },
+        {
+          "label": "MeshGraphNet_w_Adv",
+          "archive": "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "magenta"
+        },
+        {
+          "label": "GraphSAGE_w_Adv",
+          "archive": "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "orange"
+        },
+        {
+          "label": "vanilla_FluxGraphNet",
+          "archive": "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:olive"
+        },
+        {
+          "label": "vanilla_MeshGraphNet",
+          "archive": "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "cyan"
+        }
+      ],
+      "dt": 0.00234375,
+      "smooth_window": 1,
+      "title": "1D Linear Advection: Rollout Accuracy",
+      "settings_provenance": "Archived evaluation summary; comparison archives confirmed by user for Burgers. Three-model main figure and five-model appendix legend matched to archived PNG."
+    },
+    {
+      "id": "burgers_error_curves_compare_all",
+      "asset": "burgers_error_curves_compare_all.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/burgers_error_curves_compare_all.png",
+      "dpi": 170,
+      "renderer": "curves_1d",
+      "metrics": [
+        "rmse",
+        "rel_l2",
+        "l1",
+        "ssim"
+      ],
+      "curves": [
+        {
+          "label": "FluxGraphNet_w_Adv",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:blue"
+        },
+        {
+          "label": "Godunov",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "godunov",
+          "color": "tab:green",
+          "linestyle": "--"
+        },
+        {
+          "label": "WENO-3",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "weno3",
+          "color": "tab:red",
+          "linestyle": "--"
+        },
+        {
+          "label": "MeshGraphNet_w_Adv",
+          "archive": "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "magenta"
+        },
+        {
+          "label": "GraphSAGE_w_Adv",
+          "archive": "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "orange"
+        },
+        {
+          "label": "vanilla_FluxGraphNet",
+          "archive": "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:olive"
+        },
+        {
+          "label": "vanilla_MeshGraphNet",
+          "archive": "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "cyan"
+        }
+      ],
+      "dt": 0.001500000013038516,
+      "smooth_window": 9,
+      "title": "1D Inviscid Burger's Equation: Rollout Accuracy",
+      "settings_provenance": "Archived evaluation summary; comparison archives confirmed by user for Burgers. Three-model main figure and five-model appendix legend matched to archived PNG."
+    },
+    {
+      "id": "traffic_error_curves_compare_all_metrics",
+      "asset": "traffic_error_curves_compare_all_metrics.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/traffic_error_curves_compare_all_metrics.png",
+      "dpi": 170,
+      "renderer": "traffic_curves",
+      "metrics": [
+        "rmse",
+        "rel_l2",
+        "l1",
+        "ssim"
+      ],
+      "models": {
+        "FluxGraphNet_w_Adv": "1D_traffic/fluxgraphnet_with_advection",
+        "MeshGraphNet_w_Adv": "1D_traffic/meshgraphnet_with_advection",
+        "GraphSAGE_w_Adv": "1D_traffic/graphsage_with_advection",
+        "vanilla_FluxGraphNet": "1D_traffic/fluxgraphnet_no_advection",
+        "vanilla_MeshGraphNet": "1D_traffic/meshgraphnet_no_advection"
+      },
+      "colors": {
+        "FluxGraphNet_w_Adv": "tab:blue",
+        "MeshGraphNet_w_Adv": "magenta",
+        "GraphSAGE_w_Adv": "orange",
+        "vanilla_MeshGraphNet": "cyan",
+        "vanilla_FluxGraphNet": "tab:olive"
+      },
+      "smooth_window": 9,
+      "selected_split": "combined_test",
+      "reason": "",
+      "settings_provenance": "Saved comparison summary and exact source-PNG matches."
+    },
+    {
+      "id": "cell-migration_error_curves_compare_all_metrics",
+      "asset": "cell-migration_error_curves_compare_all_metrics.png",
+      "status": "ready",
+      "manuscript_source": "appendices/01_model_variations_and_accuracy_comparisons.tex",
+      "reference": "reproduction/reference/figures/cell-migration_error_curves_compare_all_metrics.png",
+      "dpi": 170,
+      "renderer": "chem_curves",
+      "archive": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_metrics.npz",
+      "metrics": [
+        "rmse",
+        "rel_l2",
+        "l1",
+        "ssim"
+      ],
+      "labels": [
+        "FluxGraphNet_w_Adv",
+        "MeshGraphNet_w_Adv",
+        "GraphSAGE_w_Adv",
+        "vanilla_MeshGraphNet",
+        "vanilla_FluxGraphNet",
+        "FV-Upwind",
+        "FV-MUSCL"
+      ],
+      "colors": {
+        "FluxGraphNet_w_Adv": "tab:blue",
+        "MeshGraphNet_w_Adv": "magenta",
+        "GraphSAGE_w_Adv": "orange",
+        "vanilla_MeshGraphNet": "cyan",
+        "vanilla_FluxGraphNet": "tab:olive",
+        "FV-Upwind": "tab:green",
+        "FV-MUSCL": "black"
+      },
+      "smooth_window": 9,
+      "title": "2D Chemotactic Cell Migration: Rollout Accuracy",
+      "baseline_step_mode": "cfl-subcycle",
+      "settings_provenance": "Saved raw metric archive and error_curves_summary.json; main figure is three learned-model subset."
+    },
+    {
+      "id": "1D_heat_rollout_sample",
+      "asset": "1D_heat_rollout_sample.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/1D_heat_rollout_sample.png",
+      "dpi": 170,
+      "renderer": "heat",
+      "archive": "evaluations/heat_equation/graphsage_1d/rollout_eval.npz",
+      "axis_label": "Node Index",
+      "render_settings_provenance": "Axis label updated to match author-corrected 10-13-26 manuscript; numerical arrays unchanged."
+    },
+    {
+      "id": "vanilla_sageconv_linear_adv_spacetime_compare_id26",
+      "asset": "vanilla_sageconv_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/vanilla_sageconv_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/graphsage_no_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "vanilla_sageconv_burgers_spacetime_compare_id300",
+      "asset": "vanilla_sageconv_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/vanilla_sageconv_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/graphsage_no_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/graphsage_no_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "sageconv-w-adv_linear_adv_spacetime_compare_id26",
+      "asset": "sageconv-w-adv_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/sageconv-w-adv_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/graphsage_with_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "sageconv-w-adv_burgers_spacetime_compare_id300",
+      "asset": "sageconv-w-adv_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/sageconv-w-adv_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/graphsage_with_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/graphsage_with_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "meshgraphnet-abs_linear_adv_spacetime_compare_id26",
+      "asset": "meshgraphnet-abs_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/meshgraphnet-abs_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/meshgraphnet-abs_no_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "meshgraphnet-abs_burgers_spacetime_compare_id300",
+      "asset": "meshgraphnet-abs_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/meshgraphnet-abs_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/meshgraphnet-abs_no_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26",
+      "asset": "fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/fluxgraphnet-w-adv_linear_adv_spacetime_compare_id26.png",
+      "dpi": 180,
+      "renderer": "advection_space",
+      "run_id": "1D_advection/fluxgraphnet_with_advection",
+      "trajectory_id": 26,
+      "page_width": 8.4,
+      "page_height": 10.5,
+      "render_settings_provenance": "Matched four-panel layout and aspect of archived PNG; historical CLI not recovered."
+    },
+    {
+      "id": "fluxgraphnet-w-adv_burgers_spacetime_compare_id300",
+      "asset": "fluxgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/fluxgraphnet-w-adv_burgers_spacetime_compare_id300.png",
+      "dpi": 180,
+      "renderer": "burgers_space",
+      "run_id": "Burgers/fluxgraphnet_with_advection",
+      "reason": "",
+      "dataset": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+      "trajectory_id": 1,
+      "selection_provenance": "Author confirmed zero-based index 1 on 2026-10-13.",
+      "archive": "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.npz",
+      "page_width": 8.0,
+      "page_height": 10.0,
+      "prediction_provenance": "New CPU inference on 2026-10-13; recorded in companion length3_visualization.json. Historical visualization predictions were not recovered.",
+      "render_settings_provenance": "Archived plotter, four panels (Exact/GNN/Godunov/GNN error). Reconstructed 8x10 inch, 180 dpi page matching the original 1440x1800 assets; absolute-edge image in manuscript was resized."
+    },
+    {
+      "id": "linear_advection_error_curves_compare",
+      "asset": "linear_advection_error_curves_compare.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/linear_advection_error_curves_compare.png",
+      "dpi": 170,
+      "renderer": "curves_1d",
+      "metrics": [
+        "rel_l2",
+        "ssim"
+      ],
+      "curves": [
+        {
+          "label": "FluxGraphNet_w_Adv",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:blue"
+        },
+        {
+          "label": "Godunov",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz",
+          "source": "godunov",
+          "color": "tab:green",
+          "linestyle": "--"
+        },
+        {
+          "label": "WENO-3",
+          "archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz",
+          "source": "weno3",
+          "color": "tab:red",
+          "linestyle": "--"
+        },
+        {
+          "label": "MeshGraphNet_w_Adv",
+          "archive": "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "magenta"
+        },
+        {
+          "label": "GraphSAGE_w_Adv",
+          "archive": "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "orange"
+        }
+      ],
+      "dt": 0.00234375,
+      "smooth_window": 1,
+      "title": "1D Linear Advection: Rollout Accuracy",
+      "settings_provenance": "Archived evaluation summary; comparison archives confirmed by user for Burgers. Three-model main figure and five-model appendix legend matched to archived PNG."
+    },
+    {
+      "id": "burgers_error_curves_compare",
+      "asset": "burgers_error_curves_compare.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/burgers_error_curves_compare.png",
+      "dpi": 170,
+      "renderer": "curves_1d",
+      "metrics": [
+        "rel_l2",
+        "ssim"
+      ],
+      "curves": [
+        {
+          "label": "FluxGraphNet_w_Adv",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "tab:blue"
+        },
+        {
+          "label": "Godunov",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "godunov",
+          "color": "tab:green",
+          "linestyle": "--"
+        },
+        {
+          "label": "WENO-3",
+          "archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "weno3",
+          "color": "tab:red",
+          "linestyle": "--"
+        },
+        {
+          "label": "MeshGraphNet_w_Adv",
+          "archive": "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "magenta"
+        },
+        {
+          "label": "GraphSAGE_w_Adv",
+          "archive": "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "source": "gnn",
+          "color": "orange"
+        }
+      ],
+      "dt": 0.001500000013038516,
+      "smooth_window": 9,
+      "title": "1D Inviscid Burger's Equation: Rollout Accuracy",
+      "settings_provenance": "Archived evaluation summary; comparison archives confirmed by user for Burgers. Three-model main figure and five-model appendix legend matched to archived PNG."
+    },
+    {
+      "id": "traffic_topology-26_trajectory_0000_network",
+      "asset": "traffic_topology-26_trajectory_0000_network.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/traffic_topology-26_trajectory_0000_network.png",
+      "dpi": 180,
+      "renderer": "traffic_space",
+      "archive": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+      "trajectory_id": 0,
+      "snapshot_steps": [
+        0,
+        85,
+        170,
+        256
+      ]
+    },
+    {
+      "id": "cell-migr_trajectory_048_rollout",
+      "asset": "cell-migr_trajectory_048_rollout.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/cell-migr_trajectory_048_rollout.png",
+      "dpi": 180,
+      "renderer": "chem_space",
+      "archive": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+      "trajectory_id": 48,
+      "snapshot_steps": [
+        0,
+        43,
+        85,
+        128
+      ],
+      "contour_levels": 6,
+      "render_settings_provenance": "Snapshot steps and colormap read from manuscript PNG; contour settings use archived plotter defaults."
+    },
+    {
+      "id": "traffic_error_curves_compare",
+      "asset": "traffic_error_curves_compare.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/traffic_error_curves_compare.png",
+      "dpi": 170,
+      "renderer": "traffic_curves",
+      "metrics": [
+        "rel_l2",
+        "ssim"
+      ],
+      "models": {
+        "FluxGraphNet_w_Adv": "1D_traffic/fluxgraphnet_with_advection",
+        "MeshGraphNet_w_Adv": "1D_traffic/meshgraphnet_with_advection",
+        "GraphSAGE_w_Adv": "1D_traffic/graphsage_with_advection"
+      },
+      "colors": {
+        "FluxGraphNet_w_Adv": "tab:blue",
+        "MeshGraphNet_w_Adv": "magenta",
+        "GraphSAGE_w_Adv": "orange",
+        "vanilla_MeshGraphNet": "cyan",
+        "vanilla_FluxGraphNet": "tab:olive"
+      },
+      "smooth_window": 9,
+      "selected_split": "combined_test",
+      "reason": "",
+      "settings_provenance": "Saved comparison settings; author corrected the main-figure selection from test_large to all test splits.",
+      "trajectory_count": 48,
+      "selection_provenance": "Author confirmed all 48 test trajectories on 2026-10-13."
+    },
+    {
+      "id": "cell-migration_error_curves_compare",
+      "asset": "cell-migration_error_curves_compare.png",
+      "status": "ready",
+      "manuscript_source": "sections/03_results.tex",
+      "reference": "reproduction/reference/figures/cell-migration_error_curves_compare.png",
+      "dpi": 170,
+      "renderer": "chem_curves",
+      "archive": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_metrics.npz",
+      "metrics": [
+        "rel_l2",
+        "ssim"
+      ],
+      "labels": [
+        "FluxGraphNet_w_Adv",
+        "MeshGraphNet_w_Adv",
+        "GraphSAGE_w_Adv",
+        "FV-Upwind",
+        "FV-MUSCL"
+      ],
+      "colors": {
+        "FluxGraphNet_w_Adv": "tab:blue",
+        "MeshGraphNet_w_Adv": "magenta",
+        "GraphSAGE_w_Adv": "orange",
+        "vanilla_MeshGraphNet": "cyan",
+        "vanilla_FluxGraphNet": "tab:olive",
+        "FV-Upwind": "tab:green",
+        "FV-MUSCL": "black"
+      },
+      "smooth_window": 9,
+      "title": "2D Chemotactic Cell Migration: Rollout Accuracy",
+      "baseline_step_mode": "cfl-subcycle",
+      "settings_provenance": "Saved raw metric archive and error_curves_summary.json; main figure is three learned-model subset."
+    }
+  ]
+}

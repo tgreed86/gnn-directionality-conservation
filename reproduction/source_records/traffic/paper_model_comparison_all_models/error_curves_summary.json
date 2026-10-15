@@ -1,0 +1,259 @@
+{
+  "combined_average": "macro",
+  "combined_mean_only": true,
+  "combined_test_summary": {
+    "aggregation": "equal_across_selected_splits",
+    "averaging": "macro",
+    "background_curves": "none",
+    "figure": "runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/paper_model_comparisons/combined_test/error_curves_compare.png",
+    "final_unsmoothed_combined_means": {
+      "FluxGraphNet_w_Adv": {
+        "l1": 0.004264842607429926,
+        "rel_l2": 0.04059748216556408,
+        "rmse": 0.011210085882281055,
+        "ssim": 0.9811912676656024
+      },
+      "GraphSAGE_w_Adv": {
+        "l1": 0.016364624925282307,
+        "rel_l2": 0.15604083606028826,
+        "rmse": 0.04673489236304812,
+        "ssim": 0.9469822352548772
+      },
+      "MeshGraphNet_w_Adv": {
+        "l1": 0.009900006753726145,
+        "rel_l2": 0.09482218247862317,
+        "rmse": 0.029049237405314666,
+        "ssim": 0.9723677590295
+      },
+      "vanilla_FluxGraphNet": {
+        "l1": 0.009198003068972501,
+        "rel_l2": 0.06536980260227798,
+        "rmse": 0.018309911237512428,
+        "ssim": 0.9402044152844006
+      },
+      "vanilla_MeshGraphNet": {
+        "l1": 0.012168284620151154,
+        "rel_l2": 0.12762072434112268,
+        "rmse": 0.03724751005288974,
+        "ssim": 0.9576366243845631
+      }
+    },
+    "included_splits": [
+      "test_in_size",
+      "test_large",
+      "test_parameter_ood"
+    ],
+    "rollout_steps": 256,
+    "spread": "none",
+    "title": "1D LWR Traffic: Rollout Errors"
+  },
+  "dataset": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/data/lwr_structured_directional",
+  "error_curves_mean_only": true,
+  "error_curves_metrics": [
+    "rmse",
+    "rel_l2",
+    "l1",
+    "ssim"
+  ],
+  "error_curves_smooth_window": 9,
+  "error_curves_spread": "none",
+  "error_curves_spread_definition": {
+    "iqr": "weighted 25th--75th percentiles",
+    "std": "weighted mean plus/minus one population standard deviation"
+  },
+  "horizontal_axis": "rollout_step",
+  "models": {
+    "FluxGraphNet_w_Adv": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/rollout_plots",
+    "GraphSAGE_w_Adv": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/runs/structured_directional/sageconv/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots",
+    "MeshGraphNet_w_Adv": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/runs/structured_directional/meshgraphnet/with_advection/1000ep_lr-1e-4_pred-rate/rollout_plots",
+    "vanilla_FluxGraphNet": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/runs/structured_directional/fluxgraphnet/flux-loss-weight/1000ep_lr-1e-4_pred-rate_flux-loss-10p0/rollout_plots",
+    "vanilla_MeshGraphNet": "/Users/trevorreed/UVA_postdoc_stuff/gparc/toy_model/1D_traffic/runs/structured_directional/meshgraphnet/1000ep_lr-1e-4_pred-rate/rollout_plots"
+  },
+  "physical_time_alignment": "not_applied",
+  "relative_l2": "cell_length_weighted",
+  "source_figure": "Figure 6 of 7_6_26_scirep_v2.pdf",
+  "split_aggregation": {
+    "topology_aggregation": "equal_across_topologies",
+    "trajectory_aggregation": "equal_within_topology"
+  },
+  "splits": {
+    "test_in_size": {
+      "dt_by_topology": {
+        "20": 0.043485751924906946,
+        "21": 0.05054562486661241,
+        "22": 0.04933205741533608,
+        "23": 0.04576246435040834
+      },
+      "figure": "runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/paper_model_comparisons/test_in_size/error_curves_compare.png",
+      "final_unsmoothed_topology_balanced_means": {
+        "FluxGraphNet_w_Adv": {
+          "l1": 0.0018865673336965674,
+          "rel_l2": 0.020783424470137625,
+          "rmse": 0.004476163766450738,
+          "ssim": 0.9964766350971729
+        },
+        "GraphSAGE_w_Adv": {
+          "l1": 0.005574701876072243,
+          "rel_l2": 0.05400893164537385,
+          "rmse": 0.01322508222123629,
+          "ssim": 0.9875290079300852
+        },
+        "MeshGraphNet_w_Adv": {
+          "l1": 0.004730913845218206,
+          "rel_l2": 0.045390436968215375,
+          "rmse": 0.011045855467428166,
+          "ssim": 0.9942744216973436
+        },
+        "vanilla_FluxGraphNet": {
+          "l1": 0.004052252382229991,
+          "rel_l2": 0.028595576845384316,
+          "rmse": 0.006256010317406585,
+          "ssim": 0.975395958377438
+        },
+        "vanilla_MeshGraphNet": {
+          "l1": 0.0064205652964513405,
+          "rel_l2": 0.07549865317924218,
+          "rmse": 0.018451858808115257,
+          "ssim": 0.986268936025982
+        }
+      },
+      "num_topology_trajectory_pairs": 16,
+      "physical_horizon_by_topology": {
+        "20": 11.132352492776178,
+        "21": 12.939679965852777,
+        "22": 12.629006698326036,
+        "23": 11.715190873704534
+      },
+      "rollout_steps": 256,
+      "title": "1D LWR Traffic: Rollout Accuracy",
+      "topology_ids": [
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "test_large": {
+      "dt_by_topology": {
+        "24": 0.04140076996331555,
+        "25": 0.05251641322901873,
+        "26": 0.04120398343815746,
+        "27": 0.0428776561188146
+      },
+      "figure": "runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/paper_model_comparisons/test_large/error_curves_compare.png",
+      "final_unsmoothed_topology_balanced_means": {
+        "FluxGraphNet_w_Adv": {
+          "l1": 0.002677800531027069,
+          "rel_l2": 0.020368325462281362,
+          "rmse": 0.007000930695495009,
+          "ssim": 0.9898833111525859
+        },
+        "GraphSAGE_w_Adv": {
+          "l1": 0.009835085164025356,
+          "rel_l2": 0.11036542429103353,
+          "rmse": 0.03890643172572555,
+          "ssim": 0.9590352257722308
+        },
+        "MeshGraphNet_w_Adv": {
+          "l1": 0.00823484726632261,
+          "rel_l2": 0.08119294792017061,
+          "rmse": 0.028942095165106832,
+          "ssim": 0.9781875866002875
+        },
+        "vanilla_FluxGraphNet": {
+          "l1": 0.0053152061159046846,
+          "rel_l2": 0.02535963509866685,
+          "rmse": 0.008854179275073345,
+          "ssim": 0.9584887334131814
+        },
+        "vanilla_MeshGraphNet": {
+          "l1": 0.008831407565280667,
+          "rel_l2": 0.08629903179393494,
+          "rmse": 0.030942404026204948,
+          "ssim": 0.9606950929034005
+        }
+      },
+      "num_topology_trajectory_pairs": 16,
+      "physical_horizon_by_topology": {
+        "24": 10.59859711060878,
+        "25": 13.444201786628796,
+        "26": 10.54821976016831,
+        "27": 10.976679966416537
+      },
+      "rollout_steps": 256,
+      "title": "1D LWR Traffic: Rollout Accuracy",
+      "topology_ids": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "test_parameter_ood": {
+      "dt_by_topology": {
+        "28": 0.034956075298255146,
+        "29": 0.08314931807236481,
+        "30": 0.03427298168669406,
+        "31": 0.03308987649078079
+      },
+      "figure": "runs/structured_directional/fluxgraphnet/flux-loss-weight/with_advection/1000ep_lr-1e-4_10p0-flux-loss-weight_pred-rate/paper_model_comparisons/test_parameter_ood/error_curves_compare.png",
+      "final_unsmoothed_topology_balanced_means": {
+        "FluxGraphNet_w_Adv": {
+          "l1": 0.008230159957566143,
+          "rel_l2": 0.08064069656427325,
+          "rmse": 0.02215316318489742,
+          "ssim": 0.9572138567470483
+        },
+        "GraphSAGE_w_Adv": {
+          "l1": 0.03368408773574932,
+          "rel_l2": 0.3037481522444574,
+          "rmse": 0.08807316314218251,
+          "ssim": 0.8943824720623158
+        },
+        "MeshGraphNet_w_Adv": {
+          "l1": 0.016734259149637616,
+          "rel_l2": 0.1578831625474835,
+          "rmse": 0.047159761583408996,
+          "ssim": 0.9446412687908691
+        },
+        "vanilla_FluxGraphNet": {
+          "l1": 0.01822655070878283,
+          "rel_l2": 0.14215419586278277,
+          "rmse": 0.03981954412005735,
+          "ssim": 0.886728554062582
+        },
+        "vanilla_MeshGraphNet": {
+          "l1": 0.021252880998721458,
+          "rel_l2": 0.22106448805019085,
+          "rmse": 0.06234826732434901,
+          "ssim": 0.9259458442243069
+        }
+      },
+      "num_topology_trajectory_pairs": 16,
+      "physical_horizon_by_topology": {
+        "28": 8.948755276353317,
+        "29": 21.28622542652539,
+        "30": 8.773883311793679,
+        "31": 8.471008381639882
+      },
+      "rollout_steps": 256,
+      "title": "1D LWR Traffic: Rollout Accuracy",
+      "topology_ids": [
+        28,
+        29,
+        30,
+        31
+      ]
+    }
+  },
+  "ssim": {
+    "data_range": "rho_max",
+    "k1": 0.01,
+    "k2": 0.03,
+    "reference_spacing": 0.125,
+    "reference_spacing_source": "manifest_generation_config_cells_per_unit",
+    "sigma_reference_cells": 1.5,
+    "type": "roadwise_local_gaussian",
+    "window_size_reference_cells": 11
+  }
+}

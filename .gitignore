@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+.venv/
+.venv-*/
+venv/
+
+# Downloaded research artifacts
+/datasets/
+/evaluations/
+*.pt
+*.pth
+
+# Generated files
+outputs/
+regenerated/

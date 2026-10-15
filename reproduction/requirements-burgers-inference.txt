@@ -1,0 +1,8 @@
+# Versions exercised for the six Burgers visualization rollouts on Python 3.11.13.
+# This is not a reconstruction of the historical training environment.
+# A fresh cross-platform installation has not been tested.
+numpy==1.26.4
+torch==2.2.2
+torch-geometric==2.6.1
+matplotlib==3.8.4
+PyYAML==6.0.2

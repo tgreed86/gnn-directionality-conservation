@@ -1,0 +1,532 @@
+{
+  "model_class": "FluxGraphNet",
+  "model_name": "fluxgraphnet",
+  "model_kwargs": {
+    "in_channels": 8,
+    "hidden_channels": 128,
+    "num_layers": 4,
+    "dropout": 0.1,
+    "layer_norm": false,
+    "edge_attr_channels": 13,
+    "target_type": "delta",
+    "target_mean": 2.7837913506875105e-06,
+    "target_std": 0.00528452774832418,
+    "decode_normalized_flux": true,
+    "flux_decoder_edge_features": "processed",
+    "antisymmetric_flux_decoder": true,
+    "flux_mean": -8.678648150643046e-09,
+    "flux_std": 2.7283210217612424e-05
+  },
+  "normalization": {
+    "density_mean": 0.15911343021475827,
+    "density_std": 0.3957323685565304,
+    "target_mean": 2.7837913506875105e-06,
+    "target_std": 0.00528452774832418,
+    "static_continuous_mean": [
+      0.2933790896162061,
+      0.0031110382614871934,
+      0.0003109855546009747,
+      0.49998530564670157,
+      0.49993556399812017,
+      0.0019531250000000082
+    ],
+    "static_continuous_std": [
+      0.3814890334798142,
+      0.1747142208289988,
+      0.18049887805602244,
+      0.28853563071303484,
+      0.2884667464689986,
+      0.0005847746483234573
+    ],
+    "edge_mean": [
+      0.0,
+      0.0,
+      0.03889503406696253,
+      0.0,
+      0.0,
+      0.070342088541593,
+      0.0,
+      0.0,
+      0.037628560972194657,
+      1.9552360765589691,
+      0.0019582223235538663,
+      0.0019582223235538663,
+      0.08189052795031056
+    ],
+    "edge_std": [
+      0.027913373921116258,
+      0.02788750901893409,
+      0.006636710540047915,
+      0.707041884803684,
+      0.7071716716065661,
+      0.01598778424759297,
+      0.7069671066245106,
+      0.7072464280364192,
+      0.0065801522314552635,
+      0.6385114389699212,
+      0.0005936303141847802,
+      0.0005936303141847806,
+      0.27419786538612195
+    ]
+  },
+  "feature_names": [
+    "normalized_density",
+    "normalized_chemoattractant",
+    "normalized_drift_velocity_x",
+    "normalized_drift_velocity_y",
+    "normalized_pos_x",
+    "normalized_pos_y",
+    "normalized_cell_area",
+    "boundary_cell"
+  ],
+  "feature_options": {
+    "include_chi": false,
+    "include_drift_velocity": true,
+    "include_absolute_positions": true,
+    "include_boundary_distances": false
+  },
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "input_form": "delta",
+    "advection_scheme": "upwind",
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "normalize_adv_to_minus1_1": false,
+    "adv_min": null,
+    "adv_max": null,
+    "normalize_adv_clip": false,
+    "detach_inputs": true
+  },
+  "edge_attr_columns": "delta_x,delta_y,distance,unit_x,unit_y,shared_face_length,face_normal_x,face_normal_y,center_normal_distance,transmissibility,source_cell_area,target_cell_area,source_is_boundary_cell",
+  "target_type": "delta",
+  "node_loss_normalization": "target",
+  "node_density_weighting": "target",
+  "node_density_weight_strength": 0.25,
+  "flux_decoder_edge_features": "processed",
+  "antisymmetric_flux_decoder": true,
+  "autoregressive_steps": 5,
+  "mass_projection": false,
+  "node_weight_loss": 1.0,
+  "flux_loss_weight": 10.0,
+  "flux_supervision_steps": "first",
+  "flux_normalization": {
+    "mean": -8.678648150643046e-09,
+    "std": 2.7283210217612424e-05
+  },
+  "dt": 0.010339876433737077,
+  "diffusion": 0.01,
+  "data_path": "data/unique_meshes_17x17_constant-chi_0p1",
+  "source_config_path": "config_hpc.json",
+  "best_epoch": 44,
+  "early_stopping_metric": "normalized_mse",
+  "best_validation_metric": 1.6218702511294114,
+  "best_validation_metrics": {
+    "normalized_mse": 1.6218702511294114,
+    "objective_node_mse": 5.626497210928649,
+    "flux_normalized_mse": 0.07349152522994958,
+    "weighted_total_loss": 6.361412463228144,
+    "next_state_rmse": 0.006729987011124575,
+    "mass_mae": 7.325234358397763e-10,
+    "rollout_state_rel_l2": 0.009106452837986972
+  },
+  "best_validation_normalized_mse": 1.6218702511294114,
+  "test_metrics": {
+    "normalized_mse": 0.6985977805006288,
+    "objective_node_mse": 1.871153859154131,
+    "flux_normalized_mse": 0.03257782511785801,
+    "weighted_total_loss": 2.196932110332711,
+    "next_state_rmse": 0.004416922302598032,
+    "mass_mae": 7.870168375066006e-10,
+    "rollout_state_rel_l2": 0.007350088832799786
+  },
+  "state_dict_inventory": [
+    {
+      "name": "target_mean",
+      "shape": [],
+      "dtype": "torch.float32",
+      "elements": 1
+    },
+    {
+      "name": "target_std",
+      "shape": [],
+      "dtype": "torch.float32",
+      "elements": 1
+    },
+    {
+      "name": "node_encoder.0.weight",
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "torch.float32",
+      "elements": 1024
+    },
+    {
+      "name": "node_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "node_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "node_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.0.weight",
+      "shape": [
+        128,
+        13
+      ],
+      "dtype": "torch.float32",
+      "elements": 1664
+    },
+    {
+      "name": "edge_encoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "edge_encoder.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "edge_encoder.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.0.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.0.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.0.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.0.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.1.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.1.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.1.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.1.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.2.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.2.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.2.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.2.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.edge_mlp.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "processor.3.edge_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.edge_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.3.edge_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.node_mlp.0.weight",
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "torch.float32",
+      "elements": 32768
+    },
+    {
+      "name": "processor.3.node_mlp.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "processor.3.node_mlp.3.weight",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 16384
+    },
+    {
+      "name": "processor.3.node_mlp.3.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "flux_decoder.0.weight",
+      "shape": [
+        128,
+        384
+      ],
+      "dtype": "torch.float32",
+      "elements": 49152
+    },
+    {
+      "name": "flux_decoder.0.bias",
+      "shape": [
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "flux_decoder.3.weight",
+      "shape": [
+        1,
+        128
+      ],
+      "dtype": "torch.float32",
+      "elements": 128
+    },
+    {
+      "name": "flux_decoder.3.bias",
+      "shape": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "elements": 1
+    }
+  ]
+}

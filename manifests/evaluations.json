@@ -1,0 +1,342 @@
+{
+  "scope": "101 historical numerical archives for all 27 selected checkpoints, plus six newly regenerated length-three Burgers visualization archives.",
+  "runs": [
+    {
+      "run_id": "Burgers/fluxgraphnet_with_advection",
+      "directory": "evaluations/Burgers/fluxgraphnet_with_advection",
+      "primary_archive": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.npz",
+        "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "Burgers/meshgraphnet_with_advection",
+      "directory": "evaluations/Burgers/meshgraphnet_with_advection",
+      "primary_archive": "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.npz",
+        "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "Burgers/fluxgraphnet_no_advection",
+      "directory": "evaluations/Burgers/fluxgraphnet_no_advection",
+      "primary_archive": "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "Burgers/meshgraphnet_no_advection",
+      "directory": "evaluations/Burgers/meshgraphnet_no_advection",
+      "primary_archive": "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.npz",
+        "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "Burgers/graphsage_with_advection",
+      "directory": "evaluations/Burgers/graphsage_with_advection",
+      "primary_archive": "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/graphsage_with_advection/length3_visualization.npz",
+        "evaluations/Burgers/graphsage_with_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/graphsage_with_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "Burgers/graphsage_no_advection",
+      "directory": "evaluations/Burgers/graphsage_no_advection",
+      "primary_archive": "evaluations/Burgers/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/graphsage_no_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/graphsage_no_advection/length3_visualization.npz",
+        "evaluations/Burgers/graphsage_no_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/graphsage_no_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "Burgers/meshgraphnet-abs_no_advection",
+      "directory": "evaluations/Burgers/meshgraphnet-abs_no_advection",
+      "primary_archive": "evaluations/Burgers/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/Burgers/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/Burgers/meshgraphnet-abs_no_advection/gnn_vs_godunov_summary.json",
+        "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.npz",
+        "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.json"
+      ],
+      "visualization_archive": "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.npz"
+    },
+    {
+      "run_id": "1D_advection/fluxgraphnet_with_advection",
+      "directory": "evaluations/1D_advection/fluxgraphnet_with_advection",
+      "primary_archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_summary.json",
+        "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz"
+      ],
+      "baseline_archive": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz"
+    },
+    {
+      "run_id": "1D_advection/meshgraphnet_with_advection",
+      "directory": "evaluations/1D_advection/meshgraphnet_with_advection",
+      "primary_archive": "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_advection/fluxgraphnet_no_advection",
+      "directory": "evaluations/1D_advection/fluxgraphnet_no_advection",
+      "primary_archive": "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_advection/meshgraphnet_no_advection",
+      "directory": "evaluations/1D_advection/meshgraphnet_no_advection",
+      "primary_archive": "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_advection/graphsage_with_advection",
+      "directory": "evaluations/1D_advection/graphsage_with_advection",
+      "primary_archive": "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_advection/graphsage_no_advection",
+      "directory": "evaluations/1D_advection/graphsage_no_advection",
+      "primary_archive": "evaluations/1D_advection/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/graphsage_no_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_advection/meshgraphnet-abs_no_advection",
+      "directory": "evaluations/1D_advection/meshgraphnet-abs_no_advection",
+      "primary_archive": "evaluations/1D_advection/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+      "files": [
+        "evaluations/1D_advection/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+        "evaluations/1D_advection/meshgraphnet-abs_no_advection/gnn_vs_godunov_summary.json"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/fluxgraphnet_with_advection",
+      "directory": "evaluations/1D_traffic/fluxgraphnet_with_advection",
+      "primary_archive": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/meshgraphnet_with_advection",
+      "directory": "evaluations/1D_traffic/meshgraphnet_with_advection",
+      "primary_archive": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/fluxgraphnet_no_advection",
+      "directory": "evaluations/1D_traffic/fluxgraphnet_no_advection",
+      "primary_archive": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/meshgraphnet_no_advection",
+      "directory": "evaluations/1D_traffic/meshgraphnet_no_advection",
+      "primary_archive": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/graphsage_with_advection",
+      "directory": "evaluations/1D_traffic/graphsage_with_advection",
+      "primary_archive": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "1D_traffic/graphsage_no_advection",
+      "directory": "evaluations/1D_traffic/graphsage_no_advection",
+      "primary_archive": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+      "files": [
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/summary.json",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+        "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/fluxgraphnet_with_advection",
+      "directory": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/summary_metrics.json",
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_metrics.npz",
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_summary.json"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/meshgraphnet_with_advection",
+      "directory": "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection/rollout_plots/summary_metrics.json"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/fluxgraphnet_no_advection",
+      "directory": "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection/rollout_plots/summary_metrics.json"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/meshgraphnet_no_advection",
+      "directory": "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection/rollout_plots/summary_metrics.json"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/graphsage_with_advection",
+      "directory": "evaluations/chemotactic_cell_migration/graphsage_with_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/graphsage_with_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/graphsage_with_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/graphsage_with_advection/rollout_plots/summary_metrics.json"
+      ]
+    },
+    {
+      "run_id": "chemotactic_cell_migration/graphsage_no_advection",
+      "directory": "evaluations/chemotactic_cell_migration/graphsage_no_advection",
+      "primary_archive": "evaluations/chemotactic_cell_migration/graphsage_no_advection/rollout_plots/test_rollout_predictions.npz",
+      "files": [
+        "evaluations/chemotactic_cell_migration/graphsage_no_advection/rollout_plots/test_rollout_predictions.npz",
+        "evaluations/chemotactic_cell_migration/graphsage_no_advection/rollout_plots/summary_metrics.json"
+      ]
+    },
+    {
+      "run_id": "heat_equation/graphsage_1d",
+      "directory": "evaluations/heat_equation/graphsage_1d",
+      "primary_archive": "evaluations/heat_equation/graphsage_1d/rollout_eval.npz",
+      "files": [
+        "evaluations/heat_equation/graphsage_1d/rollout_eval.npz",
+        "evaluations/heat_equation/graphsage_1d/rollout_eval_summary.json"
+      ]
+    }
+  ]
+}

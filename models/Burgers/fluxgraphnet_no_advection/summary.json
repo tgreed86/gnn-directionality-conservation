@@ -1,0 +1,67 @@
+{
+  "run_seconds": 9517.510766506195,
+  "device": "cuda",
+  "data_dir": "data/100-samples_cfl-0p2_dt-1p5e-3_dataset.pt",
+  "regime_filter": "all",
+  "target_mode": "delta",
+  "val_every": 5,
+  "lr_initial": 0.0001,
+  "lr_final": 0.0001,
+  "lr_schedule_enabled": false,
+  "lr_schedule": [],
+  "training_mode": "rollout",
+  "rollout_steps": 10,
+  "num_nodes": 256,
+  "model_in_channels": 1,
+  "state_channel": 0,
+  "train_size": 24000,
+  "val_size": 3000,
+  "test_size": 3000,
+  "train_effective_size": 23280,
+  "val_effective_size": 2910,
+  "test_effective_size": 2910,
+  "input_features": {
+    "feature_columns": [
+      "u"
+    ],
+    "use_pos": false,
+    "normalize_u_to_minus1_1": true,
+    "normalize_clip": false,
+    "u_min": -0.5208333134651184,
+    "u_max": 0.5208333134651184
+  },
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "input_form": "delta",
+    "advection_scheme": "upwind",
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "normalize_adv_to_minus1_1": true,
+    "normalize_adv_percentile_low": 1.0,
+    "normalize_adv_percentile_high": 99.0,
+    "normalize_adv_clip": true,
+    "adv_min": null,
+    "adv_max": null,
+    "detach_inputs": true
+  },
+  "gradient_weighted_loss": {
+    "enabled": false,
+    "strength": 0.75,
+    "power": 1.0,
+    "eps": 1e-12,
+    "normalize_mean": true,
+    "clip_max": 4.0,
+    "smooth_radius": 1,
+    "peak_spread_sigma": 1.0,
+    "peak_spread_mode": "gaussian"
+  },
+  "best_epoch": 160,
+  "best_val_loss": 4.486492773289636e-06,
+  "test_metrics": {
+    "loss": 4.744517171375233e-06,
+    "rmse": 0.0020936572385287485,
+    "rel_l2": 0.527707826908449
+  }
+}

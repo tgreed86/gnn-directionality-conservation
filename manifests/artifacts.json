@@ -1,0 +1,1554 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "sha256",
+  "scope": "External research artifacts only; source presence and syntax are checked separately.",
+  "hash_provenance": "Expected hashes copied from the verified complete paper_release snapshot; source filesystem paths are not required by this repository.",
+  "groups": {
+    "datasets": {
+      "availability": "Dataset DOI 10.5281/zenodo.23369294 is reserved; record not yet published.",
+      "record_url": "https://doi.org/10.5281/zenodo.23369294",
+      "download_url": null,
+      "files": [
+        {
+          "path": "datasets/1D_advection/advection_shock_N384_L3_cfl-0p3_cellavg.npz",
+          "bytes": 838551,
+          "sha256": "1daf5d99cae7f95c2822e9ad3f0aeb8b5308a0185e86f6615e03c3135d4b8680"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/manifest.json",
+          "bytes": 29765,
+          "sha256": "771657e3f14d733fdb3dc507729014c3f33bb0728ff6b254f3eca8f35af5be4d"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0000.npz",
+          "bytes": 2586067,
+          "sha256": "b01ba0fdd6df16a7d4be95079b43cbf83439faa9afd7f7d56e8a21cc08618ec2"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0001.npz",
+          "bytes": 1781052,
+          "sha256": "ceeeae3811d2493a1d87008aa620a6ac3b1b8a8f22a3329a827dea3075a13408"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0002.npz",
+          "bytes": 2779324,
+          "sha256": "895c4859df14fd7686e3bb0abdc5ae9bce0ad3de14802fcff2e45af75504438d"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0003.npz",
+          "bytes": 2361852,
+          "sha256": "8678432304af6a5a76de4d6ca43ad1858734188f92b54f9705a722d0f9ef7f3e"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0004.npz",
+          "bytes": 2517028,
+          "sha256": "476865104d07ce46237bf7e900d491de5c2737f8a7b899f4958e3e79e61605e9"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0005.npz",
+          "bytes": 2478023,
+          "sha256": "03691ea9d478e0c135993c6693238c5a15f56162113d2a2b7adf55ec472f8fe2"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0006.npz",
+          "bytes": 3359320,
+          "sha256": "6c95f657cd0a6019be5a6e31c88b5ab655f030a89f839adb0438bdf996a0ce0e"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0007.npz",
+          "bytes": 3348513,
+          "sha256": "4e3772eb3045011c0ab7fde5fda3e7e508356fbd5d5c829a537730b8c658e032"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0008.npz",
+          "bytes": 2309202,
+          "sha256": "9dd49f925570f16dffad9bcf246dbe7276f65be897cd128a93bca9798954fef8"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0009.npz",
+          "bytes": 3387315,
+          "sha256": "b1033d448469c1b7d171f40dfad4c8cffd4960c14da016b36ad9cc8d7dd29196"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0010.npz",
+          "bytes": 2502242,
+          "sha256": "6cb415c5741478b4f355c85f7487866cd1bbd422537cfa0b5a9de0d76c14fbcc"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0011.npz",
+          "bytes": 2883469,
+          "sha256": "195c41639e5e82ae176ae4e4cadb9c3f5f012db61741bc388b50842cec0c6d02"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0012.npz",
+          "bytes": 2479047,
+          "sha256": "b43f2e60f00e0f95ec68924bec06d96a0c6f9b2447178d4cb2358aba6d55d36a"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0013.npz",
+          "bytes": 2349139,
+          "sha256": "dd040ad1af2a3cbf34cc30fb56f77578f40b1d4839466297cc8d9a16e6d87ecc"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0014.npz",
+          "bytes": 2613204,
+          "sha256": "afad107057ddbae21197b2a29184701e4eb8127caf8e32544948f273bd285766"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0015.npz",
+          "bytes": 1779350,
+          "sha256": "29482e6f4f405f6f65a0c1ade4f24bc4d2e6b192825ae9101202f4f14a408d09"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0016.npz",
+          "bytes": 1490859,
+          "sha256": "eb1ea30b737b4b29df97a9c1cd056a4b8e2ee805c1dfe191556e85b2d30fb074"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0017.npz",
+          "bytes": 1705855,
+          "sha256": "175fc655f40ff92eda07f56badf6419b2d1cb3bb3eb6172484288174cc898bc2"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0018.npz",
+          "bytes": 1877774,
+          "sha256": "2025e492dcef2a2b43c51a911b4510874cc07502c6e0c2d97e17a7c8dd6747ae"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0019.npz",
+          "bytes": 1285622,
+          "sha256": "7240dc13573e15759cc3cd9b9523800c3b43d3ca7b774b6f0e16123878c28a3b"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0020.npz",
+          "bytes": 1157645,
+          "sha256": "944174e78c1c8e2d3777d04554afd5e73a31a26589b455b12b8d851be0d22993"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0021.npz",
+          "bytes": 1499610,
+          "sha256": "0b144973f1221a52589db5e0d6a2c4467218baca32b5f4e298defe1fea8da45b"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0022.npz",
+          "bytes": 821927,
+          "sha256": "d4af5b57e2679ed14eecbcdfa5f19e65b9d9cee88516d0557b6417beb44f2d3a"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0023.npz",
+          "bytes": 1451339,
+          "sha256": "c778e17f08c118f157254cde39ca379b9b2240497d0c889e7ee353f9d7e4ecfd"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0024.npz",
+          "bytes": 3447087,
+          "sha256": "1905d98c49b778b5fb01960d6e7ca054e5cb41385c4b4ff1580ce934f7bfc348"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0025.npz",
+          "bytes": 3366828,
+          "sha256": "4274adf4ab0c32ea1b06467ffe9a21494aa974ad36be00286691c723762cf696"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0026.npz",
+          "bytes": 3484162,
+          "sha256": "471a5f5db016f899423b46f6122f562dceca8cca8f274ef9797940ba79e0fc72"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0027.npz",
+          "bytes": 3000356,
+          "sha256": "01897b5c66b18b1cb72514c33fc68b9d5f397cfdc1ed56e5fa3316c6e142c5a0"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0028.npz",
+          "bytes": 1166871,
+          "sha256": "bb8655dbde4e3744bd67542a4add9692bb47016c93ff730b2e9ca86a026c6e52"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0029.npz",
+          "bytes": 1537393,
+          "sha256": "68a55a99e26a459c05ecae35b422be574304adee397f98f1f8b812e969375c9d"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0030.npz",
+          "bytes": 1535596,
+          "sha256": "29265ecd8221c442e55bb4ad8a5ec1ae3fb3abaab0142253d2d2a15e2768ee9f"
+        },
+        {
+          "path": "datasets/1D_traffic/lwr_structured_directional/topology_0031.npz",
+          "bytes": 2223001,
+          "sha256": "586be3a27eaf8cbb1b417a3bc9ad2ddfc7efe00d8c713dce61efbb63d3e13f3c"
+        },
+        {
+          "path": "datasets/Burgers/10-samples_L-3_cfl-0p2_dt-1p5e-3_dataset.pt",
+          "bytes": 9250225,
+          "sha256": "84c9f6bc6d6b08a3c4a003e7f208c42b3f04135db90b395d954cc7e1a20c5c12"
+        },
+        {
+          "path": "datasets/Burgers/100-samples_cfl-0p2_dt-1p5e-3_dataset.pt",
+          "bytes": 30826795,
+          "sha256": "c0445b587a3216fa68c026fdf209ab0fcd39dd6261eb8bdb4ea7eaa5bfdd0dc7"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00000.npz",
+          "bytes": 1909608,
+          "sha256": "84090c7f707ff834dc86027ea6e6df37cc26a624b89b59f8630ae29f0e316ed2"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00001.npz",
+          "bytes": 1946080,
+          "sha256": "5787eb430e463aeafdbdbc60b1fcf015092e0ad6abd56fef168d3d98213690d0"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00002.npz",
+          "bytes": 1950626,
+          "sha256": "7f5f4bb2486ba60e3683f253ef1922f51a0aae6a2c02e4890544d43e088c4698"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00003.npz",
+          "bytes": 1932019,
+          "sha256": "5449940da9ab6f5315a96d5e8481ad5d2168d7e2953ff1dc90081420b2b31e49"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00004.npz",
+          "bytes": 1924300,
+          "sha256": "08b630d70492d501a0611b28a9dc992893939be27b66c86da2ca27e325d02dcb"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00005.npz",
+          "bytes": 1925364,
+          "sha256": "6cf89d902e05924c72922f1262254e56194c31c65fac73ac0d156b5e2221db51"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00006.npz",
+          "bytes": 1939219,
+          "sha256": "643e94bbf2c9c43d44d16dc23558475f829d3e9155f1f366f63d7b3c8ab93581"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00007.npz",
+          "bytes": 1953301,
+          "sha256": "1e31d0af6ae2e5e3d2112fbec9d92a4e085adcecb1d059b01da6c274b5d15aca"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00008.npz",
+          "bytes": 1896121,
+          "sha256": "8e05c3b7cd6ae3fb7009119841826b1de09753d79d73b253e114f6a60f0e86a7"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00009.npz",
+          "bytes": 1931659,
+          "sha256": "13aa638057ffa95c84321c7ac7e210661044e586e187e0e4b19e024ee69ac064"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00010.npz",
+          "bytes": 1948428,
+          "sha256": "bf1149b8afce2249b19bf650e20120ae4c0760bcd893d21509ccda041b1a354a"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00011.npz",
+          "bytes": 1934028,
+          "sha256": "080df769f8a2052b68c7478e25d82d0da5321a8d645d87d96d0232f7d7cb7f3c"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00012.npz",
+          "bytes": 1948552,
+          "sha256": "79cca749efb9f6bad4263ac9e5683bf76b309e7bbbc726bd42ee3068bd65fe49"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00013.npz",
+          "bytes": 1935070,
+          "sha256": "4bc026e69b9a19ae26fcadc235bb2935032c04018f50a0664ec3fe69ad61eaec"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00014.npz",
+          "bytes": 1917985,
+          "sha256": "70e1df910f8ade2bffc58d17b2ea1c31c128aa5adf3de798e8fe7c7de1c72efc"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00015.npz",
+          "bytes": 1928416,
+          "sha256": "4498baa9dfa508b61738a16d8cea2742a708d830a4773ce9c9d3c614fec2047c"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00016.npz",
+          "bytes": 1927813,
+          "sha256": "df3286f73fb3c2e1e0b9488a39f87edc440c9c9eba228518c23cb8b283f1459e"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00017.npz",
+          "bytes": 1933373,
+          "sha256": "a07e152740141617d9bf448f879d27d45529c8d5b21abd3b69a4016e2966d247"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00018.npz",
+          "bytes": 1920445,
+          "sha256": "c8e80aefe0dc09891f9ca49b083eb5219a24ac412fcbaebfb9560356bee86673"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00019.npz",
+          "bytes": 1933062,
+          "sha256": "195bb254cf934f2fbd9a77394e86258f3fde32c721c901a651a4c58c4cdb9e45"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00020.npz",
+          "bytes": 1928922,
+          "sha256": "00a549d20f321fcd0de0c571d776e95fe4431944c9f6f7ff3f7d4e145dd64647"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00021.npz",
+          "bytes": 1917059,
+          "sha256": "4951586e50dda232e5bec4dce96a8a96067401745fadc88c86dbeb33e2f732fe"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00022.npz",
+          "bytes": 1940712,
+          "sha256": "5c97eb003a6e3332d80dea6479f373cf5ca6ca9be830c9ba67c93adb6945a193"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00023.npz",
+          "bytes": 1940989,
+          "sha256": "750f785280ab6f2e7433c6f26d6a2aa3088770f324a86ace9160eea310e75427"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00024.npz",
+          "bytes": 1950394,
+          "sha256": "e1e66e4e3df2073ed2c88a863292e8b4c2a18fe62ab511256de23b4d8cafef7e"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00025.npz",
+          "bytes": 1929667,
+          "sha256": "526b287beca7775c6b9c02b91d8f0aa83ee8870ba9b069bc4409f42e4dc4ca76"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00026.npz",
+          "bytes": 1944130,
+          "sha256": "e60f53e45bf9d65b67282aaa489faa65337c4adfd1402b27f67afc91299cf2d5"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00027.npz",
+          "bytes": 1910128,
+          "sha256": "a40a26badaf1496832598d9d9b517a9fbe3165bc3db7630fb15bfb5e388e43c2"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00028.npz",
+          "bytes": 1943468,
+          "sha256": "29f2a9f8e3263bda31f0f24f8118435054e9f0e115ef9e245b0b1b8781634161"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00029.npz",
+          "bytes": 1921752,
+          "sha256": "37633b8baaa887bd208ff8845fcd05ec554d3c758efbd2e558a690e0dc5319b0"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00030.npz",
+          "bytes": 1944951,
+          "sha256": "eb4866fbdb155015fe95ba4f371a0681e4062d70e28b34144a2afc77a80ee2cb"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00031.npz",
+          "bytes": 1930919,
+          "sha256": "a28bfb7df8cb264be121f1a2841ff21ca5bdc2b2258bc62660ff2e2e80b1b0cf"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00032.npz",
+          "bytes": 1933671,
+          "sha256": "f75d93e00797e4b28bc027f82b4922bade9f85c7c526a3e7aaeeb64f6d52a707"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00033.npz",
+          "bytes": 1940542,
+          "sha256": "9bc0f0ddd79155818d3e3a74bb93675dac927a2fa3fea1e56ad97911a5cb9f2d"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00034.npz",
+          "bytes": 1917583,
+          "sha256": "3cc486c5f73575e9af080144138bbec1b275953d71147346b63159b9b0cdc858"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00035.npz",
+          "bytes": 1938018,
+          "sha256": "13150ff5cb1fe6bb2ab1f75ca0216b5f1ad82abcfaf32b630b05ce8f938e4795"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00036.npz",
+          "bytes": 1922180,
+          "sha256": "e73b1c00f1f48112c0ef3a9e25ab57ca3f82ac3787ffe596b8c49db2bd7a182e"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00037.npz",
+          "bytes": 1929286,
+          "sha256": "a4bbbfe17b43c1c0842982406a52b5355ba2c2db9f288f99e481aca4ab4077ea"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00038.npz",
+          "bytes": 1940595,
+          "sha256": "56e94c72aa1ab86f79fd4c5c662b726b9328c15bc1bc0038282c26b46528b1c5"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00039.npz",
+          "bytes": 1906922,
+          "sha256": "b9765b814845bb6776d2c7b618a4a295774f0255b0b5f36914f4f9ab07bd70f7"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00040.npz",
+          "bytes": 1935925,
+          "sha256": "47413023f51077359d5619b5d312a6759a30303044ea4a9f89fb64216f6baddd"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00041.npz",
+          "bytes": 1936872,
+          "sha256": "dab68b249647ca3b011e18bc5edcd89f805963dcdd5fb3acbcb82abb04e0a342"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00042.npz",
+          "bytes": 1874777,
+          "sha256": "c2743b19c6b61cc5e5062568de01932aa84b236039b421981dcaa310b0db732a"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00043.npz",
+          "bytes": 1909690,
+          "sha256": "f1762f20480cce354fa68edd22e312b3b9584ecd4b34729fff23957ebe3878aa"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00044.npz",
+          "bytes": 1910888,
+          "sha256": "7ce6714a1b2e0036e42a28b79bf0fde2f2ca6354327f6c849a502d63df666368"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00045.npz",
+          "bytes": 1940800,
+          "sha256": "3b361d21fa689b32ffc26f8c8f933e4ef72f7184d09335a40f495d63a7324395"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00046.npz",
+          "bytes": 1916004,
+          "sha256": "f05ba0ce094cdee00accd86106688fc83097dc9a66cf20a9e8ec14ab79ab2d81"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00047.npz",
+          "bytes": 1922571,
+          "sha256": "c9c056e920449a8ac429434c877e96834a33044623972bdcea357345e35836f6"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00048.npz",
+          "bytes": 1943881,
+          "sha256": "180dac3c1556a9a187dcec261739cb06569ea5a78924e583983958f9470eb5e7"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00049.npz",
+          "bytes": 1938085,
+          "sha256": "6237950fab817ed25c2d5661ef31a8def81e6e0f8220f147a68d443de158160b"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00050.npz",
+          "bytes": 1948828,
+          "sha256": "5895fe5a36de6fc39c755fb7d9372c977828d6dc499f1809ebcc95fc6b802170"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00051.npz",
+          "bytes": 1926764,
+          "sha256": "d9637f613cb9252db216d29b18f148b128289deb33fe1cd7c162ef143c7bba03"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00052.npz",
+          "bytes": 1944034,
+          "sha256": "0183af7ff36a09a552761fea9d36e3be5eb357807babc9332091b2e9c5266afe"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00053.npz",
+          "bytes": 1935243,
+          "sha256": "a8c19856a66773d1abdae44e5e61358a79d6a39f0adc4f974c4db47af4feb8a0"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00054.npz",
+          "bytes": 1927120,
+          "sha256": "7b68bece8b8a4dd451ba339d7ff5d698969c560fef4ef073682eb7e6466c5f73"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00055.npz",
+          "bytes": 1920046,
+          "sha256": "c36d06bdd9dd90714f286fe2308c59b275b8fd75a8806e8856bdb832a0053897"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00056.npz",
+          "bytes": 1944982,
+          "sha256": "af6090b2b23d54e91efab765a38cca399f020b2bc8ffe5ca9de77a975aed684c"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00057.npz",
+          "bytes": 1924382,
+          "sha256": "dbde66f794f341e48aa017d1cb388e37df268bc5162ec0c122dca8ccc937ecc4"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00058.npz",
+          "bytes": 1935975,
+          "sha256": "f1e6b4e0ae167083e442945bb748b27a108aaa45f131e8efac812839ecaa283a"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00059.npz",
+          "bytes": 1944352,
+          "sha256": "0f3267fd234064c9a445b8d09f938964bc912a6eb02ddbe178fe302c784d7820"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00060.npz",
+          "bytes": 1925854,
+          "sha256": "ac82328655a18181a427b3e85dcda0a50cfd2cd78db59c081e4aa8570f661bd6"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00061.npz",
+          "bytes": 1960515,
+          "sha256": "66648421e6e14d86df03c1100641c69638953c68f31a5c740a914d1c3750a67d"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00062.npz",
+          "bytes": 1925723,
+          "sha256": "bfcf5f2d72fa9f3579c121d31c0af5240429d0270db35258374eb0f41b7e6453"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00063.npz",
+          "bytes": 1910216,
+          "sha256": "ef3f98549fddf92a9c832944016a9465c3c846431535e71f06c3ccb0ee661b48"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00064.npz",
+          "bytes": 1955381,
+          "sha256": "61d8d773021bfafba6254c018ff1b36ab0155bbff2598bc50a8a9d3c29daeb29"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00065.npz",
+          "bytes": 1913339,
+          "sha256": "9d4a3e1b115e4ed4b6812c85e3d9105f52236bf3ed30015f470818e43b61bd78"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00066.npz",
+          "bytes": 1935270,
+          "sha256": "e178e32c6e86b50bd1198920f73b91652825714618b8beb30cc5044de45079c9"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00067.npz",
+          "bytes": 1935468,
+          "sha256": "3aa433df8541da71345b808b008c2bd0427a0e421bf9ec756b18ec07550ca615"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00068.npz",
+          "bytes": 1931033,
+          "sha256": "6301d9142bf63463aa292bee6b8d316dc55b0895003be671b32c80d7bfe45506"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00069.npz",
+          "bytes": 1934702,
+          "sha256": "2468e67003c8ab1378765a97be070d15cc77ffbb01a2a50bb9753ef49e7a5885"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00070.npz",
+          "bytes": 1945090,
+          "sha256": "6e1033da62c8a56b7fc9af53622a1e1a7f3eaa35790f6a90fe2bddedde4a782a"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00071.npz",
+          "bytes": 1941671,
+          "sha256": "f009f41d230dfe47eef1e7f253334c84d60604a0b83bd540f272264b7caaea86"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00072.npz",
+          "bytes": 1916843,
+          "sha256": "6c79900a6a2e42ba57acb4d58a7faaeeed1bb4d50e19373c761e7f78825da172"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00073.npz",
+          "bytes": 1921684,
+          "sha256": "1da11503e8b0a6e8c43529d694813bc52fc4e5a724f62aa44e024fe6076e785c"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00074.npz",
+          "bytes": 1942205,
+          "sha256": "05a25eeff21f3bfa44046749f288404c27e384326f73045e49d62ae4a878b200"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00075.npz",
+          "bytes": 1913080,
+          "sha256": "0c6cf79d3c3c23799301c482cca163708535098850424394d69a79c5b0d45102"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00076.npz",
+          "bytes": 1939318,
+          "sha256": "f9d8b5f585e0b821695d4d665e55eb516702741ac94fa87f12240f7d795f4ce4"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00077.npz",
+          "bytes": 1938180,
+          "sha256": "b005095e5f7c57dfd375c1bd11349158252b17a0fec850f5840872f272efc1a3"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00078.npz",
+          "bytes": 1944937,
+          "sha256": "7e97e75dbadbbe06634b4301e7304040c49d3838a022accde36a79a41a0113c0"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00079.npz",
+          "bytes": 1943302,
+          "sha256": "eb43571d8c30779dab64a60407a51a8c4511afcd2e7b6fae40e0f846bdd5f0a2"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00080.npz",
+          "bytes": 1938919,
+          "sha256": "f22d09824e0e00458b163ad823eb80540a06bc84a61c5648b7af61f8fda3a1c3"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00081.npz",
+          "bytes": 1953514,
+          "sha256": "d20107fe0a6715b8631dec93ea31ba298443df7b9edb8f82c5b01df73e0c4ade"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00082.npz",
+          "bytes": 1913412,
+          "sha256": "0da93768925aa7ed6f6aadacdc66a0a43f073ab41cd64ab5c5a8686b4fa80125"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00083.npz",
+          "bytes": 1935033,
+          "sha256": "b1d74428de72b7e046b1fc13d44371db3e3bceb7e2ff6d667dc2920014d12cb1"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00084.npz",
+          "bytes": 1919574,
+          "sha256": "d5944b2a327053dfc622d0db637334f9c81f0a5cd82b213ca6662bb8b9111ad8"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00085.npz",
+          "bytes": 1938188,
+          "sha256": "0b88426aa828bddf9ce773f36acfdbe15705a856f08a8e9600631a6caaa98100"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00086.npz",
+          "bytes": 1928342,
+          "sha256": "a96b0b93ba6594889a920b62d2fdb0fceb671a485f8fabc5892f27852d7551b4"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00087.npz",
+          "bytes": 1932183,
+          "sha256": "0aba59e385f4b68015c4d9ac4f5c613341a171e56fc4a9f63f5eca4944b608c6"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00088.npz",
+          "bytes": 1923962,
+          "sha256": "d67d70f742a3dab109e39a668158894f0b972ee990be8a94356c9e6b552eecbb"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00089.npz",
+          "bytes": 1939917,
+          "sha256": "8c87737fe4d8245985590016d7cafc4a87e54c1c0f058e817740a834ba56f6e8"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00090.npz",
+          "bytes": 1948708,
+          "sha256": "938d73d7a75b48a042293a8d18d3a84b41200640dc42ae7be06f652720ea71e0"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00091.npz",
+          "bytes": 1946238,
+          "sha256": "e206476731222f5e036179630a4fc7b32a4aaf1b037ffd9465782dcb20c6cff9"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00092.npz",
+          "bytes": 1918392,
+          "sha256": "e158a3c0c00a9071117227266a705c4c5253609dbf6cd527aa40a88d078b79f1"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00093.npz",
+          "bytes": 1919960,
+          "sha256": "a3919bb2135ba524cfc759e721e1233bf6af10587428ff523730e4f5eb8dc4a3"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00094.npz",
+          "bytes": 1934084,
+          "sha256": "ba527fe887643b349057c5f0d19696a4acc3e0bf20a626c3defa2ee08ea42780"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00095.npz",
+          "bytes": 1925603,
+          "sha256": "8e44d8fb82497c93752458e6e36fd342fac775d3ffa034319fdfcb1217e10a35"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00096.npz",
+          "bytes": 1921318,
+          "sha256": "b3c270c41eae6454f7816198ee7df088f139329145466d657d39c5008decb6ee"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00097.npz",
+          "bytes": 1949206,
+          "sha256": "20c545d8ab7b9056b4f42c7817ba9a31f3a53f07904dbb39ac3862403529d619"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00098.npz",
+          "bytes": 1940121,
+          "sha256": "f73c39a74127ad90fc5986d19f3c1305993eb11bb070c6f1d257e53ebcf7b6c3"
+        },
+        {
+          "path": "datasets/chemotactic_cell_migration/unique_meshes_17x17/trajectory_00099.npz",
+          "bytes": 1943776,
+          "sha256": "49d05967cf2bb181beb43dedb3b5f3c84fb0b317c1bafd7bea10948e9c3fcccf"
+        },
+        {
+          "path": "datasets/heat_equation/100_samples_heat_train.npz",
+          "bytes": 12296690,
+          "sha256": "900fcedcbcc3aed8438ca6e70794d3d23cbd12af9e0475bd2728134615908f71"
+        }
+      ]
+    },
+    "checkpoints": {
+      "availability": "Public archive/download location not yet assigned.",
+      "record_url": null,
+      "download_url": null,
+      "files": [
+        {
+          "path": "models/1D_advection/fluxgraphnet_no_advection/checkpoint_best.pt",
+          "bytes": 1741303,
+          "sha256": "8276d2fbaf1d993c57cdea904885b3c1cebae085f0d3016074c23fc8d47b3f10"
+        },
+        {
+          "path": "models/1D_advection/fluxgraphnet_with_advection/checkpoint_best.pt",
+          "bytes": 1741879,
+          "sha256": "8895439c2cc31b55c18522880c48e7a0ba4057b4c14abef97fe6169c66ede3d1"
+        },
+        {
+          "path": "models/1D_advection/graphsage_no_advection/checkpoint_best.pt",
+          "bytes": 414468,
+          "sha256": "ff7c101c57419033fc721c830de90fbc02901f67c7306a506d9bdd68a944b948"
+        },
+        {
+          "path": "models/1D_advection/graphsage_with_advection/checkpoint_best.pt",
+          "bytes": 415492,
+          "sha256": "fb8caef7a083fd1103dc9ae517b05ec34d0e407290f33ad7a7ff3289170ef48b"
+        },
+        {
+          "path": "models/1D_advection/meshgraphnet-abs_no_advection/checkpoint_best.pt",
+          "bytes": 1675255,
+          "sha256": "67f32fe26811578d8b44653ce8b50c8e4724444a5f708e741d43c3a9e10d5e90"
+        },
+        {
+          "path": "models/1D_advection/meshgraphnet_no_advection/checkpoint_best.pt",
+          "bytes": 1675255,
+          "sha256": "f456ba5bbcd88e7506d1f779f3ded5f85bc9ce242b85fb5c7b2d7bfaa2a0cc09"
+        },
+        {
+          "path": "models/1D_advection/meshgraphnet_with_advection/checkpoint_best.pt",
+          "bytes": 1675767,
+          "sha256": "f49f0e5412e9ad65036422f660e74e7d31f3201f28bdded9272b0b964c941b6f"
+        },
+        {
+          "path": "models/1D_traffic/fluxgraphnet_no_advection/checkpoint.pt",
+          "bytes": 2517162,
+          "sha256": "8519a821f5f92e97b38edca7716f718e653cbf41a4a3f9d009549d4f59ee181d"
+        },
+        {
+          "path": "models/1D_traffic/fluxgraphnet_with_advection/checkpoint.pt",
+          "bytes": 2518186,
+          "sha256": "b9f5712b3c0c2664bd29b5578cbc78bebf798cdd88f803bd43a08f14e7340fef"
+        },
+        {
+          "path": "models/1D_traffic/graphsage_no_advection/checkpoint.pt",
+          "bytes": 620586,
+          "sha256": "1485106ab98b9c16516af5ae944ddfaa2cd19ec764b8a43af164758efb197a19"
+        },
+        {
+          "path": "models/1D_traffic/graphsage_with_advection/checkpoint.pt",
+          "bytes": 621994,
+          "sha256": "abe2faf4ca65b481c99b530dca74f61625d67bcdb146f01bd2475e5a0ed9e2f3"
+        },
+        {
+          "path": "models/1D_traffic/meshgraphnet_no_advection/checkpoint.pt",
+          "bytes": 2285994,
+          "sha256": "159da02449ceeb8e442ec43c0fef23a1c53d6250119a45dabd9a21a3b2e80c68"
+        },
+        {
+          "path": "models/1D_traffic/meshgraphnet_with_advection/checkpoint.pt",
+          "bytes": 2302634,
+          "sha256": "d967234b5f4ed116c492f5a558699fb4ca74207b424acadb45aa823ce7ff9471"
+        },
+        {
+          "path": "models/Burgers/fluxgraphnet_no_advection/checkpoint_best.pt",
+          "bytes": 1845111,
+          "sha256": "a5b9ffa08f767cd13c1d47ee7c799b5004e25af8c5635cf3ae9005a0c1b17553"
+        },
+        {
+          "path": "models/Burgers/fluxgraphnet_with_advection/checkpoint_best.pt",
+          "bytes": 1845623,
+          "sha256": "b7e066285954290eaa7037d721ebca4f0ef79e7e08c2524af63c8cb8aba63297"
+        },
+        {
+          "path": "models/Burgers/graphsage_no_advection/checkpoint_best.pt",
+          "bytes": 518212,
+          "sha256": "b42485f79affa2cef4b207538d8f389cca89e21c0135231c57e4d2961d5c9d52"
+        },
+        {
+          "path": "models/Burgers/graphsage_with_advection/checkpoint_best.pt",
+          "bytes": 519444,
+          "sha256": "01b7c9d42171a74315d288636cc45f3d136245ab6478840806f1943254f4722a"
+        },
+        {
+          "path": "models/Burgers/meshgraphnet-abs_no_advection/checkpoint_best.pt",
+          "bytes": 1778999,
+          "sha256": "d0a3f350695591f20cc0e20c372e150f1f7c9169c759238ca85b8122bebb7a8b"
+        },
+        {
+          "path": "models/Burgers/meshgraphnet_no_advection/checkpoint_best.pt",
+          "bytes": 1778999,
+          "sha256": "602149911b131798bfe47ac3b72b81a1683a2dc1cc349563e753c6083a2540da"
+        },
+        {
+          "path": "models/Burgers/meshgraphnet_with_advection/checkpoint_best.pt",
+          "bytes": 1779575,
+          "sha256": "d8d1f1274429a4c17df8890ddb066d732f2a6a6561f3007808d6c868f72fda44"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/fluxgraphnet_no_advection/checkpoint.pt",
+          "bytes": 2262890,
+          "sha256": "50dbd3eb67cd3d16b905aa8c85fdb644d903bd426997fb42dd762c54d5d13c87"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/fluxgraphnet_with_advection/checkpoint.pt",
+          "bytes": 2271466,
+          "sha256": "3715614668afd591bdcb7bb195ee4b3a4d3359b5660fe48d4132ff0f13f40e02"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/graphsage_no_advection/checkpoint.pt",
+          "bytes": 526122,
+          "sha256": "63677ff915b69daa9df6b297850fbaab336ec8286994f2762d2fbfe0a8c0f7d4"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/graphsage_with_advection/checkpoint.pt",
+          "bytes": 499498,
+          "sha256": "633675f7c13784beac69ce2df695887a7292e2ab4c1ed82a027278e5f1eaca40"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/meshgraphnet_no_advection/checkpoint.pt",
+          "bytes": 2148842,
+          "sha256": "ff652b3ab0c08301434cc55c67bce9e9ce0c87c75926c38270d26581cc873c61"
+        },
+        {
+          "path": "models/chemotactic_cell_migration/meshgraphnet_with_advection/checkpoint.pt",
+          "bytes": 2184234,
+          "sha256": "81557fb3afb76e80178a234a57d5eabc36f19c749b04e127e29f854f2f644501"
+        },
+        {
+          "path": "models/heat_equation/graphsage_1d/checkpoint_best.pt",
+          "bytes": 415380,
+          "sha256": "38e1b5d9a0985105fed565133a1cf843e325c229b4618c03f1f201081d7362bd"
+        }
+      ]
+    },
+    "evaluations": {
+      "availability": "Public archive/download location not yet assigned.",
+      "record_url": null,
+      "download_url": null,
+      "files": [
+        {
+          "path": "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1344772,
+          "sha256": "eff556c2cd1c3f930ae9bb80c36d06a9ed1b8a271c9926c264ab714f284e09dc"
+        },
+        {
+          "path": "evaluations/1D_advection/fluxgraphnet_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3259,
+          "sha256": "9e0900184447587fa6b202b059b18ca9a98fce99850dd90163bd1cf35c510e7d"
+        },
+        {
+          "path": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval.npz",
+          "bytes": 1484396,
+          "sha256": "e1ccfac026451bdb109f6babcc535746c4306422f197301dec20e953ab040b97"
+        },
+        {
+          "path": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1223116,
+          "sha256": "71bef51963691c2f9a66a058193cf8c22d18f10d3120fa3befea7a23d9348e1e"
+        },
+        {
+          "path": "evaluations/1D_advection/fluxgraphnet_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 4765,
+          "sha256": "c62e6dcf57e53efc80db9197f70ea7be235942aad4002c0c38e03e37a3929c2f"
+        },
+        {
+          "path": "evaluations/1D_advection/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1571842,
+          "sha256": "21a9133dce54d320b204619c065ba8dd042ed016c4226dce78dfb5decb0e2e86"
+        },
+        {
+          "path": "evaluations/1D_advection/graphsage_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3245,
+          "sha256": "295f500c7034174919d355bbf498c147d772686e58d3e17725e5714198226581"
+        },
+        {
+          "path": "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1182350,
+          "sha256": "e9c519f871f99f066209c254597735e141e6c823d51258bb1192ba4bd91a53b1"
+        },
+        {
+          "path": "evaluations/1D_advection/graphsage_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3292,
+          "sha256": "43a0b36005f77870071a45b999fcf111bdfb0766712aacf8064e8e64a34f8731"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1425830,
+          "sha256": "9dd535024a0b9af76c9c829470e80fd8e4e1c6a9b07a5c0c581be706755b11d4"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet-abs_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3268,
+          "sha256": "9d715a14aa8cdf435e3e0c9860f1198d6bba6b6afbfb3cb36f535c3433ee1d06"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1073829,
+          "sha256": "b90c86dab21379ec3857fa02791fdfa8d635d6edc15cd1ee552f638918a91190"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3259,
+          "sha256": "d375481acc3a35d81c7ddd8cdf9a049b52c706405592aa0932bf61035a835bab"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 1093564,
+          "sha256": "189c920b139e4bec69695ce17289fb289079241c0ddacbe613f6f1f5b2ac539d"
+        },
+        {
+          "path": "evaluations/1D_advection/meshgraphnet_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3302,
+          "sha256": "581fb1e935da594099490f0cb6f6bc9427ba0b24eb09c2a3911ef3be91c52112"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 363592,
+          "sha256": "f2b311ec6dd232d0e9ad83aac011a6b85fde99cd26331af3927c082ee062286e"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/summary.json",
+          "bytes": 1702,
+          "sha256": "95c51ca6050ffe57f914339256418b73287bc59d03b72802c105187dbe428bcb"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1134158,
+          "sha256": "7576d79c472b8f39c44560904b1f59c3be88dab5f21d0276546ab0db5b076faf"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1459449,
+          "sha256": "5b7fa7922fd3177d5eb2aba093ed23a67cdde1dd64589e4a4d2d12fc23f43702"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 820859,
+          "sha256": "3c3fbdc2a8c09594b25d4cac6d34122dd07b8a4a29ca11a2e72d27513d1c4cb7"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1398555,
+          "sha256": "e21c7fb30a917c2ccb2fdfffc0f71f8ce9860fee056aded4a7c0b8c0f205a7bb"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3294885,
+          "sha256": "6261ef6ac7cd71f44fde028e9dd88fd291c3a133a6364937e795d7777773a131"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3253869,
+          "sha256": "2c41ca8b67cf5d8072fa65d4b81905df91b8a11ec552cfd449c7612cfb5c4e10"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3485520,
+          "sha256": "bd71a23efb892ece57c7893af658930980976602ead53e0f9fb78649f703001f"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 2990861,
+          "sha256": "ce3ed1fb0422349b46cd243c728fc9169a3721f0d45461ff6c97cd12fec4197f"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1093522,
+          "sha256": "d26d9db50d14e3aeb489200347307b5cfc86cb100b028a093d6d2a261ddb8b5b"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1491763,
+          "sha256": "c9366f480caec40ea3fe14377bf6299aad2856e1e0880d2f464da494efe95981"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1456584,
+          "sha256": "7b15471afbc7f412326239f0a25a6ac1411ce185b68ef7406d0d7e68733b2eed"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2043041,
+          "sha256": "04be84410c849787475c090c57187ab719f67e6d16881efbb4054511d4b5d18f"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 359731,
+          "sha256": "623aa4b9c66b85a8f1de3c54170022cedce641b34f3a9e01ded938e60390de0d"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/summary.json",
+          "bytes": 1734,
+          "sha256": "60e3d1e5bf6b7c7c5e75a8e0d1c36e046693cf8b52c3995c6c1add4cbe40a12b"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1127077,
+          "sha256": "c20e78f1d9695448ea35300d0ca3d874416e0b63d1f9ea54eb6ae0db56703a72"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1455068,
+          "sha256": "b7ffb1bf934e11288d3146355a8b6d1ff6ced828407f5628504c39086659e0ec"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 819991,
+          "sha256": "ed215932cd9ca20de096bd56f684b7ba6cecb07360004dc7718be9bee5c8572f"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1392823,
+          "sha256": "a556f7e5315b7f90e81bdf564a365624fdabf399a331e8d47fa526730d457b4e"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3286502,
+          "sha256": "b3c34ee153a1a3a822b75c294229f72d06953fa9703f53f451bafb510fdbf557"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3237597,
+          "sha256": "68ea7de1785d18040e327f93d75bf15eb8a15e281a31dc2372aedc788af58ca9"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3472392,
+          "sha256": "f72461ba811eea15490d2c45362a9661f529643b2fd6dce6f8e4d871f2857031"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 2973453,
+          "sha256": "726f5b7fa5bd6878515fb0d4d0e4460b194997d5c5b312ef2c60843372d1dac4"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1089931,
+          "sha256": "8da07f95803c0361818bad996644b9c6f046658e0f4cfbaaab9ca585691ba33d"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1474040,
+          "sha256": "a5524ccf118349aecc66a07b24c454ba219402f7c26222653d663766dd48b70e"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1449620,
+          "sha256": "bedadd457836117eb87c158ad020c68bc2148d31f06c1792801149f535eedc53"
+        },
+        {
+          "path": "evaluations/1D_traffic/fluxgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2038867,
+          "sha256": "891e544953326f0ab00431382b79dea832b521f92790c8ea53811a3733734ccb"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 401611,
+          "sha256": "41db8a2d4110ce33d120fabcf917a1f356caec77eb54e67c9ced48c3720b2ee0"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/summary.json",
+          "bytes": 1637,
+          "sha256": "c9e62231303adc547901cbb6b3b63e13dd0bb94ed8c67a64153541bff7d3a207"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1141577,
+          "sha256": "8afee5e28c4df3ce10dac4593958a1fe8659a046305f76f8beca85199ed4fbaf"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1462628,
+          "sha256": "94fb976f392d264f5d28c2a588a38794a30e06b6a3dd9be925c05172b6fbef08"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 826100,
+          "sha256": "f994c800d141900b20401eb5feb99f03f39b2a219dd12720885b5fd7d511c6dd"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1400819,
+          "sha256": "716d4510f7d77550db1a14d084a2ca28620bc46400efe80942f78416c4e22666"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3296115,
+          "sha256": "16ab0253cee7cd306f8aec6323a96e4d16c4552ab218df6f4f89210ab91e9fd6"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3274064,
+          "sha256": "e61c073d631ab3cc6f7458ba2101af83cfaec7a6f0d80f39b5beed35ca6343d5"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3481810,
+          "sha256": "81a1c171baabab11223952a8268e5c3ad2986db49249781cbfb03a75c50ec561"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 3009084,
+          "sha256": "943714b5d48d3d93f22110d22bc1cf3aa7023b4aeb20c373d9a8fa3e8f52f618"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1096930,
+          "sha256": "d5fe365cf67f5272465d2c1fccb0f2646ee303891ff2d2e238a0e8ccb6e24c79"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1495145,
+          "sha256": "4b91647a5dc61ecc8974687f9b97cb56c64775679880438b84365e273dfdc5e5"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1459704,
+          "sha256": "3e497ad452549b0a720fb2b4f2c4b81b6e2ff718e0a658d25b2b57c6bb353fad"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2049231,
+          "sha256": "396182edb1b3801d57ce55237d6fd902a32900a1017282be8b231824eb060248"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 391975,
+          "sha256": "0cc25054e0f55e8fcb9df4f211f86dae762fc9725bbf933720c5180ce5c1a788"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/summary.json",
+          "bytes": 1653,
+          "sha256": "5426c2baba9a594ba2137e6c1a636c2b309a76250794c0f1535ae8e8e84ab647"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1130021,
+          "sha256": "8c199b99d70b732a8db8a0841b7dd7f8916344962150fdfb14fab6762b74f6a9"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1457104,
+          "sha256": "d38583f88219598d34e1adf5749e60095fac093eb0b5e388395cb7016f8332f0"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 822005,
+          "sha256": "a625f6b76ea2a8a9f55c0366897e85033b331d0d56a002ed17cf3d40c4b4ea06"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1395087,
+          "sha256": "a398107ac774336f61b406f2c066ccffa290f8df88acc60f0eb54df5e00dcf65"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3288725,
+          "sha256": "aa2d552a6dbc801c8a8b5f624fb178a1829b141e70b5d9e7657c6c25b3404e2c"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3249104,
+          "sha256": "842d08d73756db24a03243617828566184eee78ccccb599e4d3c4dc155ff48fa"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3478936,
+          "sha256": "add2e799f2ddf0a685d784a41a26fd30741c954fe8aa7c799cd4a5efaf545f01"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 2983959,
+          "sha256": "26977687b87cae4e9806cac33c4537360cd703516ae90c37e6946cf9a6f638a3"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1091553,
+          "sha256": "1ceb2ad122acba35464f9cffc84a8b1d2788de7dc34a5eb75ad858b8152f710f"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1473645,
+          "sha256": "8f02349fb21eebe170391f55ac78f279f08d46cafb92aeff20201c689d07030b"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1453437,
+          "sha256": "e55bf889bef85232325b3e12ead88b31a755163a87919ad7455a6f1fe009a324"
+        },
+        {
+          "path": "evaluations/1D_traffic/graphsage_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2037365,
+          "sha256": "938123d34262b187cad70cb625782b05694407ee63203f07d9bb1dd45147aaab"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 390087,
+          "sha256": "400db2aab9abf7204336a96a97f03ff8243722b2258789b96c0d0d6d51f39cb0"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/summary.json",
+          "bytes": 1648,
+          "sha256": "87922c2f8ea1392ab8dbfe6e51a14a589c3c3da9ed6a779ab971e27afd6ce2ca"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1131560,
+          "sha256": "e4a86ae6ed534f8be391bf0a48a7926759ba8e77abf87c4ded4f2230c06a7bed"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1459405,
+          "sha256": "e08d28d94fcd842ab759083f7dcdfcf627e76a60a3e24e901eab4e83122a45c5"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 822469,
+          "sha256": "213a1c6afc6a3ecf15d29c2a16d9dee4ff5f608fa6ddace4c79ed994b211dba8"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1396388,
+          "sha256": "01bbfdb5c91ef8ebd78be826aae81ffbe8dbfb0f64130888674f2616b8436ca6"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3291086,
+          "sha256": "150709b7375058e1edea72888dacdb7e766e6e3e069cdd897ad71091f4f05951"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3250301,
+          "sha256": "f0f09674422b758662e7ae459816385e75c88067434f0b241ab0a00185119ceb"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3479168,
+          "sha256": "69a288835c067eba8f32f6ac7e2ad4cf6cf9f6cb9127f19e14c81a0d15490f34"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 2986411,
+          "sha256": "e032775ebde380c8b6a4485262672adb51e9daa102f7add5cf14431f67549a79"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1092433,
+          "sha256": "253ac4498a0cf2bb05b31d4f771442cb49408735babaacad8d721532a7536a91"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1478246,
+          "sha256": "ee156ef665323f43e64505d1665023431fc92e80168d88703923b57b7fba1d62"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1453958,
+          "sha256": "f4feabd01537d7e7e4454d134ba59bdf8d49b8e909575493f723813aad4d15a2"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_no_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2038347,
+          "sha256": "7343bea592f534868591cfc3ff579ec5b7dce4161ef1908f8598cacc0c201257"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/lwr_rollout_metrics_all_tests.npz",
+          "bytes": 388994,
+          "sha256": "c73bc180db1267163af0c469284d6f4c63a36dad25aa7084a1f5b7f250cdc980"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/summary.json",
+          "bytes": 1629,
+          "sha256": "dc5cce99cc1637f75eac28aa8e9df434c5eb85b0d1bd429688a3a5eb45bb740a"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0020/rollout_predictions.npz",
+          "bytes": 1129491,
+          "sha256": "9de83f7b600670645fd07bc8c4390359cdefc60c7eb6b4929cf2eafe00f1d8f7"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0021/rollout_predictions.npz",
+          "bytes": 1456940,
+          "sha256": "9992a11568b65c6f65e70bd2ec712a4d4a49439d101f4cbb6d7e50409b4f761b"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0022/rollout_predictions.npz",
+          "bytes": 821690,
+          "sha256": "9d943b054f1f3c6db406a4cda283c001253c3c2beaec1f26dee7f60883d4222e"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_in_size/topology_0023/rollout_predictions.npz",
+          "bytes": 1393340,
+          "sha256": "74be61c41bd70ef5025055216923d7bca2ebf54a1187521b4a7da2d9383e02a3"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0024/rollout_predictions.npz",
+          "bytes": 3285279,
+          "sha256": "3657578e8b3f2b9cb70fcff1b8ff3bea4697badd32c68ad20e2ca8af7937b373"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0025/rollout_predictions.npz",
+          "bytes": 3238471,
+          "sha256": "dcb46ad93cb1afd7aa826a0bdfb70c689073c372446162a4a9a0e930292f2d44"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0026/rollout_predictions.npz",
+          "bytes": 3467768,
+          "sha256": "d288c79f85c9c98d477ea8e2c518d1ea42c3089ed856c30da7cf28b309803a91"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_large/topology_0027/rollout_predictions.npz",
+          "bytes": 2977407,
+          "sha256": "ee4662be71f72d6bf5b2c5abedf3984d111845e16f2a6ae22124bb4c14d1cfc7"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0028/rollout_predictions.npz",
+          "bytes": 1088649,
+          "sha256": "fc135ab279aede3f1cd750ba8a3b95a3d71f8e7c8036a582d79dc80ef1dc0041"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0029/rollout_predictions.npz",
+          "bytes": 1473324,
+          "sha256": "e5fc6079b85bcf246ef562944545b38bafff814b4e6de9fbe3ee73a0412136ae"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0030/rollout_predictions.npz",
+          "bytes": 1448722,
+          "sha256": "ecea08a0baba13fd021f7c6cb0e3f61129c858b84ba90d694f4d9a7006ef2919"
+        },
+        {
+          "path": "evaluations/1D_traffic/meshgraphnet_with_advection/rollout_plots/test_parameter_ood/topology_0031/rollout_predictions.npz",
+          "bytes": 2035785,
+          "sha256": "d5d2c810733ad646564c47cba01fac182ec900f025df37a7cee31c77369458f1"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6751901,
+          "sha256": "e7303adff78c0487b58c467eb11118b8c766ce53bbb5c8cb98547d395aead711"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3343,
+          "sha256": "cb928b857b39cc36e34cac89db6539bf66292ea5b066fbbd772ce1172dcc5b4c"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 7157549,
+          "sha256": "200b259f6800c4e431d6c89e866c5c00c1bb40be077a743f75843f0a65768121"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 5034,
+          "sha256": "1366ca40f9e39c225df8ab3f03626fcd22c735b0205cae42f17ad70d4e96bff9"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.json",
+          "bytes": 10175,
+          "sha256": "ba6574188cf84885ddc5e7472ab3b8302e0acc35069d45093886bfa19a8ae86d"
+        },
+        {
+          "path": "evaluations/Burgers/fluxgraphnet_with_advection/length3_visualization.npz",
+          "bytes": 1560175,
+          "sha256": "aaea2a88481b0aa27a98429eb60ce9f9266f4f8e611ceb3844ba344a078e3101"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6236354,
+          "sha256": "308b4f42b2cf0b498e2e01ce6d6257214accc661b0fc351133a76c8e75dcfd86"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3375,
+          "sha256": "c8b2ce06b28a92a5b9977e30fc5c88d2c5b5ae8233cfea057ba23796e41fef2e"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_no_advection/length3_visualization.json",
+          "bytes": 10211,
+          "sha256": "36de1be7167c46208c60353797c0a21583186da4f69d7bedf8bff154c346ea3d"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_no_advection/length3_visualization.npz",
+          "bytes": 1555686,
+          "sha256": "4b2ec35d5612753e35fd23d17e7ad8b2b74cd0653871439bf84ea2ad566eafcf"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6638687,
+          "sha256": "e39cd76e03f19eec715a7556e5b0a0f30c031de24467a54b30a3b17c0a0802a5"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3320,
+          "sha256": "7fa12eabaae12cd9655ae9d8b3915178bfbb7476c5bdf588ce81398a025a2b08"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_with_advection/length3_visualization.json",
+          "bytes": 10228,
+          "sha256": "93b49ad00b72cd5dbe80487707c404ed6f184ca36196e53428b660cb9cb07b9c"
+        },
+        {
+          "path": "evaluations/Burgers/graphsage_with_advection/length3_visualization.npz",
+          "bytes": 1595490,
+          "sha256": "e5eac7a1a6aeaf9b618616f76a52994fd70e6545b7956aa904dbd3e22e236a0f"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet-abs_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6434291,
+          "sha256": "584b9df9890b47f9cc530e600c81c4843feba10e92a1b7d55f961719d3c711e0"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet-abs_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3965,
+          "sha256": "e7137ab00c2efd2bb3fb0ed87cad3b8bddf61c2faa50f9239835a7bd3022e808"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.json",
+          "bytes": 9958,
+          "sha256": "988bc796709fc413b4b8ca44d8a147cb988c8c33e08d81656a15dfc3daac1928"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet-abs_no_advection/length3_visualization.npz",
+          "bytes": 1549426,
+          "sha256": "115a4db6cd981f951180787203d7027c7353f3bf5ceed9c34a4478f4e0781011"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6508195,
+          "sha256": "ac1f9ce942e5c861f8e456812396a23fd6f2ff2e75bbeea75b3d6ccb6bb81176"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_no_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3322,
+          "sha256": "c1703ce3524bee94d35864fdf462e283fa5a342f64a639b644c9d38ca6ba0356"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.json",
+          "bytes": 10238,
+          "sha256": "a3fdd797150254c3377ab1533d53eed9cf9c818d7129bb2408e28101a3d4b881"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_no_advection/length3_visualization.npz",
+          "bytes": 1545035,
+          "sha256": "4d56e1a2b7ceeee79ea25f8fd7e82c64bc97f5354cbcf8bbc92bbb6b01b86521"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_eval_local_ssim.npz",
+          "bytes": 6505384,
+          "sha256": "022232df9a995171d07d4aea8a6dad1dffe7ae9cb6b0b7924ba677a455a9a852"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_with_advection/gnn_vs_godunov_summary.json",
+          "bytes": 3357,
+          "sha256": "dc6d4b3ef0c9e6521a5295dc6d4bcc42f1aeea584fc2470db303a97e4c2ab447"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.json",
+          "bytes": 10232,
+          "sha256": "6bc9cd51d7701831d521d798641cbc5180ffe5ff137796af499e5c6cc5558342"
+        },
+        {
+          "path": "evaluations/Burgers/meshgraphnet_with_advection/length3_visualization.npz",
+          "bytes": 1561791,
+          "sha256": "acf81f83f7ad36710c44c27a10b083427b0f6d7a13be9060e500713e60a11d4e"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1890,
+          "sha256": "a7d9cb44b72bd1dc4ac0519458d2e106022f5868cdb607f2502ef8a6526c6362"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7252129,
+          "sha256": "eabfefb0642eab76c65e870a11375a0819e56a8f1861b31aec1d1d219d595a98"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_metrics.npz",
+          "bytes": 19529761,
+          "sha256": "6e14efba11a4e15ab5c8e388e262902d9b2f9dda5f63e866e68131df699c6ba1"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/error_curves_summary.json",
+          "bytes": 10303,
+          "sha256": "57b3f6fd0abad30388ce838fbfaafa71d780a18405b9be7ce0fdc0ae5777ccd0"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1896,
+          "sha256": "222a6acd553d3a401b6e9569b8f2f647a7826816fa3e3b833e8bdb6d674661c4"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/fluxgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7254496,
+          "sha256": "738d6e22512b9d9858846f1de0637cd44003592634eadb2622b62d1137fbc4ad"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/graphsage_no_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1877,
+          "sha256": "7241246f8c23aee13558b5c98dba0e326283d5331515c47ce5b782eee5786bc9"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/graphsage_no_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7261656,
+          "sha256": "f277fd2faf9cb7da144af47ba83e3ac08ae6e5e9e3382967fce4498de00ccafc"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/graphsage_with_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1882,
+          "sha256": "d8e9d2a67e6a9d2c5fd1b29768bd5298ba12edbaf0bc60f5b994a2a161a51194"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/graphsage_with_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7270400,
+          "sha256": "6a07a394da050f4c02e1a50dc9ef538fdb6be18fb9994c1dea00e1d961c9f4d6"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1883,
+          "sha256": "89d430944820dd8b4c07bd4b1f218e494333b567fe80f3338d6c21d460296dc8"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/meshgraphnet_no_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7267144,
+          "sha256": "5dbdb089c976a7590960bdcac498dba35c1ed3444d9d7ca170294656066b6e03"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection/rollout_plots/summary_metrics.json",
+          "bytes": 1889,
+          "sha256": "6350c480ca6c45149d5d69ba0e7ef7e5b5f12d9c3cb7ae547167f8593facaf80"
+        },
+        {
+          "path": "evaluations/chemotactic_cell_migration/meshgraphnet_with_advection/rollout_plots/test_rollout_predictions.npz",
+          "bytes": 7260155,
+          "sha256": "eb6414ec8f6286ed6a0eb8757446af83a75dea9af1eb6770bc122dc98ff729f5"
+        },
+        {
+          "path": "evaluations/heat_equation/graphsage_1d/rollout_eval.npz",
+          "bytes": 107074,
+          "sha256": "bedd8216ea26da578e160598fab1901952ff2b3fe1cc44c53400d4683e445d14"
+        },
+        {
+          "path": "evaluations/heat_equation/graphsage_1d/rollout_eval_summary.json",
+          "bytes": 1064,
+          "sha256": "ddf4d5dea0682701e9e2e127fb35b5270930cd82903590c41898bca07574737e"
+        }
+      ]
+    }
+  }
+}

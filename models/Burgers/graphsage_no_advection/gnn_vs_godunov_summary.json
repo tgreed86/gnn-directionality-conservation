@@ -1,0 +1,114 @@
+{
+  "checkpoint": "runs/with_shocks/vanilla_sageconv/no-dropout/cfl-0p2_dt-1p5e-3/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/checkpoint_best.pt",
+  "data_dir": "data/weno-a/data/300_timesteps/100-samples_cfl-0p2_dt-1p5e-3_dataset.pt",
+  "source_format": "wenoa_pt",
+  "regime_filter": "all",
+  "sample_selection_mode": "one_per_test_trajectory_t0_nearest_limited",
+  "eval_test_trajectories": true,
+  "allow_full_test_fallback": false,
+  "device_requested": "cpu",
+  "device_resolved": "cpu",
+  "num_samples": 10,
+  "horizon": 300,
+  "dt": 0.001500000013038516,
+  "dx": 0.00390625,
+  "ssim": {
+    "mode": "local-periodic",
+    "data_range": 1.0416666269302368,
+    "data_range_source": "command-line",
+    "window_size": 11,
+    "window_sigma": 1.5,
+    "boundary": "periodic",
+    "covariance": "population",
+    "k1": 0.01,
+    "k2": 0.03
+  },
+  "baseline_schemes": [
+    "godunov"
+  ],
+  "computed_baseline_schemes": [
+    "godunov"
+  ],
+  "baseline_labels": {
+    "godunov": "Godunov"
+  },
+  "model_in_channels": 1,
+  "input_features": {
+    "feature_columns": [
+      "u"
+    ],
+    "use_pos": false,
+    "normalize_u_to_minus1_1": true,
+    "normalize_clip": false,
+    "u_min": -0.5208333134651184,
+    "u_max": 0.5208333134651184
+  },
+  "physics_inputs": {
+    "enabled": false,
+    "include_adv": true,
+    "input_form": "delta",
+    "advection_scheme": "upwind",
+    "adv_all_steps": true,
+    "input_weighted": false,
+    "adv_weight": 1.0,
+    "normalize_adv_to_minus1_1": true,
+    "normalize_adv_percentile_low": 1.0,
+    "normalize_adv_percentile_high": 99.0,
+    "normalize_adv_clip": true,
+    "adv_min": null,
+    "adv_max": null,
+    "detach_inputs": true
+  },
+  "final_mean_rmse_gnn": 0.20672523354147768,
+  "final_mean_rmse_godunov": 0.019866142613009417,
+  "final_mean_rel_l2_gnn": 1.1609271170457305,
+  "final_mean_rel_l2_godunov": 0.11389690733238249,
+  "final_mean_l1_gnn": 0.1449033541324752,
+  "final_mean_l1_godunov": 0.007866876524444531,
+  "final_mean_ssim_gnn": 0.5381515854114239,
+  "final_mean_ssim_godunov": 0.9708448333657327,
+  "final_mean_rmse_baselines": {
+    "godunov": 0.019866142613009417
+  },
+  "final_mean_rel_l2_baselines": {
+    "godunov": 0.11389690733238249
+  },
+  "final_mean_l1_baselines": {
+    "godunov": 0.007866876524444531
+  },
+  "final_mean_ssim_baselines": {
+    "godunov": 0.9708448333657327
+  },
+  "gnn_beats_godunov_fraction_final_rmse": 0.0,
+  "godunov_beats_gnn_fraction_final_rmse": 1.0,
+  "tie_fraction_final_rmse": 0.0,
+  "gnn_vs_baseline_fraction_final_rmse": {
+    "godunov": {
+      "gnn_better": 0.0,
+      "baseline_better": 1.0,
+      "tie": 0.0
+    }
+  },
+  "plot_all_samples": false,
+  "plot_all_samples_selection_mode": null,
+  "plot_all_samples_count": 0,
+  "error_curves_log_y": false,
+  "error_curves_mean_only": false,
+  "error_curves_spread": "none",
+  "error_curves_smooth_window": 1,
+  "error_curves_metrics": [
+    "rmse",
+    "rel",
+    "l1",
+    "ssim"
+  ],
+  "error_curves_autoscale_source": "all",
+  "curve_color_overrides": {},
+  "summed_field_show_exact": true,
+  "legend_label_gnn": "GNN",
+  "legend_label_godunov": "Godunov",
+  "num_compare_models": 0,
+  "compare_model_labels": [],
+  "compare_eval_npz": [],
+  "out_npz": "runs/with_shocks/vanilla_sageconv/no-dropout/cfl-0p2_dt-1p5e-3/300_timesteps_dt-1p5e-3_cfl-0p2_lr-1e-4_500ep_delta/gnn_vs_godunov_eval_local_ssim.npz"
+}

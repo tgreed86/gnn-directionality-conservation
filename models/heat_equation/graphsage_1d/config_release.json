@@ -1,0 +1,57 @@
+{
+  "seed": 1234,
+  "device": "mps",
+  "data": {
+    "spatial-dim": 1,
+    "dataset_path": "datasets/heat_equation/100_samples_heat_train.npz",
+    "target_mode": "rate",
+    "val_fraction": 0.1,
+    "test_fraction": 0.1,
+    "batch_size": 16,
+    "num_workers": 0
+  },
+  "model": {
+    "name": "HeatSAGEModel",
+    "hidden": 128,
+    "layers": 3,
+    "dropout": 0.0,
+    "activation": "relu",
+    "activation_negative_slope": 0.01,
+    "activation_elu_alpha": 1.0,
+    "use_skip": false,
+    "use_layernorm": false,
+    "layernorm_eps": 1e-06,
+    "predict_type": "rate"
+  },
+  "input_features": {
+    "include_pos": false,
+    "normalize_state_to_minus1_1": true,
+    "normalize_clip": false,
+    "state_min": -3.851522922515869,
+    "state_max": 4.505324840545654
+  },
+  "train": {
+    "epochs": 100,
+    "rollout_steps": 5,
+    "lr": 0.001,
+    "lr_schedule": {
+      "enabled": false,
+      "entries": [
+        {
+          "epoch": 250,
+          "lr": 0.0001
+        }
+      ]
+    },
+    "weight_decay": 1e-06,
+    "grad_clip": -1.0,
+    "early_stopping_patience": null,
+    "log_every": 10,
+    "save_dir": "outputs/heat_equation/graphsage_1d"
+  },
+  "rollout_eval": {
+    "enabled": true,
+    "horizon": 100,
+    "num_test_samples": 16
+  }
+}

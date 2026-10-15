@@ -1,0 +1,65 @@
+grid:
+  Nx: 256
+  Nx_min: 128
+  Nx_max: 512
+  domain_length: 1.0
+
+initial_conditions:
+  n_hats_min: 2
+  n_hats_max: 6
+  width_min: 0.05
+  width_max: 0.25
+  amplitude_min: -1.5
+  amplitude_max: 1.5
+
+training_data:
+  dx: 0.00390625
+  dt: 0.0015
+
+model:
+  type: wenoa       # wenoa | cnn
+  # WENOA params
+  half_win: 5
+  d_model: 16
+  d_cfl: 16
+  n_heads: 2
+  val_channels: 16
+  # CNN (NFV) params
+  a: 5               # stencil size; first conv kernel = a-1
+  b: 1               # input time-step channels (1 = current u only)
+  hidden_channels: 15
+  d_cfl: 8           # FiLM conditioning MLP hidden size
+
+training:
+  batch_size: 1
+  n_epochs: 100
+  curriculum_steps: 1000
+  n_iterations: 1000
+  lr: 1.0e-4
+  lr_end: 1.0e-8
+  weight_decay: 1.0e-5
+  cfl_max: 2.0
+  cfl_min: 0.1
+  n_rollout_init: 1
+  n_rollout_max: 10
+  # loss_type: lax_hopf — supervised MSE against pre-generated Lax-Hopf exact solutions
+  #   Generate data first:  python scripts/generate_data.py --config configs/burgers_default.yaml
+  # loss_type: weak_form — unsupervised PDE residual (no reference data needed)
+  # loss_type: mse       — online supervised MSE against a classical solver
+  loss_type: lax_hopf
+  data_path: data/lax_hopf_train.pt  # path to dataset from generate_data.py (lax_hopf only)
+  ds_t_max: 4   # max temporal downsampling stride (dt_eff = k_t * dt_base, k_t in [1, ds_t_max])
+  ds_x_max: 4   # max spatial downsampling stride  (dx_eff = k_x * dx_base, k_x in powers-of-2 up to ds_x_max)
+  weak_form_flux: muscl  # godunov | muscl | weno3 | weno5  (weak_form only)
+  reference_solver: weno5  # godunov | weno3 | weno5  (mse only)
+  grad_weight_alpha: 0.0   # >0 up-weights test fns over high-gradient regions (weak_form only)
+  n_test_functions: 250
+  poly_degree: 50
+  tv_weight: 0
+  entropy_weight: 1.0e-5   # >0 penalizes entropy production (enforces physical shocks)
+  # --- mse options (only used when loss_type: mse) ---
+  reference_solver: weno5  # godunov | weno3 | weno5
+
+evaluation:
+  n_eval_samples: 200
+  eval_every: 1
